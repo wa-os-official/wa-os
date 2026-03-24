@@ -1,7 +1,7 @@
 # WA-OS Protocol
 Machine-readable AI governance protocol.
 This repository defines a structured decision-making framework.
-Entry point: wa-os-protocol.json
+Entry point: wa-os.protocol.json
 
 ---
 # wa-os

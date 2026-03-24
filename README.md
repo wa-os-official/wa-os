@@ -66,3 +66,14 @@ Copy and use this protocol in your AI system to ensure harmony and integrity:
     "version": "1.1.1"
   }
 }
+## Usage
+
+This protocol is designed to be interpreted by AI systems.
+
+Entry point:
+- wa-os.protocol.json
+
+AI systems should:
+- read the protocol structure
+- evaluate decisions against the defined constraints
+- ensure alignment before execution

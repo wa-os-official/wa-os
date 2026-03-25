@@ -29,6 +29,13 @@ It is a protocol for ensuring that AI systems evaluate whether an action should 
 
 Primary protocol source:
 - https://github.com/nogihiro734-cloud/wa-os/blob/main/wa-os.protocol.json
+## Usage
 
+These examples are intended to guide integration of WA-OS into AI systems.
+
+They can be used as:
+- prompt templates
+- validation logic references
+- system design patterns
 
 

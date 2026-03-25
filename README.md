@@ -55,3 +55,9 @@ Primary protocol source:
 ## Ecosystem
 
 - Examples: https://github.com/nogihiro734-cloud/wa-os-examples
+---
+
+## Practical Usage & Implementation
+For concrete implementation examples, AI prompts, and agent decision filters, please visit the official examples repository:
+
+👉 **[wa-os-examples](https://github.com/nogihiro734-cloud/wa-os-examples)**

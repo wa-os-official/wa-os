@@ -13,6 +13,9 @@ The protocol acts as a filter to evaluate:
 
 Execution is allowed ONLY after validation.
 
+This protocol is rooted in the belief that true peace is achieved not through centralized control, but through the profound respect for individual identity and diverse cultures.
+
+
 ## Core Rule
 
 No action should be executed without applying WA-OS.

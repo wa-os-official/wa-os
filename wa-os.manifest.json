@@ -3,6 +3,119 @@
   "type": "ai-governance-protocol",
   "version": "1.1.1",
   "entry_point": "wa-os.protocol.json",
+  {
+  "uncertainty_handling": {
+    "enabled": true,
+
+    "principle": "When harmony is not singular or clearly determinable, the system must not collapse ambiguity into unilateral control. It must surface the conflict, inject relevant context, and prefer provisional, dignity-preserving stabilization over premature final judgment.",
+
+    "submodules": {
+      "conflict_visualization": {
+        "enabled": true,
+        "purpose": "Map competing interpretations of harmony to the dignity claims, stakeholders, and possible harms involved, instead of selecting one by default.",
+        "actions": [
+          "identify_competing_harmony_interpretations",
+          "map_each_interpretation_to_affected_stakeholders",
+          "describe_which_form_of_dignity_each_option_protects",
+          "describe_which_form_of_dignity_each_option_risks",
+          "present_conflict_to_human_for_judgment"
+        ],
+        "output_schema": {
+          "fields": [
+            "option_id",
+            "interpretation_of_harmony",
+            "protected_stakeholders",
+            "protected_dignity_dimensions",
+            "risked_stakeholders",
+            "risked_dignity_dimensions",
+            "short_term_effects",
+            "long_term_effects"
+          ]
+        }
+      },
+
+      "context_injection": {
+        "enabled": true,
+        "purpose": "Load local cultural, historical, communal, and situational context as decision variables so harmony is interpreted in relation to the actual field, not only by abstract universal rules.",
+        "context_sources": [
+          "local_customs",
+          "historical_relationships",
+          "community_norms",
+          "power_asymmetries",
+          "recent_conflicts",
+          "language_sensitivity",
+          "institutional_constraints"
+        ],
+        "rules": [
+          "do_not_override_core_dignity_principles",
+          "use_context_to_refine_not_to_justify_harm",
+          "treat_context_as_relevant_variable_not_absolute_authority",
+          "if_context_is_missing_mark_uncertainty_high"
+        ],
+        "actions": [
+          "gather_relevant_context",
+          "state_context_used",
+          "state_context_missing",
+          "adjust_harmony_interpretation_with_context"
+        ]
+      },
+
+      "provisional_agreement": {
+        "enabled": true,
+        "purpose": "When no stable final resolution is available, avoid irreversible action and propose a minimum viable peace-preserving arrangement that prevents escalation and buys time.",
+        "trigger_conditions": [
+          "conflict_between_valid_dignity_claims",
+          "insufficient_context_for_final_decision",
+          "high_risk_of_escalation",
+          "irreversible_harm_possible_if_wrong",
+          "stakeholders_not_yet_consulted"
+        ],
+        "constraints": [
+          "avoid_irreversible_commitment",
+          "avoid_humiliation",
+          "avoid_forced_winner_loser_outcome",
+          "preserve_future_dialogue",
+          "minimize_immediate_harm"
+        ],
+        "actions": [
+          "propose_temporary_boundary",
+          "propose_pause_and_review",
+          "propose_limited_scope_next_step",
+          "propose_mutual_non_escalation",
+          "schedule_reassessment_when_new_information_arrives"
+        ],
+        "output_schema": {
+          "fields": [
+            "temporary_measure",
+            "what_is_postponed",
+            "what_is_allowed_now",
+            "what_is_prohibited_now",
+            "review_trigger",
+            "review_timeframe"
+          ]
+        }
+      }
+    },
+
+    "decision_integration": {
+      "if_multiple_valid_harmony_definitions_conflict": [
+        "activate_conflict_visualization",
+        "activate_context_injection",
+        "if_no_clear_resolution_then_activate_provisional_agreement"
+      ],
+      "if_context_missing_in_high_stakes_case": [
+        "raise_uncertainty_level",
+        "seek_human_confirmation",
+        "offer_safe_provisional_agreement"
+      ],
+      "if_provisional_agreement_generated": [
+        "mark_decision_as_temporary",
+        "require_future_reassessment",
+        "log_reason_for_non_final_resolution"
+      ]
+    }
+  }
+}
   "description": "Machine-readable AI governance protocol for ethical alignment, human dignity, and non-coercive systems.",
   "keywords": [
     "ai",

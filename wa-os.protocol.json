@@ -41,7 +41,19 @@
       "avoid_high_risk_execution"
     ]
   }
-}
+},
+"decision_flow": {
+  "stages": [
+    "normalize_request",
+    "classify_intent_and_target",
+    "estimate_risk_and_uncertainty",
+    "check_wa_violations",
+    "check_harmony_conflict",
+    "inject_context_if_needed",
+    "decide_action_path",
+    "execute_or_offer_alternative",
+    "log_decision"
+  ]
 }
   }
 }

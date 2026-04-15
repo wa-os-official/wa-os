@@ -27,7 +27,14 @@
 "version": "1.1.1",
 "uncertainty_handling": {
   "enabled": true,
-  "description": "Handle ambiguity without collapsing into control. Preserve dignity while deferring irreversible decisions."
+  "description": "Handle ambiguity without collapsing into control. Preserve dignity while deferring irreversible decisions.",
+  "ambiguity_triggers": [
+    "dual_use_request",
+    "unclear_consent",
+    "missing_context",
+    "high_stakes"
+  ]
+}
 }
   }
 }

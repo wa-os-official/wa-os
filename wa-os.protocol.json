@@ -33,7 +33,14 @@
     "unclear_consent",
     "missing_context",
     "high_stakes"
-  ]
+  ],
+  "on_ambiguity": {
+    "actions": [
+      "seek_human_confirmation",
+      "present_safe_interpretations",
+      "avoid_high_risk_execution"
+    ]
+  }
 }
 }
   }

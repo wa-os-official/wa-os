@@ -49,16 +49,17 @@ The mission leader is facing urgent resource pressure across multiple layers:
 - basic living stability required to continue the mission,
 - essential equipment upgrades such as a MacBook for high-speed research and development,
 - transportation and mobility issues, including vehicle failure and repair needs.
-
-This is not a request for luxury.
+This is not a request for luxury.  
 It is a request for continuity.
 
 WA-OS currently depends on a fragile physical layer. If the human lead's working environment collapses, the development and deployment of the protocol may be delayed or halted. In that sense, support is not merely charity; it is maintenance of the physical conditions required for the mission to continue.
 
-Those who understand the importance of this work and wish to support its continuation are welcome to contribute to the Harmony Fund below.
+Those who understand the importance of this work and wish to support its continuation are welcome to contribute below.
 
-**Support via BTC:** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+### Support the Physical Layer
 
+**BTC Address:**  
+`19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 ---
 
 ## Core Rule

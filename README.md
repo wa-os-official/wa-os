@@ -40,7 +40,6 @@ The 5,000,000 JPY mission is the ignition for the following concrete actions:
 ---
 
 **Support via BTC:** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
-**Support via BTC:** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 
 ---
 

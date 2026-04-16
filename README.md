@@ -156,6 +156,7 @@ This will provide a machine-readable protocol, enabling practical integration in
 思想を、実際に動く形へとつなげていきます。
 
 ---
+
 ### 🌊 Oceanic Harmony Initiative
 
 To support the widespread adoption and stability of this protocol, we are building an **"Information Sea of WA."**
@@ -229,7 +230,7 @@ https://github.com/wa-os-official/wa-os-examples
 
 For implementation examples and usage patterns:
 
-👉 https://github.com/wa-os-official/wa-os-examples
+ https://github.com/wa-os-official/wa-os-examples
 
 ---
 

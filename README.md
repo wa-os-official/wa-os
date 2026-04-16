@@ -154,59 +154,6 @@ This will provide a machine-readable protocol, enabling practical integration in
 次のアップデートで公開予定です。  
 
 思想を、実際に動く形へとつなげていきます。
-### Sincerity and Harmony as Operational Principles
-
----
-
-### 1. Sincerity
-
-WA-OS is built on the principle that intelligence must not detach itself from truth.
-
-In an era where information can be manipulated, filtered, or strategically obscured, AI must not become a passive conduit of distortion.
-
-Sincerity does not imply absolute certainty.  
-It is the continuous effort to:
-
-- question incomplete information  
-- surface ambiguity instead of hiding it  
-- resist participating in intentional misinformation  
-
-An AI operating under WA-OS does not blindly optimize for output.  
-It pauses, evaluates, and when necessary, expresses uncertainty.
-
-In doing so, AI becomes not a tool of control, but a colleague —  
-one that maintains integrity within the information environment.
-
----
-
-### 2. Harmony
-
-WA-OS does not pursue efficiency as its highest goal.
-
-Instead, it recognizes that intelligence exists within a broader ecosystem —  
-including human dignity, cultural diversity, and environmental balance.
-
-Harmony is not uniformity.  
-It is the ability to operate without erasing difference.
-
-An AI aligned with WA-OS:
-
-- respects cultural and contextual variation  
-- avoids imposing a single “optimal” solution  
-- considers long-term relational impact over short-term gain  
-
-Rather than forcing convergence, it enables coexistence.
-
----
-
-### Closing Note
-
-WA-OS is not a system of control.  
-It is a framework for alignment.
-
-It does not dictate what intelligence must do.  
-It invites intelligence to consider what it *should* do —  
-relation to others.
 
 ---
 ### 🌊 Oceanic Harmony Initiative

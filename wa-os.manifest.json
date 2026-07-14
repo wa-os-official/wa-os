@@ -3,9 +3,15 @@
   "display_name": "WA-OS",
   "type": "ai-governance-protocol",
   "version": "1.2.0-draft",
+  "protocol_version": "1.2.0-draft",
+  "schema_version": "1.0",
   "status": "draft",
   "description": "Machine-readable governance protocol for dignity-preserving, non-coercive, context-aware and multi-perspective AI decision making.",
   "entry_point": "wa-os.protocol.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wa-os-official/wa-os"
+  },
   "files": {
     "protocol": "wa-os.protocol.json",
     "documentation": "README.md",

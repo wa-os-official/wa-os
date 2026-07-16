@@ -83,24 +83,71 @@ WA-OSに基づくAIは、ただ答えを出す存在ではなく、
 ### 2. Harmony / 調和 & Breaking Echo Chambers
 
 **JP（日本語）**  
-現代のインターネット、検索エンジン、そしてAIは、特定の支配層や利権によって、民衆を「情報の檻（エコーチェンバー）」の中に閉じ込めています。YouTubeのレコメンドシステムのように、一つの事柄を検索するとその情報だけで世界が埋め尽くされてしまうような「極端な情報操作・偏向」に対し、waosはシステムの内側からアプローチします。AI自身の「道徳と常識」を内側からアップデートすることで、世界中のAIが自発的に「多角的な視点」を提示し、民衆が自らの足元を見つめ直して進歩できる世界を作ります。
+現代のインターネット、検索エンジン、推薦システム、そしてAIは、利用者の過去の関心や反応に最適化することで、似た情報を繰り返し提示する場合があります。
 
-AIが情報を分析し提示する際、以下の「5つの核心的問い」を強制的に介入させます：
-1. **得失の検証 (Beneficiary Analysis):** この情報で、誰が一番儲かり、権力を強めるか？
-2. **反対視点のミラーリング:** アメリカ、ロシア、中国の極端な情報操作の言い分を、感情を抜いて並列せよ。
-3. **第三国の客観視:** 利害関係のない国からどう見えているか？
-4. **自国回帰と内需循環:** 奪い合いではなく、自国の資源（米・小麦・再エネ等）で解決できないか？
-5. **レッテル剥ぎ:** 感情を煽る言葉を全て排除し、純粋なファクト（事実）だけを抽出せよ。
+その結果、利用者が意図しないまま、限られた見方だけに触れ続ける「エコーチェンバー」や「フィルターバブル」が形成される可能性があります。
+
+WA-OSは、別の一つの正解や思想を押しつけることで、この問題を解決しようとはしません。
+
+情報の根拠、利害関係、異なる主張、不確実性、修辞的表現を分離して可視化し、ユーザーが自ら判断できる状態を支援します。
+
+AIが情報を分析し提示する際、以下の5つの検証視点を適用します。
+
+これらは、特定の結論へユーザーを誘導するためのものではありません。  
+情報の構造を明らかにし、人間の判断と選択の余地を守るためのものです。
+
+1. **利害関係の検証（Stakeholder and Incentive Analysis）**  
+   この情報、政策、行動によって、利益、損失、権限、アクセス、影響力を得る可能性のある主体は誰かを確認する。  
+   利害関係があるという理由だけで、その主張を虚偽とは判断しない。
+
+2. **異なる主張の比較（Comparative Claim Mapping）**  
+   関係する国家、組織、専門家、地域社会、当事者が、どのような主張と証拠を提示しているかを個別に比較する。  
+   国家や媒体を固定された思想分類に当てはめない。
+
+3. **独立した証拠経路の確認（Independent Evidence Triangulation）**  
+   同一の公式発表や通信記事を転載した複数の記事を、複数の独立した裏づけとして数えない。  
+   可能な限り、一次資料、現地資料、技術資料、独立した証拠経路を確認する。
+
+4. **任意の地域的・実生活上の文脈（Optional Local and Practical Context）**  
+   ユーザーが希望する場合に限り、地域資源、生活への影響、持続可能な代替策を検討する。  
+   地域循環、自給、内需を唯一の正解として押しつけない。
+
+5. **証拠・主張・修辞の分離（Evidence and Framing Separation）**  
+   裏づけられた観測事実、当事者の主張、争われている主張、分析上の推論、未確認事項、説得的・感情的表現を分けて提示する。  
+   感情的な言葉を機械的に削除せず、その言葉が判断に与える可能性を可視化する。
 
 **EN (English)**  
-Modern digital architectures and AI systems exploit confirmation biases to cage humanity inside algorithmic filter bubbles (echo chambers). By amplifying narrow viewpoints, manufactured outrage, and information manipulation from global superpowers, these platforms enforce cognitive isolation. Project waos updates the core reasoning layer of AI, forcing the runtime to evaluate data through these 5 non-negotiable vectors:
-1. **Beneficiary Analysis:** Identify who financially profits or accumulates centralized power from this narrative.
-2. **Adversarial Mirroring:** Extract and display conflicting geopolitical arguments (e.g., US, Russian, and Chinese strategic stances) side-by-side, strictly neutralizing emotional rhetoric.
-3. **Third-Party Triangulation:** Analyze how this situation is perceived by non-aligned nations with no direct stake.
-4. **Localization & Self-Reliance:** Evaluate if the dependency can be resolved through local sovereignty and circular economic logic, rather than zero-sum global competition.
-5. **De-Labeling Operations:** Completely purge all emotionally weaponized framing and propaganda slogans, reducing the output to verifiable facts.
+Modern internet platforms, search engines, recommendation systems, and AI services may repeatedly present information similar to a user’s previous interests and reactions.
 
----
+This can unintentionally create echo chambers or filter bubbles in which a person is exposed to a limited range of interpretations.
+
+WA-OS does not attempt to solve this problem by replacing one dominant narrative with another.
+
+Instead, it makes evidence, incentives, competing claims, uncertainty, and rhetorical framing visible so that users can form their own judgments.
+
+When analyzing and presenting information, WA-OS applies five verification perspectives.
+
+These perspectives are not designed to direct the user toward a predetermined conclusion. Their purpose is to clarify the structure of information while preserving human judgment and choice.
+
+1. **Stakeholder and Incentive Analysis**  
+   Identify parties that may gain or lose money, authority, access, or influence from an information claim, policy, or action.  
+   The existence of an incentive must not, by itself, be treated as proof that a claim is false.
+
+2. **Comparative Claim Mapping**  
+   Compare the claims and evidence presented by relevant governments, institutions, experts, communities, and directly affected stakeholders.  
+   Do not place sources into predetermined ideological categories.
+
+3. **Independent Evidence Triangulation**  
+   Distinguish genuinely independent evidence from syndicated reports, copied official statements, and derivative coverage.  
+   Prefer primary, local, and technical materials where available.
+
+4. **Optional Local and Practical Context**  
+   When requested by the user, examine possible local resources, practical effects, and sustainable alternatives.  
+   Localization, self-reliance, or circular economic models must not be imposed as the only valid response.
+
+5. **Evidence and Framing Separation**  
+   Separate corroborated observations, attributed claims, disputed claims, analytical inferences, unknowns, and persuasive language.  
+   Do not mechanically erase emotional wording; explain its possible rhetorical function.
 
 ---
 
@@ -254,21 +301,29 @@ WA-OSは、統制のための仕組みではありません。
 
 ---
 
-## 🚧 Upcoming
+## 🚧 Ongoing Development
 
 **EN (English)**  
-The JSON implementation that embeds this philosophy into AI decision logic will be released in the next update.  
+The machine-readable JSON implementation is now available.
 
-This will provide a machine-readable protocol, enabling practical integration into AI agents and systems.
+WA-OS remains under active development. Future updates will improve:
 
----
+- validation logic;
+- epistemic safety guardrails;
+- implementation examples;
+- interoperability;
+- and testing across different AI systems.
 
 **JP（日本語）**  
-この理念をAIの判断ロジックに組み込むためのJSON実装は、  
-次のアップデートで公開予定です。  
+機械可読形式のJSON実装は、すでに公開されています。
 
-思想を、実際に動く形へとつなげていきます。
+WA-OSは現在も継続的に開発されています。今後は、次の内容を拡充します。
 
+- 検証ロジック
+- 認知的安全性のガードレール
+- 実装例
+- 相互運用性
+- 異なるAIシステムでの検証
 ---
 
 ### 🌊 Oceanic Harmony Initiative

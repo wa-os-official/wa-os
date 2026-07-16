@@ -218,6 +218,21 @@ The user must remain free to:
 For a detailed implementation example, see:
 
 `examples/triangulation-and-framing-analysis/README.md`
+
+## Core Principle
+
+WA-OS does not replace one dominant narrative with another.
+
+It is designed to:
+
+- separate evidence from interpretation;
+- preserve uncertainty where uncertainty exists;
+- expose rhetorical pressure without equating rhetoric with falsehood;
+- and return judgment and agency to the human.
+
+The purpose of WA-OS is not to decide for humanity,
+but to help humanity think more freely.
+
 ### Closing Note
 
 **EN (English)**  

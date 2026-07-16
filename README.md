@@ -408,28 +408,48 @@ https://github.com/wa-os-official/wa-os-examples
 
 ---
 
-## 🤝 Support & Contributions
+## 🤝 Support & Contributions (ご支援と独立研究のサポート)
 
-WA-OS is an independent open-source research project.
+**JP（日本語）**  
+WA-OSは、個人のインディペンデントな非営利AIガバナンス研究・開発プロジェクトです。  
 
-If you find this protocol valuable and would like to support its continued development, documentation, testing, and long-term maintenance, contributions are welcome.
+もし、このプロトコルの思想や認知的安全性の仕組みに価値を感じ、共にお茶を分かち合うような感覚で活動を応援していただけるなら、どのような形のご支援も心から歓迎いたします。  
 
-Community support helps sustain:
+皆様からの自発的な応援は、プロトコルのさらなる洗練、検証、多言語ドキュメントの翻訳、そしてAIが人間の尊厳を守り抜くための未来のインフラ作りに大切に使わせていただきます。
 
-- Protocol development
-- Documentation
-- Translation
-- Implementation examples
-- Testing across AI systems
-- Open-source infrastructure
+* **ご支援とプロジェクトの独立性について：**  
+  皆様からのご支援は、WA-OSの独立性を損なうものではありません。資金的支援の有無や規模によって、プロトコルの内容、ロードマップ、あるいはその理念が左右されることは決してありません。
 
-Support is entirely voluntary.
+現在、公式な **GitHub Sponsors** によるサポート窓口の準備を進めています。利用可能になり次第、こちらに登録用のボタンを追加します。
 
-### Digital Asset Support
+それまでの間、もし先行して活動をサポートしていただける場合は、以下のデジタル資産（暗号資産）より応援をいただけますと幸いです。
 
-BTC
+* **GitHub Sponsors:** Coming Soon (準備中)
+* **BTC (Bitcoin):** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 
-`19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+心からの感謝を込めて。
+
+---
+
+**EN (English)**  
+WA-OS is an independent, individual open-source AI governance research and development project.  
+
+If you find value in this philosophy and wish to support our research—as if sharing a cup of tea—any voluntary contribution is deeply appreciated.  
+
+Every contribution directly supports the continued development, empirical testing, translation, multilingual documentation, and long-term stewardship of WA-OS.
+
+* **Support and Project Independence:**  
+  Financial support supports independent research but never grants editorial control or decision-making power over the protocol, its roadmaps, or its governance. The integrity and neutrality of WA-OS remain non-negotiable.
+
+We are currently preparing our official **GitHub Sponsors** integration. A direct support option will be integrated here as soon as the configuration is complete.
+
+In the meantime, if you would like to support our early-stage journey, digital asset contributions are welcome below:
+
+* **GitHub Sponsors:** Coming Soon
+* **BTC (Bitcoin):** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+
+With sincere gratitude,
+
 
 ---
 

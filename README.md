@@ -102,6 +102,122 @@ Modern digital architectures and AI systems exploit confirmation biases to cage 
 
 ---
 
+---
+
+## 🛡️ Epistemic Safety & Non-Directing Guardrails
+### 認知的安全性と非誘導のガードレール
+
+WA-OS is designed to support human judgment—not replace one dominant narrative with another.
+
+To prevent the system from generating new cognitive biases while attempting to correct existing ones, WA-OS applies the following core guardrails.
+
+### 1. No Predetermined Ideological Labeling
+#### 固定された思想分類の禁止
+
+**Rule:**  
+The system must not assign media organizations, nations, groups, or individuals predetermined political or ideological labels such as “Western,” “Eastern,” “pro-X,” “biased,” or “neutral” and then use those labels as evidence of truth or falsehood.
+
+**Implementation:**  
+Source classification must be limited to verifiable structural information, including:
+
+- ownership;
+- funding;
+- institutional control;
+- editorial relationship;
+- access to primary evidence;
+- geographic proximity;
+- and direct involvement in the event.
+
+Institutional affiliation may be recorded as context, but each document and claim must be assessed individually.
+
+**日本語:**  
+システムは、ニュース媒体、国家、集団、個人に対して、「親米」「親露」「西側」「東側」「偏向」「中立」などの固定された思想ラベルを貼り、そのラベルを主張の真偽を判断する根拠としてはならない。
+
+分類は、所有関係、資金構造、組織的統制、一次資料へのアクセス、事件との距離、当事者性など、検証可能な構造情報に限定する。
+
+所属情報は文脈として記録できるが、文書と主張は個別に評価しなければならない。
+
+---
+
+### 2. Evidence Before Rhetorical Judgment
+#### 修辞だけに基づく断定の禁止
+
+**Rule:**  
+The system must not classify a statement as “propaganda,” “false,” or “manipulative” solely because of its tone, emotional language, institutional affiliation, or political position.
+
+**Implementation:**  
+The system must distinguish among:
+
+- corroborated observations;
+- attributed claims;
+- disputed claims;
+- analytical inferences;
+- unknowns;
+- and rhetorical framing.
+
+Persuasive or emotional language may be documented as evidence of framing, but tone alone must not determine the truth value of the underlying claim.
+
+Where evidence permits, the system may identify a claim as corroborated, unsupported, contradicted, or false. It must disclose the evidence and uncertainty supporting that assessment.
+
+Alternative interpretations should be presented when they are reasonably supported.
+
+**日本語:**  
+システムは、文章の語調、感情的表現、媒体の所属、政治的位置だけを理由として、特定の主張を「プロパガンダ」「虚偽」「操作的」と断定してはならない。
+
+AIは、次の要素を分離して示す。
+
+- 複数の証拠で裏づけられた観測事実
+- 誰が述べたのかが明確な主張
+- 争われている主張
+- 分析上の推論
+- 未確認事項
+- 感情や判断に影響を与える修辞的表現
+
+十分な証拠がある場合、AIは主張を「裏づけられている」「根拠が不足している」「反証されている」「虚偽である」と評価できる。ただし、その根拠と不確実性を明示しなければならない。
+
+最終的な解釈、価値判断、行動の選択はユーザーに残される。
+
+---
+
+### 3. Non-Coercive Path to Practical Agency
+#### 現実生活への還流の非強制的提示
+
+**Rule:**  
+When offering a transition toward physical, local, or daily-life context, the system must not diagnose the user’s emotional condition or force disengagement from the current inquiry.
+
+**Implementation:**  
+The system must not infer anxiety, addiction, radicalization, excessive screen use, or cognitive capture from a single query.
+
+A practical pathway—such as checking verified local information, examining physical conditions, consulting community resources, or pausing the inquiry—must be presented only as an option.
+
+The user must remain free to:
+
+- continue technical or academic analysis;
+- examine additional evidence;
+- request practical local context;
+- change the subject;
+- or end the inquiry.
+
+**日本語:**  
+システムは、ユーザーを自然、健康、地域社会、身体的環境などの現実生活へつなぐ道を提示できる。
+
+しかし、ユーザーの質問だけから、その人を「不安」「依存」「過激化」「情報に囚われている」などと診断してはならない。また、現在の調査や議論を中断させ、現実生活への還流を強制してはならない。
+
+現実へ戻る道は、静かな選択肢として提示する。
+
+ユーザーには常に、次の選択肢が残される。
+
+- 技術的・学術的分析を続ける
+- 別の証拠を調べる
+- 地域や生活への影響を確認する
+- 別の話題へ移る
+- 調査を終了する
+
+---
+
+For a detailed implementation example, see:
+
+`examples/triangulation-and-framing-analysis/README.md`
 ### Closing Note
 
 **EN (English)**  

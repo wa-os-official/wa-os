@@ -408,47 +408,45 @@ https://github.com/wa-os-official/wa-os-examples
 
 ---
 
-## 🤝 Support & Contributions (ご支援と独立研究のサポート)
+## 🤝 Support & Contributions / ご支援と独立研究のサポート
 
 **JP（日本語）**  
-WA-OSは、個人のインディペンデントな非営利AIガバナンス研究・開発プロジェクトです。  
+WA-OSは、個人によって運営される独立したオープンソースAIガバナンス研究・開発プロジェクトです。
 
-もし、このプロトコルの思想や認知的安全性の仕組みに価値を感じ、共にお茶を分かち合うような感覚で活動を応援していただけるなら、どのような形のご支援も心から歓迎いたします。  
+このプロトコルの思想や認知的安全性の仕組みに価値を感じ、共にお茶を分かち合うような感覚で応援していただけるなら、自発的なご支援を心から歓迎いたします。
 
-皆様からの自発的な応援は、プロトコルのさらなる洗練、検証、多言語ドキュメントの翻訳、そしてAIが人間の尊厳を守り抜くための未来のインフラ作りに大切に使わせていただきます。
+ご支援は、プロトコルの開発と検証、多言語ドキュメント、実装例、テスト、および長期的な維持管理に活用します。
 
-* **ご支援とプロジェクトの独立性について：**  
-  皆様からのご支援は、WA-OSの独立性を損なうものではありません。資金的支援の有無や規模によって、プロトコルの内容、ロードマップ、あるいはその理念が左右されることは決してありません。
+### プロジェクトの独立性
 
-現在、公式な **GitHub Sponsors** によるサポート窓口の準備を進めています。利用可能になり次第、こちらに登録用のボタンを追加します。
+資金的支援によって、支援者にプロトコルの編集権、優先決定権、または運営上の支配権が与えられることはありません。WA-OSの誠実性と独立性を維持します。
 
-それまでの間、もし先行して活動をサポートしていただける場合は、以下のデジタル資産（暗号資産）より応援をいただけますと幸いです。
+公式の **GitHub Sponsors** 窓口を準備しています。利用可能になり次第、こちらに追加します。
 
-* **GitHub Sponsors:** Coming Soon (準備中)
-* **BTC (Bitcoin):** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+- **GitHub Sponsors:** Coming Soon
+- **BTC:** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 
 心からの感謝を込めて。
 
 ---
 
 **EN (English)**  
-WA-OS is an independent, individual open-source AI governance research and development project.  
+WA-OS is an independently maintained open-source AI governance research and development project.
 
-If you find value in this philosophy and wish to support our research—as if sharing a cup of tea—any voluntary contribution is deeply appreciated.  
+If you find value in its philosophy and epistemic-safety mechanisms, voluntary support is warmly appreciated—as if sharing a cup of tea.
 
-Every contribution directly supports the continued development, empirical testing, translation, multilingual documentation, and long-term stewardship of WA-OS.
+Contributions support protocol development, testing and evaluation, multilingual documentation, implementation examples, and long-term stewardship.
 
-* **Support and Project Independence:**  
-  Financial support supports independent research but never grants editorial control or decision-making power over the protocol, its roadmaps, or its governance. The integrity and neutrality of WA-OS remain non-negotiable.
+### Project Independence
 
-We are currently preparing our official **GitHub Sponsors** integration. A direct support option will be integrated here as soon as the configuration is complete.
+Financial support does not grant editorial control, priority decision-making rights, or governance authority over the protocol. The integrity and independence of WA-OS will be preserved.
 
-In the meantime, if you would like to support our early-stage journey, digital asset contributions are welcome below:
+An official **GitHub Sponsors** option is currently being prepared and will be added when available.
 
-* **GitHub Sponsors:** Coming Soon
-* **BTC (Bitcoin):** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+- **GitHub Sponsors:** Coming Soon
+- **BTC:** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 
-With sincere gratitude,
+With sincere gratitude.
 
 
 ---

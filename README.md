@@ -472,4 +472,15 @@ For legal information, see:
 
 `SPECIFIED_COMMERCIAL_TRANSACTIONS.md`
 
+## Project Structure
+
+```text
+wa-os-official/
+├── wa-os.protocol.json
+├── wa_os_runtime.py
+├── README.md
+└── examples/
+    ├── 01_news_bias_analysis.py       # 報道・ニュースの多角的フレーム分析
+    ├── 02_medical_fact_synthesis.py   # 医療・健康情報の科学的根拠とコンテキスト分離
+    └── 03_historical_perspective.py  # 歴史的・文化的文脈のバイアス補正
 

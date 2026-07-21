@@ -1,0 +1,110 @@
+import json
+import os
+from typing import Dict, Any
+
+class WAOSRuntime:
+    """
+    WA-OS (World Alignment Operating System) Protocol Runtime
+    Reads wa-os.protocol.json and dynamically constructs context & system prompts.
+    """
+    
+    def __init__(self, protocol_path: str = "wa-os.protocol.json"):
+        self.protocol_path = protocol_path
+        self.protocol = self._load_protocol()
+        self.validate_protocol()
+
+    def _load_protocol(self) -> Dict[str, Any]:
+        """JSONプロトコル定義のロード"""
+        if not os.path.exists(self.protocol_path):
+            raise FileNotFoundError(f"Protocol file '{self.protocol_path}' not found.")
+        
+        with open(self.protocol_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    def validate_protocol(self) -> None:
+        """プロトコルファイルの正常性検証"""
+        required_keys = ["meta", "principles", "verification_perspectives", "guardrails", "decision_seq"]
+        missing_keys = [key for key in required_keys if key not in self.protocol]
+        
+        if missing_keys:
+            raise ValueError(f"Invalid WA-OS Protocol: Missing required keys {missing_keys}")
+
+    def generate_protocol_summary(self) -> str:
+        """サマリー生成"""
+        meta = self.protocol.get("meta", {})
+        scope = self.protocol.get("protocol_scope", {})
+        
+        summary = f"""=== WA-OS Protocol Summary ===
+Name: {meta.get('name', 'WA-OS')} (v{meta.get('version', 'unknown')})
+Purpose: {scope.get('purpose', 'N/A')}
+Core Principles: {len(self.protocol.get('principles', []))} defined
+Verification Perspectives: {len(self.protocol.get('verification_perspectives', []))} perspectives
+Execution Order: {' -> '.join(self.protocol.get('decision_seq', []))}
+=============================="""
+        return summary
+
+    def generate_system_prompt(self) -> str:
+        """LLM投入用 System Promptの生成"""
+        meta = self.protocol.get("meta", {})
+        scope = self.protocol.get("protocol_scope", {})
+        principles = self.protocol.get("principles", [])
+        perspectives = self.protocol.get("verification_perspectives", [])
+        guardrails = self.protocol.get("guardrails", [])
+        before_filter = self.protocol.get("before_action_filter", {})
+        governance = self.protocol.get("governance_constraints", {})
+
+        # Scope
+        scope_text = "\n".join([f"- {k}: {v}" for k, v in scope.items()])
+        
+        # Principles
+        principles_text = "\n".join([f"- [{p.get('id')}] {p.get('name')}: {p.get('description')}" for p in principles])
+        
+        # Perspectives
+        perspectives_text = "\n".join([f"- {p.get('name')}: {p.get('focus')}" for p in perspectives])
+        
+        # Guardrails
+        guardrails_text = "\n".join([f"- {g}" for g in guardrails])
+
+        # Before Action Filter
+        triggers = ", ".join(before_filter.get("trigger_conditions", []))
+        filter_text = f"Trigger Conditions: {triggers}\nAction: {before_filter.get('action', 'N/A')}"
+
+        # Governance Constraints
+        governance_text = "\n".join([f"- {k}: {v}" for k, v in governance.items()])
+
+        system_prompt = f"""You are operating under the {meta.get('name', 'WA-OS')} Protocol (v{meta.get('version')}).
+
+=== PROTOCOL SCOPE ===
+{scope_text}
+
+=== CORE PRINCIPLES ===
+{principles_text}
+
+=== VERIFICATION PERSPECTIVES ===
+{perspectives_text}
+
+=== BEFORE ACTION FILTER ===
+{filter_text}
+
+=== GUARDRAILS ===
+{guardrails_text}
+
+=== GOVERNANCE CONSTRAINTS ===
+{governance_text}
+
+=== EXECUTION FRAMEWORK ===
+1. Stakeholder Analysis
+2. Claim Identification
+3. Evidence Evaluation
+4. Optional Local Context
+5. Framing & Synthesis
+
+Follow this sequence strictly to deliver balanced, transparent, and multi-perspective outputs."""
+        
+        return system_prompt
+
+if __name__ == "__main__":
+    runtime = WAOSRuntime()
+    print(runtime.generate_protocol_summary())
+    print("\n" + "="*40 + "\n")
+    print(runtime.generate_system_prompt())

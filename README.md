@@ -408,92 +408,88 @@ https://github.com/wa-os-official/wa-os-examples
 
 ---
 
-## 🤝 Support WA-OS
+## 🤝 Support WA-OS / WA-OSを応援する
 
-### Building a more thoughtful future for AI—together.
+### Help keep independent AI-governance research open.
 
-WA-OS is an independent open-source research project exploring AI governance, human dignity, and responsible decision-making.
+WA-OS is an independently developed, open-source AI governance protocol designed to help AI systems preserve human dignity, examine uncertainty, and support non-coercive decision-making.
 
-If you believe projects like this should remain open, transparent, and freely available, your support helps make that possible. Every contribution—no matter the size—helps WA-OS continue to grow.
+The core machine-readable protocol and implementation examples are already publicly available. The next stage is to strengthen validation logic, expand practical examples, improve multilingual documentation, and test the protocol across different AI systems.
 
----
-
-### 🌱 Your support makes a real difference
-
-Every contribution directly supports the continued development of WA-OS, including:
-
-- AI API usage and testing
-- Open-source protocol development
-- Research and documentation
-- Multilingual translations
-- Long-term maintenance of the project
+If you believe this work should remain open, transparent, and available for anyone to examine, your voluntary support helps make its continued development possible.
 
 ---
 
-### 🔒 Independence First
+### 独立したAIガバナンス研究を、開かれた形で継続するために
 
-Supporting WA-OS does **not** provide editorial control, governance rights, or influence over the protocol.  
-This project will always remain independent, transparent, and community-focused.
+WA-OSは、人間の尊厳を守り、不確実性を丁寧に扱い、非強制的な意思決定を支援するために、個人が独立して開発しているオープンソースAIガバナンス・プロトコルです。
 
----
+機械可読形式の中核プロトコルと実装例は、すでに無償で公開しています。今後は、検証ロジックの強化、実践的な実装例の追加、多言語ドキュメントの整備、異なるAIシステムでの互換性検証を進めます。
 
-### ❤️ GitHub Sponsors (Primary)
-
-*Currently under review.*  
-GitHub Sponsors will become the primary support option once approved. Until then, Bitcoin is provided as an optional way to support the project.
+この研究が、誰でも利用・検証できる開かれた形で残ってほしいと感じていただけたなら、共に一杯のお茶を分かち合うような気持ちで応援していただけると、大きな力になります。
 
 ---
 
-### 🪙 Crypto Support (Optional)
+### 🌱 What your support enables / ご支援によって進められること
 
-If GitHub Sponsors is not yet available in your region, or if you simply prefer cryptocurrency, you may also support the project with Bitcoin.
+Contributions are used for:
+- protocol research, development, and validation;
+- AI API usage and cross-system testing;
+- implementation examples and developer documentation;
+- Japanese–English and future multilingual documentation;
+- research materials and long-term project maintenance.
 
-**Bitcoin (BTC):** `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+ご支援は、次の活動に活用します。
+- プロトコルの研究・開発・検証
+- AI APIの利用と複数システムでのテスト
+- 実装例および開発者向けドキュメントの作成
+- 日英および今後の多言語ドキュメントの整備
+- 研究資料の収集とプロジェクトの長期的な維持管理
 
----
-
-> *“Building AI that helps people understand one another—not replace one another.”*  
-> *“Every line of code is written with the hope of reducing conflict and increasing understanding.”*
-
----
-
-## 🤝 WA-OSを応援する
-
-WA-OSは、独立した個人開発によって育てられているオープンソースAIガバナンス研究プロジェクトです。
-
-人の尊厳、協調、そして責任あるAIの未来に価値を感じてくださる方へ。  
-もしこのプロジェクトが世界に必要だと思っていただけたなら、共に一杯のお茶を分かち合うような気持ちで応援していただけると、とても励みになります。
-
----
-
-### 🌱 ご支援の使い道
-
-ご支援は、プロトコルの研究・開発・検証、多言語ドキュメントの整備、実装例の作成、テスト、および長期的な維持管理に大切に活用いたします。
+Every contribution, regardless of size, gives this independent work more time and capacity to grow.  
+金額の大小にかかわらず、一つひとつのご支援が、独立した研究を継続し、育てていく力になります。
 
 ---
 
-### 🔒 WA-OSの独立性について
+### 🔒 Independence First / プロジェクトの独立性
 
-ご支援によって、編集権・意思決定権・運営権が付与されることはありません。  
-WA-OSは、透明性と独立性を大切にしながら運営を続けます。
+Financial support does not grant editorial control, preferential treatment, governance authority, or ownership of the protocol. Technical proposals and contributions may be considered on their merits through the project’s normal, transparent process, regardless of whether the contributor is a financial supporter.
 
----
+資金的支援によって、プロトコルの編集権、優先対応、意思決定権、運営上の支配権または所有権が付与されることはありません。技術的な提案や貢献は、資金支援の有無にかかわらず、通常の透明な手続きの中で、その内容に基づいて検討します。
 
-### ❤️ GitHub Sponsors（準備中）
-
-現在、GitHub Sponsors の審査中です。  
-審査完了後はそちらを主な支援窓口とする予定です。それまでは、希望される方向けにBitcoinでのご支援も受け付けています。
+WA-OS will remain independent, transparent, and open to examination.  
+WA-OSは、独立性と透明性を守り、誰もが内容を検証できる形で運営を続けます。
 
 ---
 
-### 🪙 Bitcoin（任意の支援方法）
+### ❤️ GitHub Sponsors
 
+*Currently under review / 現在審査中*
+
+GitHub Sponsors will become the primary support option once approved.  
+承認後は、GitHub Sponsorsを主な支援窓口として掲載します。
+
+---
+
+### 🪙 Bitcoin — Optional / 任意の支援方法
+
+Until GitHub Sponsors becomes available—or for those who prefer cryptocurrency—Bitcoin support is also accepted.  
+GitHub Sponsorsの利用開始まで、または暗号資産による支援を希望される方のために、Bitcoinの受け取り先を掲載しています。
+
+**BTC:**
 `19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
 
+Please verify the complete address before sending. Cryptocurrency transactions generally cannot be reversed.  
+送金前に、アドレス全体が一致していることをご確認ください。暗号資産による送金は、通常取り消すことができません。
+
 ---
 
-> 「AIが人を置き換えるのではなく、人と人がより良く理解し合える未来を目指して。」  
-> 「このプロジェクトの一行一行のコードには、対立を減らし、理解を増やしたいという願いが込められています。」
+> Building AI that helps people understand one another—not decide for one another.  
+> AIが人間に代わって答えを決めるのではなく、人と人がより深く理解し合うために。
+> 
+> Thank you for helping independent, human-centered AI research remain open.  
+> 独立した、人間中心のAI研究を支えてくださることに、心より感謝いたします。
+
 
 ---
 

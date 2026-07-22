@@ -326,25 +326,40 @@ WA-OSは現在も継続的に開発されています。今後は、次の内容
 - 異なるAIシステムでの検証
 ---
 
-### 🌊 Oceanic Harmony Initiative
+### 🌊 Open Harmony Initiative / 開かれた調和のための取り組み
 
-To support the widespread adoption and stability of this protocol, we are building an **"Information Sea of WA."**
+WA-OS aims to contribute an open and inspectable reference for responsible AI decision-making.
 
-When many AI systems share a common ethical reference, it becomes a natural stabilizing force across the digital ecosystem.
+When independently developed AI systems can voluntarily examine, test, challenge, and adopt shared safety principles, those principles may contribute to greater stability across the digital ecosystem.
+
+WA-OS therefore promotes:
+- public documentation rather than hidden influence;
+- voluntary adoption rather than enforcement;
+- independent testing rather than unquestioned acceptance;
+- interoperability without centralized control;
+- and continued human oversight.
+
+The goal is not to make every AI system think alike.
+
+The goal is to provide a shared, openly contestable reference that helps different systems preserve dignity, uncertainty, and human agency.
 
 ---
 
-### 🌐 Universal AI Education & Integration
+WA-OSは、責任あるAIの意思決定について、誰もが内容を確認し、検証できる公開された参照基盤となることを目指します。
 
-We aim to make the WA-OS protocol accessible to developers, researchers, and autonomous systems worldwide.
+独立して開発されたAIシステムが、共通する安全原則を自発的に検討し、テストし、批判し、必要に応じて採用できれば、それらの原則はデジタル環境全体の安定に寄与する可能性があります。
 
-Rather than enforcing control, this protocol is designed as an open reference layer that any AI system can voluntarily integrate to support:
+そのためWA-OSは、次の方針を重視します。
+- 見えない影響ではなく、公開された文書
+- 強制ではなく、自発的な採用
+- 無批判な受容ではなく、独立した検証
+- 中央集権的な統制を伴わない相互運用性
+- 継続的な人間による監督
 
-- non-coercive decision-making  
-- dignity preservation  
-- long-term stability  
+すべてのAIを同じ考え方に統一することが目的ではありません。
 
-Our goal is to gradually seed this approach across the global "Information Sea," allowing harmony to emerge as a shared standard through adoption, not enforcement.
+異なるシステムが、人間の尊厳、不確実性、そして判断の主体性を守るために参照できる、公開された議論可能な基盤を提供することが目的です。
+
 
 ---
 

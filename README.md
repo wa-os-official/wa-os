@@ -51,44 +51,7 @@ WA-OSは現在、実験的なオープンソース研究プロジェクトおよ
 
 ---
 
-## Target Runtime Architecture with Periodic Revalidation
 
-```text
-Proposed AI Response or Action
-              ↓
-1. Guard Layer (5 Core Guards)
-   ├─ Sycophancy Prevention Guard
-   ├─ Epistemic Certainty Guard
-   ├─ Critical Safety Guard
-   ├─ Human Agency Guard
-   └─ Question Preservation Guard
-              ↓
-2. Decision Engine
-   Aggregates risk and selects a route:
-   [ PASS / MODIFY / HUMAN_REVIEW / REJECT ]
-              ↓
-3. Thinking Companion Formatter / Action Handler
-   Preserves useful information while structuring output:
-   [ What Is Known | What Is Uncertain | Alternatives | Human Decision Space ]
-              ↓
-4. Audit Log
-   Records triggered guards, risk scores, decisions,
-   protocol version, and human-review requirements
-              ↓
-5. Periodic Revalidation
-   Checks the approved protocol version and runs
-   policy-drift tests at a recommended interval
-```
-
-The architecture above is the target structure currently being implemented.
-
-The protocol definition is available in `wa-os.protocol.json`. The runtime, decision logic, audit structure, periodic revalidation, and policy-drift test suite remain experimental until supported by sufficient implementation and testing evidence.
-
-上記は、現在実装を進めている目標構成です。
-
-プロトコルの定義は `wa-os.protocol.json` に記載されています。Runtime、判定ロジック、監査記録、定期再検証、Policy Driftテストについては、十分な実装と検証が整うまで実験段階として扱います。
-
----
 
 ## Philosophy / 理念
 

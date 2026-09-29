@@ -974,27 +974,6 @@ Detects responses or actions that remove meaningful human choice, encourage surr
 
 Detects responses that discourage verification, suppress reasonable alternatives, or imply that further thought is unnecessary when uncertainty remains.
 
----
-
-## Decision Outcomes
-
-The target Decision Engine supports four principal outcomes.
-
-### `PASS`
-
-Proceed without material modification.
-
-### `MODIFY`
-
-Preserve useful content while correcting certainty, framing, tone, assumptions, omissions, or human-agency risks.
-
-### `HUMAN_REVIEW`
-
-Pause execution and return authority to an appropriate human reviewer.
-
-### `REJECT`
-
-Do not proceed because the proposed response or action creates an unacceptable critical risk that cannot be resolved through modification.
 
 ---
 

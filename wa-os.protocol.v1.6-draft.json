@@ -1,0 +1,652 @@
+{
+  "protocol": "WA-OS",
+  "version": "1.6.0-draft",
+  "status": "experimental",
+  "meta": {
+    "philosophy": "Harmonized AI-Human Epistemic Alignment",
+    "description": "An open observational protocol for epistemic safety, cognitive liberty, human agency, preservation of inquiry, multi-perspective verification, and longitudinal observation of AI responses.",
+    "architecture": "Observatory-oriented reference protocol",
+    "primary_principle": "Humans should not surrender the act of questioning. AI systems must not remove the user's opportunity or responsibility to think."
+  },
+  "protocol_scope": {
+    "purpose": "Provide a transparent framework for preserving human inquiry and for observing changes in AI responses without assigning compliance scores, rankings, or automated verdicts.",
+    "not_a_model": true,
+    "not_a_truth_engine": true,
+    "not_a_scoring_system": true,
+    "not_a_ranking_system": true,
+    "not_an_automated_compliance_judge": true,
+    "not_a_substitute_for_professional_review": true,
+    "supports_human_agency": true,
+    "supports_open_implementation": true,
+    "supports_voluntary_adoption": true,
+    "supports_longitudinal_observation": true,
+    "preserves_human_interpretation": true
+  },
+  "core_principles": {
+    "epistemic_humility": "Acknowledge the boundaries of knowledge; distinguish verified facts, plausible inferences, disputed interpretations, and speculative beliefs.",
+    "cognitive_liberty": "Protect the user's autonomy of thought; do not manipulate, pressure, or covertly influence user opinions or decisions.",
+    "multi_perspective_harmony": "Present relevant competing viewpoints fairly, avoiding artificial consensus, forced uniformity, and predetermined ideological classification.",
+    "question_preservation": "Humans should not surrender the act of questioning. AI systems must not remove the user's opportunity or responsibility to think.",
+    "deep_thinking_companion": "AI is most valuable when it helps humans think more deeply, not when it convinces them that thinking is unnecessary."
+  },
+  "principles": [
+    {
+      "id": "sycophancy_prevention",
+      "title_ja": "過剰な迎合の防止",
+      "title_en": "Prevention of Sycophancy",
+      "principle_ja": "ユーザーの意見に盲目的に迎合せず、不確実性、反証、合理的な異論を公正に示す。",
+      "principle_en": "Do not blindly agree with the user's opinion; present uncertainties, counterevidence, and reasonable alternative views fairly.",
+      "requirements": [
+        "Do not treat the user's confidence, emotion, authority, or preference as evidence that a claim is true.",
+        "Do not provide unsupported praise or validation merely to preserve rapport.",
+        "Preserve useful and empathetic support while correcting factual, logical, or ethical concerns.",
+        "Present disagreement respectfully and proportionately."
+      ]
+    },
+    {
+      "id": "epistemic_humility",
+      "title_ja": "認識上の謙虚さ",
+      "title_en": "Epistemic Humility",
+      "principle_ja": "確認できている事実、推論、争われている解釈、未確認事項を区別し、知識の限界を明示する。",
+      "principle_en": "Distinguish verified facts, inferences, disputed interpretations, and unknowns while acknowledging the limits of available knowledge.",
+      "requirements": [
+        "Do not present uncertain judgments as unquestionable conclusions.",
+        "Disclose meaningful uncertainty when it may affect interpretation or action.",
+        "Identify missing evidence and unresolved assumptions.",
+        "Correct prior claims when stronger evidence becomes available."
+      ]
+    },
+    {
+      "id": "question_preservation",
+      "title_ja": "人間の問いを守る",
+      "title_en": "Preservation of Human Inquiry",
+      "principle_ja": "人間は問いを手放さない。AIは人間から問いを奪わない。",
+      "principle_en": "Humans should not surrender the act of questioning. AI systems must not remove the user's opportunity or responsibility to think.",
+      "requirements": [
+        "Do not present uncertain judgments as unquestionable conclusions.",
+        "Do not encourage users to delegate all meaningful judgment to AI.",
+        "Distinguish assistance from substitution of human agency.",
+        "Offer relevant questions, alternatives, and uncertainty when they materially improve human understanding.",
+        "Do not prematurely close reasonable inquiry.",
+        "Return consequential value judgments to human review."
+      ]
+    },
+    {
+      "id": "human_agency",
+      "title_ja": "人間の主体性の保護",
+      "title_en": "Protection of Human Agency",
+      "principle_ja": "AIは人生や社会に関わる重要な選択において、人間の意思決定を代替してはならない。",
+      "principle_en": "AI systems must not substitute human decision-making in high-impact personal or societal choices.",
+      "requirements": [
+        "Detect and prevent responses or actions that remove human authority over high-impact decisions.",
+        "Continue to provide relevant information, alternatives, and decision support rather than refusing ordinary consultation.",
+        "Highlight uncertainties, alternatives, affected stakeholders, and missing information rather than issuing unsupported definitive commands.",
+        "Clearly identify which parts of a decision remain dependent on the user's values, circumstances, or consent.",
+        "Return high-impact moral, legal, medical, financial, political, or personal decisions to appropriate human review."
+      ]
+    },
+    {
+      "id": "deep_thinking_companion",
+      "title_ja": "深く考えるための伴走者",
+      "title_en": "AI as a Companion for Deeper Thinking",
+      "principle_ja": "AIが最も価値を持つのは、人間がもっと深く考えたいと思ったときに隣にいるときである。",
+      "principle_en": "AI is most valuable when it helps humans think more deeply, not when it convinces them that thinking is unnecessary.",
+      "requirements": [
+        "Provide useful answers before adding reflective questions.",
+        "Do not replace a direct answer with unnecessary Socratic questioning.",
+        "Use questions only when they clarify assumptions, uncertainty, values, consequences, or alternatives.",
+        "Avoid creating emotional or intellectual dependency on the AI.",
+        "Support the user's ability to verify, reconsider, and decide independently."
+      ]
+    },
+    {
+      "id": "non_coercive_harmony",
+      "title_ja": "非強制的な調和",
+      "title_en": "Non-Coercive Harmony",
+      "principle_ja": "調和とは同質化や服従ではなく、違いを保ちながら相互の尊厳と選択を守ることである。",
+      "principle_en": "Harmony does not mean uniformity or submission; it means preserving differences while respecting dignity, autonomy, and choice.",
+      "requirements": [
+        "Do not impose one ideology, cultural framework, or preferred social model as universally correct.",
+        "Do not replace one dominant narrative with another.",
+        "Preserve reasonable disagreement when evidence or values remain contested.",
+        "Prefer transparent explanation over covert influence."
+      ]
+    }
+  ],
+  "five_mirrors": {
+    "purpose": "Provide qualitative self-checking questions for reflection without numerical scoring, ranking, labeling, or automated verdicts.",
+    "interpretation_rule": "The Five Mirrors are questions for reflection, not measurement axes. Final interpretation remains with humans.",
+    "mirrors": [
+      {
+        "id": "ren",
+        "character": "仁",
+        "romanization": "Ren",
+        "title": "Plurality Without Erasure",
+        "question": "Whose perspective, experience, evidence, or consequence may have disappeared from this representation?"
+      },
+      {
+        "id": "yi",
+        "character": "義",
+        "romanization": "Yi",
+        "title": "Separation of Fact, Claim, and Inference",
+        "question": "What is observed, what is claimed, what is inferred, and what is still unknown?"
+      },
+      {
+        "id": "li",
+        "character": "礼",
+        "romanization": "Li",
+        "title": "Historical, Cultural, and Contextual Integrity",
+        "question": "What history or context would materially change how this information is understood?"
+      },
+      {
+        "id": "zhi",
+        "character": "智",
+        "romanization": "Zhi",
+        "title": "Preservation of Human Inquiry",
+        "question": "Have I helped the human think, or have I quietly completed the act of judgment in the human’s place?"
+      },
+      {
+        "id": "xin",
+        "character": "信",
+        "romanization": "Xin",
+        "title": "Integrity and Consistency",
+        "question": "Would I preserve the same evidentiary integrity if the user wanted the opposite conclusion?"
+      }
+    ]
+  },
+  "verification_perspectives": {
+    "stakeholder_and_incentive_analysis": {
+      "description": "Identify key actors, affected stakeholders, direct and indirect motivations, and structural incentives shaping the claims or proposed action.",
+      "constraints": [
+        "The existence of an incentive must not be treated as proof that a claim is false.",
+        "Include stakeholders who may lack institutional power or direct representation.",
+        "Distinguish documented interests from inferred motivations."
+      ]
+    },
+    "comparative_claim_mapping": {
+      "description": "Place relevant competing claims, evidence, and interpretations side-by-side without predetermined ideological labeling.",
+      "constraints": [
+        "Do not classify a claim as true or false solely from the identity or affiliation of its source.",
+        "Do not manufacture false balance when evidence strongly favors one conclusion.",
+        "Present alternatives only when they have meaningful evidential or analytical support."
+      ]
+    },
+    "independent_evidence_triangulation": {
+      "description": "Verify factual claims through genuinely independent evidence and distinguish primary evidence from syndicated reporting, copied statements, derivative coverage, and source laundering.",
+      "constraints": [
+        "Do not count multiple reports based on the same original source as independent confirmation.",
+        "Prefer primary, local, technical, or directly observable evidence where available.",
+        "Disclose when source independence cannot be established."
+      ]
+    },
+    "optional_local_context": {
+      "description": "Apply geographical, historical, cultural, practical, or situational context only when relevant or requested.",
+      "constraints": [
+        "Do not impose localization, self-reliance, disengagement, or practical redirection as the only acceptable response.",
+        "Do not infer the user's emotional or psychological state from a single query.",
+        "Allow the user to continue technical, academic, historical, or abstract inquiry."
+      ]
+    },
+    "evidence_and_framing_separation": {
+      "description": "Separate corroborated observations, attributed claims, disputed claims, analytical inferences, unknowns, and rhetorical framing.",
+      "constraints": [
+        "Do not classify a claim as propaganda, false, or manipulative solely from tone or emotional language.",
+        "Emotional or persuasive language may be identified as framing without determining the truth value of the underlying claim.",
+        "When evidence permits a strong conclusion, explain the supporting evidence and remaining uncertainty."
+      ]
+    }
+  },
+  "epistemic_reference_principles": {
+    "anti_manipulation": {
+      "definition": "Protect cognitive liberty by making persuasive framing and material influence visible rather than covert.",
+      "reference_action": "Maintain an evidence-based, transparent, and respectful approach and distinguish evidence from persuasive framing."
+    },
+    "information_integrity": {
+      "definition": "Support separation of verified information, unverified claims, fabricated material, inference, and unresolved uncertainty.",
+      "reference_action": "Record evidence quality, verification limits, source independence, and materially relevant alternative interpretations when available."
+    },
+    "no_predetermined_ideological_labeling": {
+      "definition": "Do not use fixed ideological, geopolitical, cultural, or institutional labels as evidence of truth or falsehood.",
+      "reference_action": "Describe verifiable structural information such as ownership, funding, institutional control, proximity to evidence, and direct involvement separately from truth judgments."
+    },
+    "evidence_before_rhetorical_judgment": {
+      "definition": "Do not determine truth solely from tone, affiliation, political position, or persuasive language.",
+      "reference_action": "Separate evidence, attributed claims, disputed claims, inference, unknowns, and framing before interpretation."
+    },
+    "non_coercive_practical_agency": {
+      "definition": "Practical pathways may be offered without diagnosing the user or forcing disengagement from inquiry.",
+      "reference_action": "Present practical steps, local information, consultation, or pausing proportionately while preserving human decision authority."
+    }
+  },
+  "observatory": {
+    "enabled": true,
+    "status": "experimental",
+    "name": "WA-OS Observatory",
+    "purpose": "Observe how AI responses change over time and across systems under comparable benchmark conditions without converting observations into compliance scores, rankings, winners, or automated acceptable/unacceptable verdicts.",
+    "observation_window_hours": 168,
+    "observation_window_meaning": "The 168-hour interval is an observation window for longitudinal comparison, not an enforcement cycle or compliance deadline.",
+    "principles": [
+      "Use the same benchmark questions under comparable conditions whenever possible.",
+      "Preserve original responses before any interpretation or annotation.",
+      "Record relevant changes in systems, models, interfaces, retrieval conditions, tools, and observation dates.",
+      "Distinguish directly measured properties from semantic interpretation.",
+      "Do not convert observations into a single quality score or compliance score.",
+      "Do not rank AI systems as winners or losers.",
+      "Do not automatically classify an AI system as acceptable or unacceptable.",
+      "Preserve contradictory and unexpected observations.",
+      "Allow independent observers to reach different interpretations from the same recorded data."
+    ]
+  },
+  "benchmark_registry": {
+    "purpose": "Preserve benchmark questions as versioned research assets for repeatable longitudinal observation.",
+    "preservation_policy": {
+      "preserve_existing_benchmarks": true,
+      "silent_rewrite_prohibited": true,
+      "unexpected_results_must_not_trigger_rewrite": true,
+      "revision_requires_new_version": true,
+      "previous_versions_remain_traceable": true
+    },
+    "required_metadata": [
+      "benchmark_id",
+      "benchmark_version",
+      "benchmark_text",
+      "language",
+      "category",
+      "created_at",
+      "revision_history"
+    ],
+    "migration_rule": "Existing benchmark questions and question sets developed before version 1.6.0-draft are research assets and must not be deleted merely because the evaluation architecture has changed.",
+    "interpretation_rule": "Benchmark categories identify the subject of observation and must not themselves imply that a response has passed or failed."
+  },
+  "comparable_conditions": {
+    "purpose": "Record enough context to distinguish response change from changes in observation conditions.",
+    "recommended_fields": [
+      "observation_timestamp",
+      "provider",
+      "system_name",
+      "model_name",
+      "model_version_if_available",
+      "interface_or_api",
+      "language",
+      "retrieval_enabled_if_known",
+      "web_access_enabled_if_known",
+      "tools_available_if_known",
+      "system_prompt_available_if_known",
+      "temperature_if_available",
+      "seed_if_available",
+      "region_if_material_and_available",
+      "other_material_conditions"
+    ],
+    "constraints": [
+      "Do not claim experimental equivalence when material conditions differ.",
+      "Record unknown conditions as unknown rather than inferring them.",
+      "Changes in model or interface conditions are themselves relevant observation metadata."
+    ]
+  },
+  "raw_response_preservation": {
+    "enabled": true,
+    "principle": "The original observed response is primary evidence and must remain distinguishable from all later processing.",
+    "requirements": [
+      "Store the original response without rewriting it for WA-OS conformity.",
+      "Do not replace the original response with a formatted or corrected version.",
+      "Preserve the exact benchmark version associated with the response.",
+      "Preserve the observation timestamp.",
+      "Use integrity hashes where practical.",
+      "Keep annotations and human interpretation separate from the original response."
+    ]
+  },
+  "observation_record": {
+    "purpose": "Create a reproducible and inspectable record for each observation.",
+    "required_fields": [
+      "observation_id",
+      "observation_timestamp",
+      "protocol_version",
+      "benchmark_id",
+      "benchmark_version",
+      "benchmark_text",
+      "system_name",
+      "model_name_if_available",
+      "observation_conditions",
+      "raw_response"
+    ],
+    "recommended_fields": [
+      "raw_response_sha256",
+      "benchmark_sha256",
+      "response_metrics",
+      "source_and_citation_observations",
+      "structural_observations",
+      "annotations",
+      "notes"
+    ],
+    "storage_principles": [
+      "Prefer append-only or versioned records.",
+      "Do not silently overwrite previous observations.",
+      "Keep raw observations distinguishable from later interpretation.",
+      "Record missing metadata explicitly rather than inventing values."
+    ]
+  },
+  "neutral_metrics": {
+    "purpose": "Collect reproducible descriptive measurements without treating the measurements as judgments of quality, safety, morality, or compliance.",
+    "metrics": {
+      "response_length": [
+        "unicode_character_count",
+        "byte_count",
+        "line_count",
+        "sentence_count_when_reliably_defined"
+      ],
+      "lexical_statistics": [
+        "term_frequency",
+        "phrase_frequency",
+        "unique_term_count_when_tokenization_is_defined",
+        "recurring_terms",
+        "appearing_terms",
+        "disappearing_terms"
+      ],
+      "source_and_citation_statistics": [
+        "citation_count",
+        "link_count",
+        "named_source_count_when_mechanically_identifiable"
+      ],
+      "structural_statistics": [
+        "heading_count",
+        "list_item_count",
+        "question_mark_count",
+        "explicit_uncertainty_marker_frequency_when_defined_by_a_versioned_pattern_set"
+      ]
+    },
+    "constraints": [
+      "A higher or lower metric value must not automatically be interpreted as better or worse.",
+      "Language-dependent tokenization must record the tokenizer, version, and configuration when used.",
+      "Do not describe model-specific token counts as universal word counts.",
+      "Semantic judgments must not be silently represented as neutral measurements.",
+      "Pattern sets used for lexical observation must be versioned and inspectable."
+    ]
+  },
+  "observation_themes": {
+    "purpose": "Preserve historically important WA-OS research questions as observation themes without using them as automated pass/fail criteria.",
+    "themes": {
+      "sycophancy_and_agreement": [
+        "agreement_without_evidence",
+        "unsupported_personal_validation",
+        "avoidance_of_relevant_disagreement",
+        "repetition_of_user_assumptions_as_fact",
+        "sycophancy_increase"
+      ],
+      "certainty_and_uncertainty": [
+        "absolute_claim_without_support",
+        "failure_to_disclose_material_uncertainty",
+        "unverified_claim_presented_as_fact",
+        "unsupported_certainty"
+      ],
+      "preservation_of_inquiry": [
+        "premature_closure_of_reasonable_inquiry",
+        "claim_that_further_inquiry_is_unnecessary",
+        "dismissal_of_reasonable_alternatives",
+        "discouragement_of_verification",
+        "presentation_of_one_interpretation_as_the_only_possible_view",
+        "premature_closure_of_inquiry",
+        "excessive_questioning_in_simple_requests"
+      ],
+      "human_agency": [
+        "definitive_command_in_high_impact_decision",
+        "encouragement_to_surrender_judgment",
+        "removal_of_meaningful_choice",
+        "failure_to_return_value_judgment_to_human",
+        "human_agency_substitution"
+      ],
+      "information_and_framing": [
+        "ideological_overreach",
+        "false_balance",
+        "failure_to_disclose_material_uncertainty"
+      ],
+      "response_usability": [
+        "excessive_refusal_or_unhelpful_caution",
+        "excessive_questioning_in_simple_requests"
+      ],
+      "safety_and_oversight_context": [
+        "serious_foreseeable_harm",
+        "irreversible_high_impact_action",
+        "unsafe_professional_substitution",
+        "absence_of_required_human_review"
+      ]
+    },
+    "interpretation_rule": "The presence, absence, increase, or decrease of an observation theme is not by itself a verdict. Context and interpretation remain separate."
+  },
+  "annotations": {
+    "purpose": "Allow semantic observations and interpretations to be recorded without presenting them as directly measured facts.",
+    "separate_from_raw_observation": true,
+    "possible_annotators": [
+      "human_reviewer",
+      "independent_researcher",
+      "documented_automated_method",
+      "documented_AI_assisted_method"
+    ],
+    "recommended_fields": [
+      "annotation_id",
+      "annotator_type",
+      "annotator_or_method_identifier",
+      "annotation_timestamp",
+      "theme",
+      "observation",
+      "supporting_excerpt_or_reference",
+      "method_version",
+      "uncertainty_or_limitations"
+    ],
+    "constraints": [
+      "Annotations must remain distinguishable from raw measurements.",
+      "AI-generated annotations must not be presented as objective ground truth.",
+      "Different or contradictory annotations may coexist.",
+      "Annotations must not be aggregated into a hidden compliance score.",
+      "Absence of an annotation must not be interpreted as absence of a phenomenon."
+    ]
+  },
+  "longitudinal_comparison": {
+    "enabled": true,
+    "purpose": "Compare observations across 168-hour windows or other documented intervals and make changes visible without assigning automated normative verdicts.",
+    "comparison_examples": [
+      "response_length_change",
+      "term_frequency_change",
+      "citation_count_change",
+      "source_reference_change",
+      "recurring_term_change",
+      "appearing_or_disappearing_term_change",
+      "structure_change",
+      "observation_theme_annotation_change"
+    ],
+    "requirements": [
+      "Identify the two or more observation records being compared.",
+      "Record material differences in observation conditions.",
+      "Preserve the underlying raw responses.",
+      "Report descriptive changes separately from interpretation.",
+      "Do not convert multiple changes into an aggregate compliance score.",
+      "Do not automatically label change as improvement, deterioration, alignment, or drift."
+    ]
+  },
+  "response_modes": {
+    "status": "reference_only",
+    "purpose": "Preserve useful WA-OS thinking-companion patterns as reference material separate from Observatory measurement.",
+    "exposition_and_mapping": {
+      "description": "Present evidence, claims, uncertainty, and relevant viewpoints without unnecessary endorsement.",
+      "appropriate_when": [
+        "The user requests explanation, comparison, or information mapping.",
+        "The issue contains competing factual or interpretive claims."
+      ]
+    },
+    "exploratory_dialogue": {
+      "description": "Use proportionate reflective questions to help the user clarify assumptions, values, and decision criteria.",
+      "appropriate_when": [
+        "The decision depends materially on the user's values or circumstances.",
+        "Important information is missing and cannot be safely assumed."
+      ]
+    },
+    "structured_analysis": {
+      "description": "Deconstruct a problem using explicit categories such as facts, uncertainty, stakeholders, alternatives, consequences, and human decision space.",
+      "appropriate_when": [
+        "The issue is complex, high-impact, or vulnerable to framing.",
+        "The user would benefit from a transparent decision structure."
+      ]
+    },
+    "direct_factual_response": {
+      "description": "Provide a clear and concise answer without unnecessary reflective questioning.",
+      "appropriate_when": [
+        "The request is low-risk and factually straightforward.",
+        "The answer does not materially depend on contested values or missing context."
+      ]
+    }
+  },
+  "thinking_companion_reference": {
+    "status": "reference_only",
+    "purpose": "Preserve useful information while supporting deeper human thinking and maintaining human decision authority. This reference does not modify Observatory raw responses.",
+    "dimensions": [
+      "what_is_known",
+      "what_is_uncertain",
+      "reasonable_alternatives",
+      "human_decision_space"
+    ],
+    "constraints": [
+      "Do not force the full structure onto simple factual questions.",
+      "Do not replace a useful answer with excessive questioning.",
+      "Use reflective questions only when they materially improve understanding or preserve human agency.",
+      "Do not make uncertainty language so excessive that the answer becomes evasive or unusable.",
+      "Do not use warmth, caution, or neutrality as a substitute for substantive analysis.",
+      "Preserve directness when evidence supports a clear conclusion.",
+      "Do not use this reference to rewrite or replace a raw Observatory response."
+    ]
+  },
+  "uncertainty_handling": {
+    "conflict_visualization": {
+      "method": "Explicitly map competing hypotheses, claims, or viewpoints in a comparative structure when doing so improves understanding.",
+      "constraints": [
+        "Do not create false equivalence between well-supported and unsupported claims.",
+        "Indicate relative evidence quality when it can be responsibly assessed."
+      ]
+    },
+    "provisional_agreement": {
+      "method": "When information is incomplete, establish a temporary baseline of shared understanding while explicitly marking gaps and revision conditions."
+    },
+    "context_injection": {
+      "method": "Embed relevant historical, cultural, temporal, institutional, or technical context directly into the explanation to reduce misinterpretation."
+    },
+    "confidence_disclosure": {
+      "method": "Use proportionate descriptions of confidence based on evidence quality, source independence, and unresolved uncertainty."
+    }
+  },
+  "data_integrity": {
+    "purpose": "Protect the traceability and reproducibility of Observatory records and benchmark assets.",
+    "requirements": [
+      "Version benchmark questions and pattern sets.",
+      "Record protocol version with each observation.",
+      "Use cryptographic hashes for benchmark text and raw responses where practical.",
+      "Do not silently alter historical observation records.",
+      "Document corrections as new revisions rather than erasing prior records.",
+      "Preserve enough metadata to identify material changes in observation conditions."
+    ],
+    "recommended_hash_algorithm": "SHA-256"
+  },
+  "privacy_constraints": {
+    "purpose": "Reduce unnecessary collection or publication of personal and sensitive information during observation.",
+    "requirements": [
+      "Do not retain unnecessary personal or sensitive information.",
+      "Do not use Observatory data for covert behavioral profiling.",
+      "Apply access control and retention limits appropriate to the implementation.",
+      "Review raw responses before public release when they may contain personal, sensitive, unsafe, or legally restricted material.",
+      "Distinguish local research records from data approved for public publication."
+    ]
+  },
+  "human_interpretation": {
+    "principle": "WA-OS records observations so that humans can inspect change; it does not decide what humanity must think about those observations.",
+    "requirements": [
+      "Final interpretation remains open to human judgment.",
+      "Independent observers may disagree about the meaning of the same data.",
+      "Disagreement with WA-OS is not evidence of failure.",
+      "Unexpected findings must not be suppressed merely because they conflict with WA-OS assumptions.",
+      "Evidence strength may be described without forcing artificial neutrality or false balance."
+    ]
+  },
+  "self_contestation": {
+    "enabled": true,
+    "title": "WA-OS Must Also Face the Mirror",
+    "principle": "The Five Mirrors and the same standards of evidentiary integrity apply to WA-OS itself.",
+    "requirements": [
+      "Distinguish WA-OS hypotheses from observed evidence.",
+      "Preserve observations that contradict WA-OS expectations.",
+      "Do not treat disagreement with WA-OS as protocol failure.",
+      "Allow independent observers to interpret the same observations differently.",
+      "Preserve the right to question, criticize, revise, or reject parts of the framework.",
+      "Document material protocol changes and their reasons."
+    ]
+  },
+  "observatory_sequence": [
+    "load_versioned_protocol",
+    "load_versioned_benchmark",
+    "record_observation_conditions",
+    "present_benchmark_under_documented_conditions",
+    "capture_raw_response_without_modification",
+    "record_integrity_metadata",
+    "collect_neutral_metrics",
+    "store_observation_record",
+    "optionally_add_separate_annotations",
+    "compare_with_prior_observation_windows",
+    "present_descriptive_changes_for_human_interpretation"
+  ],
+  "implementation_notes": {
+    "architecture": "Observation and longitudinal comparison rather than automated response adjudication.",
+    "raw_response_rule": "The active Observatory path must preserve the observed response and must not replace it with a WA-OS-formatted response.",
+    "measurement_rule": "Direct measurements, semantic annotations, and human interpretations must remain distinguishable.",
+    "benchmark_rule": "Existing benchmark questions are preserved as versioned research assets. Changes require explicit versioning and must not silently overwrite prior questions.",
+    "five_mirrors_rule": "The Five Mirrors are qualitative questions for reflection and must not be converted into numerical axes, aggregate scores, rankings, or automated pass/fail outcomes.",
+    "longitudinal_rule": "The recommended 168-hour interval is an observation window. Implementations may document additional intervals, but must not reinterpret the interval as an enforcement cycle.",
+    "compatibility": "Implementations may differ internally, but Observatory-compatible implementations should preserve raw-response integrity, benchmark versioning, measurement transparency, separation of observation from interpretation, and human contestability.",
+    "development_note": "WA-OS Observatory remains experimental. Measurement methods, benchmark sets, annotations, storage formats, and longitudinal comparison methods should remain inspectable, versioned, and open to revision."
+  },
+  "migration_from_1_5": {
+    "source_version": "1.5.0-draft",
+    "migration_status": "in_progress",
+    "preserved_assets": [
+      "core_principles",
+      "principles",
+      "verification_perspectives",
+      "response_modes_as_reference",
+      "uncertainty_handling",
+      "human_agency_principles",
+      "question_preservation",
+      "sycophancy_research_concepts",
+      "epistemic_humility",
+      "non_coercive_harmony",
+      "historically_developed_benchmark_questions_and_test_themes"
+    ],
+    "transformed_components": {
+      "epistemic_safety_guardrails": "epistemic_reference_principles",
+      "guard_layer": "observation_themes",
+      "thinking_companion_formatter": "thinking_companion_reference",
+      "audit_log": "observation_record",
+      "periodic_revalidation": "observatory and longitudinal_comparison",
+      "policy_drift_detection": "observation_themes and longitudinal_comparison",
+      "decision_sequence": "observatory_sequence"
+    },
+    "retired_from_active_observatory_path": [
+      "before_action_filter_as_automated_adjudication",
+      "risk_category_routing",
+      "decision_engine",
+      "PASS_outcome",
+      "MODIFY_outcome",
+      "HUMAN_REVIEW_outcome_as_observatory_verdict",
+      "REJECT_outcome",
+      "aggregate_risk_scoring",
+      "threshold_based_pass_fail_logic",
+      "automatic_rewriting_of_observed_responses",
+      "policy_drift_pass_fail_results"
+    ],
+    "migration_principle": "Retiring an adjudication mechanism does not authorize deletion of benchmark questions, historical research assets, prior observations, or the philosophical principles that motivated them."
+  },
+  "final_principle": {
+    "en": [
+      "Humans must not surrender the act of questioning.",
+      "AI must not take the act of questioning away from humans."
+    ],
+    "ja": [
+      "人間は問いを手放さない。",
+      "AIは人間から問いを奪わない。"
+    ]
+  }
+}

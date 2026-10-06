@@ -514,7 +514,7 @@ class WAOSObservatory:
         return record
 
      @staticmethod
-    def compare_records(
+     def compare_records(
         earlier: ObservationRecord,
         later: ObservationRecord,
     ) -> Dict[str, Any]:

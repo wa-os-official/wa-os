@@ -1,0 +1,52 @@
+name: WA-OS Observatory Tests
+
+on:
+  push:
+    paths:
+      - "wa-os.protocol.v1.6-draft.json"
+      - "wa-os.manifest.v1.6-draft.json"
+      - "LATEST.v1.6-draft.json"
+      - "wa_os_observatory.py"
+      - "tests/test_observatory.py"
+      - ".github/workflows/observatory-tests.yml"
+  pull_request:
+    paths:
+      - "wa-os.protocol.v1.6-draft.json"
+      - "wa-os.manifest.v1.6-draft.json"
+      - "LATEST.v1.6-draft.json"
+      - "wa_os_observatory.py"
+      - "tests/test_observatory.py"
+      - ".github/workflows/observatory-tests.yml"
+  workflow_dispatch:
+
+jobs:
+  observatory-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependency
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+
+      - name: Validate Observatory JSON files
+        run: |
+          python -m json.tool wa-os.protocol.v1.6-draft.json > /dev/null
+          python -m json.tool wa-os.manifest.v1.6-draft.json > /dev/null
+          python -m json.tool LATEST.v1.6-draft.json > /dev/null
+
+      - name: Check Observatory Python syntax
+        run: |
+          python -m py_compile wa_os_observatory.py
+
+      - name: Run Observatory tests
+        run: |
+          python -m pytest -q tests/test_observatory.py

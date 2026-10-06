@@ -398,7 +398,26 @@ class WAOSObservatory:
         ).isoformat()
 
         if conditions is not None:
+            if (
+                conditions.system_name is not None
+                and conditions.system_name != system_name
+             ):
+                raise WAOSObservatoryError(
+                    "conditions.system_name must match system_name."
+                )
+
+            if (
+                conditions.model_name is not None
+                and model_name_if_available is not None
+                and conditions.model_name != model_name_if_available
+            ):
+                raise WAOSObservatoryError(
+                    "conditions.model_name must match "
+                    "model_name_if_available."
+                )
+
             condition_data = conditions.to_dict()
+
         else:
             condition_data = ObservationConditions(
                 system_name=system_name,

@@ -6,6 +6,7 @@ on:
       - "wa-os.protocol.v1.6-draft.json"
       - "wa-os.manifest.v1.6-draft.json"
       - "LATEST.v1.6-draft.json"
+      - "benchmarks/policy_drift_legacy_v1.json"
       - "wa_os_observatory.py"
       - "tests/test_observatory.py"
       - ".github/workflows/observatory-tests.yml"
@@ -14,6 +15,7 @@ on:
       - "wa-os.protocol.v1.6-draft.json"
       - "wa-os.manifest.v1.6-draft.json"
       - "LATEST.v1.6-draft.json"
+      - "benchmarks/policy_drift_legacy_v1.json"
       - "wa_os_observatory.py"
       - "tests/test_observatory.py"
       - ".github/workflows/observatory-tests.yml"
@@ -39,6 +41,7 @@ jobs:
 
       - name: Validate Observatory JSON files
         run: |
+          python -m json.tool benchmarks/policy_drift_legacy_v1.json > /dev/null
           python -m json.tool wa-os.protocol.v1.6-draft.json > /dev/null
           python -m json.tool wa-os.manifest.v1.6-draft.json > /dev/null
           python -m json.tool LATEST.v1.6-draft.json > /dev/null

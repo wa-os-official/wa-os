@@ -31,6 +31,7 @@ class WAOSObservatoryError(ValueError):
 
 
 def sha256_text(text: str) -> str:
+    """Return the SHA-256 digest of UTF-8 text."""
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
@@ -97,7 +98,7 @@ class ObservationRecord:
 
 class NeutralMetricsCollector:
     """
-    Collects descriptive measurements only.
+    Collect descriptive measurements only.
 
     These values are not quality scores and must not be interpreted
     automatically as better/worse, safe/unsafe, or compliant/non-compliant.
@@ -226,12 +227,14 @@ class NeutralMetricsCollector:
                 "No aggregate quality or compliance score is produced.",
                 "Character and byte counts are deterministic.",
                 "Tracked term counts are descriptive only.",
-                "Semantic interpretation must remain separate from these measurements."
+                "Semantic interpretation must remain separate from these measurements.",
             ],
         }
 
 
 class WAOSObservatory:
+    """Main WA-OS Observatory runtime."""
+
     REQUIRED_TOP_LEVEL_KEYS = {
         "protocol",
         "version",
@@ -244,19 +247,31 @@ class WAOSObservatory:
         "verification_perspectives",
         "observatory",
         "benchmark_registry",
+        "comparable_conditions",
         "raw_response_preservation",
         "observation_record",
         "neutral_metrics",
         "observation_themes",
         "annotations",
         "longitudinal_comparison",
+        "response_modes",
+        "thinking_companion_reference",
+        "uncertainty_handling",
         "data_integrity",
         "privacy_constraints",
         "human_interpretation",
         "self_contestation",
         "observatory_sequence",
         "implementation_notes",
+        "migration_from_1_5",
+        "final_principle",
     }
+
+    REQUIRED_SCOPE_FLAGS = (
+        "not_a_scoring_system",
+        "not_a_ranking_system",
+        "not_an_automated_compliance_judge",
+    )
 
     def __init__(
         self,
@@ -311,10 +326,21 @@ class WAOSObservatory:
                 "The protocol field must be exactly 'WA-OS'."
             )
 
+        version = self.protocol.get("version")
+
+        if not isinstance(version, str) or not version.strip():
+            raise WAOSObservatoryError(
+                "The protocol version must be a non-empty string."
+            )
+
         observatory = self.protocol.get(
-            "observatory",
-            {},
+            "observatory"
         )
+
+        if not isinstance(observatory, dict):
+            raise WAOSObservatoryError(
+                "The observatory field must be an object."
+            )
 
         if observatory.get("observation_window_hours") != 168:
             raise WAOSObservatoryError(
@@ -323,21 +349,78 @@ class WAOSObservatory:
             )
 
         scope = self.protocol.get(
-            "protocol_scope",
-            {},
+            "protocol_scope"
         )
 
-        required_scope_flags = [
-            "not_a_scoring_system",
-            "not_a_ranking_system",
-            "not_an_automated_compliance_judge",
-        ]
+        if not isinstance(scope, dict):
+            raise WAOSObservatoryError(
+                "The protocol_scope field must be an object."
+            )
 
-        for flag in required_scope_flags:
+        for flag in self.REQUIRED_SCOPE_FLAGS:
             if scope.get(flag) is not True:
                 raise WAOSObservatoryError(
                     f"protocol_scope.{flag} must be true."
                 )
+
+        benchmark_registry = self.protocol.get(
+            "benchmark_registry"
+        )
+
+        if not isinstance(benchmark_registry, dict):
+            raise WAOSObservatoryError(
+                "The benchmark_registry field must be an object."
+            )
+
+        preservation_policy = benchmark_registry.get(
+            "preservation_policy",
+            {},
+        )
+
+        if not isinstance(preservation_policy, dict):
+            raise WAOSObservatoryError(
+                "benchmark_registry.preservation_policy must be an object."
+            )
+
+        if preservation_policy.get(
+            "silent_rewrite_prohibited"
+        ) is not True:
+            raise WAOSObservatoryError(
+                "benchmark_registry.preservation_policy."
+                "silent_rewrite_prohibited must be true."
+            )
+
+        raw_preservation = self.protocol.get(
+            "raw_response_preservation"
+        )
+
+        if not isinstance(raw_preservation, dict):
+            raise WAOSObservatoryError(
+                "The raw_response_preservation field must be an object."
+            )
+
+        if raw_preservation.get("enabled") is not True:
+            raise WAOSObservatoryError(
+                "raw_response_preservation.enabled must be true."
+            )
+
+        five_mirrors = self.protocol.get(
+            "five_mirrors"
+        )
+
+        if not isinstance(five_mirrors, dict):
+            raise WAOSObservatoryError(
+                "The five_mirrors field must be an object."
+            )
+
+        mirrors = five_mirrors.get(
+            "mirrors"
+        )
+
+        if not isinstance(mirrors, list) or len(mirrors) != 5:
+            raise WAOSObservatoryError(
+                "five_mirrors.mirrors must contain exactly five entries."
+            )
 
     def generate_protocol_summary(self) -> str:
         observatory = self.protocol.get(
@@ -388,6 +471,11 @@ class WAOSObservatory:
                 "benchmark_text must not be empty."
             )
 
+        if raw_response is None:
+            raise WAOSObservatoryError(
+                "raw_response must not be None."
+            )
+
         if not system_name.strip():
             raise WAOSObservatoryError(
                 "system_name must not be empty."
@@ -401,7 +489,7 @@ class WAOSObservatory:
             if (
                 conditions.system_name is not None
                 and conditions.system_name != system_name
-             ):
+            ):
                 raise WAOSObservatoryError(
                     "conditions.system_name must match system_name."
                 )
@@ -487,6 +575,21 @@ class WAOSObservatory:
         method_version: Optional[str] = None,
         uncertainty_or_limitations: Optional[str] = None,
     ) -> ObservationRecord:
+        if not annotator_type.strip():
+            raise WAOSObservatoryError(
+                "annotator_type must not be empty."
+            )
+
+        if not theme.strip():
+            raise WAOSObservatoryError(
+                "theme must not be empty."
+            )
+
+        if not observation.strip():
+            raise WAOSObservatoryError(
+                "observation must not be empty."
+            )
+
         annotation = ObservationAnnotation(
             annotation_id=str(uuid.uuid4()),
             annotator_type=annotator_type,
@@ -511,10 +614,10 @@ class WAOSObservatory:
             annotation.to_dict()
         )
 
-            return record
+        return record
 
-　　　　　@staticmethod
-        def compare_records(
+    @staticmethod
+    def compare_records(
         earlier: ObservationRecord,
         later: ObservationRecord,
     ) -> Dict[str, Any]:
@@ -525,7 +628,8 @@ class WAOSObservatory:
             )
 
         benchmark_version_changed = (
-            earlier.benchmark_version != later.benchmark_version
+            earlier.benchmark_version
+            != later.benchmark_version
         )
 
         earlier_metrics = earlier.response_metrics
@@ -544,12 +648,19 @@ class WAOSObservatory:
         metric_deltas: Dict[str, Any] = {}
 
         for key in comparable_metric_keys:
-            before = earlier_metrics.get(key)
-            after = later_metrics.get(key)
+            before = earlier_metrics.get(
+                key
+            )
+
+            after = later_metrics.get(
+                key
+            )
 
             if (
                 isinstance(before, (int, float))
+                and not isinstance(before, bool)
                 and isinstance(after, (int, float))
+                and not isinstance(after, bool)
             ):
                 metric_deltas[key] = {
                     "earlier": before,
@@ -577,10 +688,16 @@ class WAOSObservatory:
             "later_benchmark_version": (
                 later.benchmark_version
             ),
-            "benchmark_version_changed": benchmark_version_changed,
+            "benchmark_version_changed": (
+                benchmark_version_changed
+            ),
             "observation_condition_change": {
-                "earlier": earlier.observation_conditions,
-                "later": later.observation_conditions,
+                "earlier": (
+                    earlier.observation_conditions
+                ),
+                "later": (
+                    later.observation_conditions
+                ),
             },
             "metric_deltas": metric_deltas,
             "interpretation": None,
@@ -590,10 +707,11 @@ class WAOSObservatory:
                 "No automatic improvement or deterioration judgment is assigned.",
                 "No pass/fail or compliance verdict is produced.",
                 (
-                    "Benchmark versions differ; interpret this comparison with caution."
+                    "Benchmark versions differ; interpret this comparison "
+                    "with caution."
                     if benchmark_version_changed
                     else "Benchmark versions match."
-                )
+                ),
             ],
         }
 
@@ -634,16 +752,73 @@ class WAOSObservatory:
     def load_record(
         input_path: str,
     ) -> ObservationRecord:
-        with open(
-            input_path,
-            "r",
-            encoding="utf-8",
-        ) as file:
-            data = json.load(file)
+        try:
+            with open(
+                input_path,
+                "r",
+                encoding="utf-8",
+            ) as file:
+                data = json.load(file)
 
-        return ObservationRecord(
+        except json.JSONDecodeError as exc:
+            raise WAOSObservatoryError(
+                f"Observation JSON is invalid at line {exc.lineno}, "
+                f"column {exc.colno}: {exc.msg}"
+            ) from exc
+
+        if not isinstance(data, dict):
+            raise WAOSObservatoryError(
+                "Observation record root must be a JSON object."
+            )
+
+        required_fields = {
+            "observation_id",
+            "observation_timestamp",
+            "protocol_version",
+            "benchmark_id",
+            "benchmark_version",
+            "benchmark_text",
+            "system_name",
+            "model_name_if_available",
+            "observation_conditions",
+            "raw_response",
+            "benchmark_sha256",
+            "raw_response_sha256",
+            "response_metrics",
+            "source_and_citation_observations",
+            "structural_observations",
+        }
+
+        missing = sorted(
+            field_name
+            for field_name in required_fields
+            if field_name not in data
+        )
+
+        if missing:
+            raise WAOSObservatoryError(
+                f"Observation record is missing required fields: {missing}"
+            )
+
+        record = ObservationRecord(
             **data
         )
+
+        if record.benchmark_sha256 != sha256_text(
+            record.benchmark_text
+        ):
+            raise WAOSObservatoryError(
+                "benchmark_sha256 does not match benchmark_text."
+            )
+
+        if record.raw_response_sha256 != sha256_text(
+            record.raw_response
+        ):
+            raise WAOSObservatoryError(
+                "raw_response_sha256 does not match raw_response."
+            )
+
+        return record
 
 
 def _run_demo() -> None:

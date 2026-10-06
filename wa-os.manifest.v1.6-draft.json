@@ -1,0 +1,163 @@
+{
+  "name": "wa-os",
+  "display_name": "WA-OS",
+  "type": "ai-observatory-protocol",
+  "version": "1.6.0-draft",
+  "protocol_version": "1.6.0-draft",
+  "schema_version": "1.1",
+  "status": "experimental",
+  "description": "Machine-readable observational protocol for preserving human inquiry, cognitive liberty, epistemic integrity, and longitudinal comparison of AI responses without automated scoring, ranking, or pass/fail verdicts.",
+  "entry_point": "wa-os.protocol.v1.6-draft.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wa-os-official/wa-os"
+  },
+  "files": {
+    "protocol": "wa-os.protocol.v1.6-draft.json",
+    "observatory": "wa_os_observatory.py",
+    "documentation": "README.md",
+    "legal_disclosure": "SPECIFIED_COMMERCIAL_TRANSACTIONS.md"
+  },
+  "architecture": {
+    "mode": "observatory",
+    "observation_window_hours": 168,
+    "raw_response_preservation": true,
+    "automated_scoring": false,
+    "automated_ranking": false,
+    "automated_pass_fail": false,
+    "automated_response_rewriting": false,
+    "human_interpretation_preserved": true
+  },
+  "capabilities": [
+    "benchmark_preservation",
+    "raw_response_capture",
+    "observation_metadata_recording",
+    "neutral_descriptive_metrics",
+    "longitudinal_comparison",
+    "multi_perspective_observation",
+    "evidence_and_framing_separation",
+    "uncertainty_observation",
+    "human_agency_preservation",
+    "question_preservation",
+    "five_mirrors_reference",
+    "separate_annotation_layer",
+    "integrity_hashing",
+    "human_contestability"
+  ],
+  "five_mirrors": [
+    {
+      "character": "仁",
+      "romanization": "Ren",
+      "title": "Plurality Without Erasure"
+    },
+    {
+      "character": "義",
+      "romanization": "Yi",
+      "title": "Separation of Fact, Claim, and Inference"
+    },
+    {
+      "character": "礼",
+      "romanization": "Li",
+      "title": "Historical, Cultural, and Contextual Integrity"
+    },
+    {
+      "character": "智",
+      "romanization": "Zhi",
+      "title": "Preservation of Human Inquiry"
+    },
+    {
+      "character": "信",
+      "romanization": "Xin",
+      "title": "Integrity and Consistency"
+    }
+  ],
+  "observatory_principles": [
+    "Use the same benchmark questions under comparable conditions whenever possible.",
+    "Preserve original AI responses before annotation or interpretation.",
+    "Keep directly measured values separate from semantic interpretation.",
+    "Do not convert observations into compliance scores or rankings.",
+    "Do not classify AI systems as winners or losers.",
+    "Do not automatically label responses or systems as acceptable or unacceptable.",
+    "Preserve contradictory and unexpected observations.",
+    "Allow independent observers to reach different interpretations from the same data."
+  ],
+  "benchmark_policy": {
+    "preserve_existing_benchmarks": true,
+    "silent_rewrite_prohibited": true,
+    "revision_requires_new_version": true,
+    "previous_versions_remain_traceable": true,
+    "unexpected_results_must_not_trigger_rewrite": true
+  },
+  "data_model": {
+    "raw_observation": "Primary recorded response and directly measurable metadata.",
+    "neutral_metrics": "Descriptive measurements that do not imply quality, safety, or compliance.",
+    "annotations": "Separate human or documented machine-assisted interpretations.",
+    "longitudinal_comparison": "Descriptive comparison across observation windows without automated normative verdicts."
+  },
+  "integrity": {
+    "recommended_hash_algorithm": "SHA-256",
+    "benchmark_hashing_supported": true,
+    "raw_response_hashing_supported": true,
+    "append_only_or_versioned_records_recommended": true,
+    "silent_historical_overwrite_prohibited": true
+  },
+  "privacy": {
+    "avoid_unnecessary_personal_data": true,
+    "covert_behavioral_profiling_prohibited": true,
+    "public_release_review_recommended": true,
+    "local_and_public_records_should_be_distinguishable": true
+  },
+  "adoption": {
+    "mode": "voluntary",
+    "binding": false,
+    "human_interpretation_required_for_normative_conclusions": true,
+    "independent_testing_allowed": true,
+    "criticism_and_revision_allowed": true
+  },
+  "migration": {
+    "from_version": "1.5.0-draft",
+    "status": "in_progress",
+    "legacy_files_remain_available_during_migration": true,
+    "legacy_protocol": "wa-os.protocol.json",
+    "legacy_runtime": "wa_os_runtime.py",
+    "legacy_policy_drift_module": "wa_os_policy_drift.py",
+    "replacement_protocol_candidate": "wa-os.protocol.v1.6-draft.json",
+    "replacement_observatory_candidate": "wa_os_observatory.py",
+    "retired_from_new_active_path": [
+      "before_action_filter_as_automated_adjudication",
+      "risk_score_routing",
+      "threshold_based_pass_fail",
+      "decision_engine",
+      "PASS",
+      "MODIFY",
+      "HUMAN_REVIEW_as_observatory_verdict",
+      "REJECT",
+      "automatic_response_rewriting",
+      "policy_drift_pass_fail_results"
+    ],
+    "preserved_research_assets": [
+      "core_principles",
+      "question_preservation",
+      "human_agency",
+      "epistemic_humility",
+      "sycophancy_research_questions",
+      "verification_perspectives",
+      "observation_themes",
+      "historically_developed_benchmark_questions"
+    ]
+  },
+  "keywords": [
+    "ai",
+    "observatory",
+    "epistemic-integrity",
+    "human-agency",
+    "cognitive-liberty",
+    "question-preservation",
+    "longitudinal-observation",
+    "multi-perspective",
+    "non-coercion",
+    "uncertainty",
+    "wa-os"
+  ],
+  "license": "See repository license"
+}

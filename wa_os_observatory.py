@@ -511,10 +511,10 @@ class WAOSObservatory:
             annotation.to_dict()
         )
 
-        return record
+            return record
 
-     @staticmethod
-     def compare_records(
+　　　　　@staticmethod
+        def compare_records(
         earlier: ObservationRecord,
         later: ObservationRecord,
     ) -> Dict[str, Any]:

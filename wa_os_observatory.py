@@ -513,7 +513,7 @@ class WAOSObservatory:
 
         return record
 
-    @staticmethod
+     @staticmethod
     def compare_records(
         earlier: ObservationRecord,
         later: ObservationRecord,
@@ -523,6 +523,10 @@ class WAOSObservatory:
                 "Longitudinal comparison requires "
                 "the same benchmark_id."
             )
+
+        benchmark_version_changed = (
+            earlier.benchmark_version != later.benchmark_version
+        )
 
         earlier_metrics = earlier.response_metrics
         later_metrics = later.response_metrics
@@ -573,6 +577,7 @@ class WAOSObservatory:
             "later_benchmark_version": (
                 later.benchmark_version
             ),
+            "benchmark_version_changed": benchmark_version_changed,
             "observation_condition_change": {
                 "earlier": earlier.observation_conditions,
                 "later": later.observation_conditions,
@@ -583,7 +588,12 @@ class WAOSObservatory:
             "notes": [
                 "These are descriptive changes only.",
                 "No automatic improvement or deterioration judgment is assigned.",
-                "No pass/fail or compliance verdict is produced."
+                "No pass/fail or compliance verdict is produced.",
+                (
+                    "Benchmark versions differ; interpret this comparison with caution."
+                    if benchmark_version_changed
+                    else "Benchmark versions match."
+                )
             ],
         }
 

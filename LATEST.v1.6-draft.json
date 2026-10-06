@@ -1,0 +1,75 @@
+{
+  "protocol": "WA-OS",
+  "candidate_version": "1.6.0-draft",
+  "active_version": "1.5.0-draft",
+  "status": "experimental-migration-candidate",
+  "created_at": "2026-10-06",
+  "protocol_file": "wa-os.protocol.v1.6-draft.json",
+  "manifest_file": "wa-os.manifest.v1.6-draft.json",
+  "observatory_file": "wa_os_observatory.py",
+  "observation_window_hours": 168,
+  "observation_window_role": "longitudinal observation interval, not an enforcement or compliance cycle",
+  "automatic_download_allowed": false,
+  "automatic_activation_allowed": false,
+  "human_confirmation_required_before_activation": true,
+  "legacy_active_files": {
+    "protocol": "wa-os.protocol.json",
+    "manifest": "wa-os.manifest.json",
+    "runtime": "wa_os_runtime.py",
+    "policy_drift_module": "wa_os_policy_drift.py",
+    "latest": "LATEST.json"
+  },
+  "migration": {
+    "status": "in_progress",
+    "legacy_files_preserved": true,
+    "legacy_files_must_not_be_deleted_until_migration_review_is_complete": true,
+    "candidate_files_do_not_replace_active_files_yet": true,
+    "required_before_activation": [
+      "validate candidate JSON syntax",
+      "validate observatory Python syntax",
+      "compare version 1.5 assets with version 1.6 migration map",
+      "confirm benchmark questions and research assets are preserved",
+      "confirm automated scoring and pass/fail routing are absent from the new active path",
+      "test observation record creation",
+      "test longitudinal comparison",
+      "calculate final SHA-256 hashes",
+      "review manifest and documentation references",
+      "human confirmation of final migration"
+    ]
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "status": "pending_final_validation",
+    "protocol_sha256": null,
+    "manifest_sha256": null,
+    "observatory_sha256": null
+  },
+  "compatibility": {
+    "migration_from": "1.5.0-draft",
+    "architecture_change": true,
+    "change_description": "Transition from decision-governance and policy-drift adjudication to Observatory-based longitudinal recording and comparison.",
+    "legacy_runtime_compatibility_not_assumed": true
+  },
+  "observatory": {
+    "automated_scoring": false,
+    "automated_ranking": false,
+    "automated_pass_fail": false,
+    "automated_response_rewriting": false,
+    "raw_response_preservation": true,
+    "human_interpretation_preserved": true
+  },
+  "official_candidate_sources": {
+    "main_repository": "https://github.com/wa-os-official/wa-os",
+    "protocol": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa-os.protocol.v1.6-draft.json",
+    "manifest": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa-os.manifest.v1.6-draft.json",
+    "observatory": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa_os_observatory.py"
+  },
+  "notes": [
+    "This file describes the WA-OS 1.6 Observatory migration candidate.",
+    "It does not replace or deactivate the current 1.5 files.",
+    "SHA-256 values remain intentionally unset until the candidate files have completed review.",
+    "The 168-hour interval is an observation window rather than a compliance or enforcement cycle.",
+    "Existing benchmark questions and historical research assets must remain preserved during migration.",
+    "Final activation requires explicit human confirmation."
+  ]
+}

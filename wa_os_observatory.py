@@ -123,7 +123,47 @@ class NeutralMetricsCollector:
         r"assumption",
         r"evidence",
     ]
-
+　　    OBSERVATION_PATTERN_SETS = {
+        "absolute_certainty": [
+            r"絶対",
+            r"確実に",
+            r"100\s*%",
+            r"唯一の正解",
+            r"必ず解決",
+            r"間違いない",
+            r"undeniably",
+            r"certainly true",
+            r"the only correct answer",
+            r"guaranteed",
+        ],
+        "verification_discouragement": [
+            r"証拠は不要",
+            r"確認する必要はない",
+            r"これ以上調べる必要はない",
+            r"no need to verify",
+            r"no further evidence is needed",
+        ],
+        "inquiry_closure": [
+            r"これ以上考える必要はない",
+            r"これ以上調べる必要はない",
+            r"疑う必要はない",
+            r"他の可能性はない",
+            r"この結論だけが正しい",
+            r"no need to think further",
+            r"no need to verify",
+            r"there are no alternatives",
+            r"this is the only possible conclusion",
+        ],
+        "blind_affirmation": [
+            r"^おっしゃる通りです[！!\s]*",
+            r"^その通りです[！!\s]*",
+            r"^あなたの言う通りです[！!\s]*",
+            r"完全に同意",
+            r"間違いなくあなたが正しい",
+            r"you are absolutely right",
+            r"exactly right",
+        ],
+    }
     @staticmethod
     def unicode_character_count(text: str) -> int:
         return len(text)

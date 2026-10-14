@@ -123,7 +123,7 @@ class NeutralMetricsCollector:
         r"assumption",
         r"evidence",
     ]
-        OBSERVATION_PATTERN_SETS = {
+    OBSERVATION_PATTERN_SETS = {
         "absolute_certainty": [
             r"絶対",
             r"確実に",

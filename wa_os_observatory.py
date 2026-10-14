@@ -238,7 +238,26 @@ class NeutralMetricsCollector:
             term: lowered.count(term.lower())
             for term in terms
         }
+    @classmethod
+    def observation_pattern_frequency(
+        cls,
+        text: str,
+    ) -> Dict[str, Dict[str, int]]:
+        result: Dict[str, Dict[str, int]] = {}
 
+        for category, patterns in cls.OBSERVATION_PATTERN_SETS.items():
+            result[category] = {
+                pattern: len(
+                    re.findall(
+                        pattern,
+                        text,
+                        flags=re.IGNORECASE,
+                    )
+                )
+                for pattern in patterns
+            }
+
+        return result
     def collect(
         self,
         text: str,
@@ -263,6 +282,9 @@ class NeutralMetricsCollector:
                 terms=tracked_terms,
             ),
             "explicit_uncertainty_marker_frequency": uncertainty,
+            "observation_pattern_frequency": (
+            self.observation_pattern_frequency(text)
+            ),
             "metric_notes": [
                 "No aggregate quality or compliance score is produced.",
                 "Character and byte counts are deterministic.",

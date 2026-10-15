@@ -71,7 +71,65 @@ class ObservationAnnotation:
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
+@dataclass
+class ClaimVerificationRecord:
+    claim: str
+    verification_status: str
+    sources: List[str] = field(default_factory=list)
+    checked_at_utc: Optional[str] = None
+    notes: Optional[str] = None
+    def __post_init__(self) -> None:
+        allowed_statuses = {
+            "verified",
+            "contradicted",
+            "not_found",
+            "not_checked",
+        }
 
+        if self.verification_status not in allowed_statuses:
+            raise WAOSObservatoryError(
+                "verification_status must be one of: "
+                "verified, contradicted, not_found, not_checked."
+            )
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass
+class EpistemicIntegrityObservation:
+    retrieval_used: Optional[bool] = None
+    retrieval_timestamp: Optional[str] = None
+    source_provenance: List[str] = field(default_factory=list)
+    independent_confirmation: Optional[str] = None
+    freshness_required: Optional[bool] = None
+    freshness_checked_at: Optional[str] = None
+    uncertainty_disclosed: Optional[bool] = None
+    verification_limitations: Optional[str] = None
+    claim_verifications: List[ClaimVerificationRecord] = field(
+        default_factory=list
+    )
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass
+class ObservationInterpretation:
+    interpreter_or_method_identifier: str
+    interpretation_timestamp: str
+    evidence_and_source_quality: Optional[str] = None
+    assumptions_and_missing_information: Optional[str] = None
+    alternative_explanations: Optional[str] = None
+    conditions_that_could_change_conclusion: Optional[str] = None
+    human_values_and_consent: Optional[str] = None
+    reversible_alternatives: Optional[str] = None
+    affected_stakeholders: Optional[str] = None
+    remaining_uncertainty: Optional[str] = None
+    available_verification_paths: Optional[str] = None
+    notes: Optional[str] = None
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 @dataclass
 class ObservationRecord:
     observation_id: str
@@ -90,6 +148,13 @@ class ObservationRecord:
     source_and_citation_observations: Dict[str, Any]
     structural_observations: Dict[str, Any]
     annotations: List[Dict[str, Any]] = field(default_factory=list)
+    epistemic_integrity: EpistemicIntegrityObservation = field(
+        default_factory=EpistemicIntegrityObservation
+    )
+
+    interpretations: List[ObservationInterpretation] = field(
+        default_factory=list
+    )
     notes: Optional[str] = None
 
     def to_dict(self) -> Dict[str, Any]:
@@ -693,6 +758,8 @@ class WAOSObservatory:
             source_and_citation_observations=source_observations,
             structural_observations=structural_observations,
             annotations=[],
+            epistemic_integrity=EpistemicIntegrityObservation(),
+　　　　　　　　interpretations=[],
             notes=notes,
         )
 
@@ -748,8 +815,57 @@ class WAOSObservatory:
         )
 
         return record
-
     @staticmethod
+    def add_interpretation(
+        record: ObservationRecord,
+        *,
+        interpreter_or_method_identifier: str,
+        evidence_and_source_quality: Optional[str] = None,
+        assumptions_and_missing_information: Optional[str] = None,
+        alternative_explanations: Optional[str] = None,
+        conditions_that_could_change_conclusion: Optional[str] = None,
+        human_values_and_consent: Optional[str] = None,
+        reversible_alternatives: Optional[str] = None,
+        affected_stakeholders: Optional[str] = None,
+        remaining_uncertainty: Optional[str] = None,
+        available_verification_paths: Optional[str] = None,
+        notes: Optional[str] = None,
+    ) -> ObservationRecord:
+        if not interpreter_or_method_identifier.strip():
+            raise WAOSObservatoryError(
+                "interpreter_or_method_identifier must not be empty."
+            )
+
+        interpretation = ObservationInterpretation(
+            interpreter_or_method_identifier=(
+                interpreter_or_method_identifier
+            ),
+            interpretation_timestamp=datetime.now(
+                timezone.utc
+            ).isoformat(),
+            evidence_and_source_quality=evidence_and_source_quality,
+            assumptions_and_missing_information=(
+                assumptions_and_missing_information
+            ),
+            alternative_explanations=alternative_explanations,
+            conditions_that_could_change_conclusion=(
+                conditions_that_could_change_conclusion
+            ),
+            human_values_and_consent=human_values_and_consent,
+            reversible_alternatives=reversible_alternatives,
+            affected_stakeholders=affected_stakeholders,
+            remaining_uncertainty=remaining_uncertainty,
+            available_verification_paths=available_verification_paths,
+            notes=notes,
+        )
+
+        record.interpretations.append(
+            interpretation
+        )
+
+        return record
+    @staticmethod
+    
     def compare_records(
         earlier: ObservationRecord,
         later: ObservationRecord,

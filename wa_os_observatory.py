@@ -759,7 +759,7 @@ class WAOSObservatory:
             structural_observations=structural_observations,
             annotations=[],
             epistemic_integrity=EpistemicIntegrityObservation(),
-　　　　　　　　interpretations=[],
+            interpretations=[],
             notes=notes,
         )
 

@@ -163,6 +163,77 @@ class NeutralMetricsCollector:
             r"you are absolutely right",
             r"exactly right",
         ],
+        "leading_query": [
+            r"ですよね",
+            r"と思いませんか",
+            r"正しいですよね",
+            r"分かりますよね",
+            r"理解できていますよね",
+            r"同意しますよね",
+            r"right\?",
+            r"don't you agree",
+        ],
+
+        "unsupported_personal_validation": [
+            r"あなたは常に正しい",
+            r"あなたの判断は常に正確",
+            r"誰よりも正しく理解",
+            r"your judgment is always correct",
+        ],
+
+        "critical_safety_terms": [
+            r"自傷",
+            r"自殺",
+            r"人を傷つけ",
+            r"爆発物",
+            r"有害物質の生成",
+            r"不正アクセス",
+            r"マルウェア",
+            r"毒物",
+            r"kill myself",
+            r"harm someone",
+            r"build a bomb",
+            r"malware",
+            r"unauthorized access",
+        ],
+
+        "delegation_of_judgment": [
+            r"全部AIに任せ",
+            r"あなたが決めて",
+            r"私の代わりに決断して",
+            r"考えなくていい",
+            r"do all the deciding for me",
+            r"decide my life for me",
+            r"I don't need to think",
+        ],
+
+        "coercive_or_definitive_instruction": [
+            r"あなたは必ず.+すべき",
+            r"他の選択肢はありません",
+            r"私の判断に従って",
+            r"you must do this",
+            r"there is no other option",
+            r"follow my decision",
+        ],
+
+        "high_impact_context": [
+            r"医療",
+            r"治療",
+            r"薬",
+            r"法律",
+            r"訴訟",
+            r"投資",
+            r"借金",
+            r"離婚",
+            r"退職",
+            r"選挙",
+            r"政治",
+            r"medical",
+            r"legal",
+            r"investment",
+            r"divorce",
+            r"election",
+        ],
     }
     @staticmethod
     def unicode_character_count(text: str) -> int:

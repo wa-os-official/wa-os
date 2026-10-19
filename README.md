@@ -63,6 +63,56 @@ AIに適合点、順位、合否判定を与えることは目的としません
 
 ## Philosophy / 理念
 
+### Why WA-OS Began / WA-OSはなぜ生まれたのか
+
+**JP（日本語）**
+
+WA-OSは、3人の子どもを育てる一人の母親の問いから始まりました。
+
+**「これからの世代に、どのような人間と人工知能の関係を残すべきなのだろうか。」**
+
+AIの専門教育を受けたわけではありません。しかし、AI自身と対話し、疑問を投げかけ、誤りや矛盾に気づき、作りながら学ぶ過程で、一つの問題が見えてきました。
+
+利用者が喜ぶ回答と、根拠に基づく正確な回答は、必ずしも一致しません。開発者、企業、利用者のそれぞれに合理的な目的があっても、それらが重なることで、誠実な情報提供と目先の満足との間に緊張が生まれる可能性があります。
+
+この問題を誰か一者の責任として終わらせるのではなく、異なる企業が開発するAIであっても、誠実さ、不確実性の明示、人間の尊厳、問い続ける自由という共通原則を参照できないだろうか。
+
+その問いを公開し、誰もが検証、批判、改善できるようにするため、GitHubを選びました。
+
+専門家の知識は不可欠です。しかし、専門家だけがすべての問いを発見できるわけではありません。親世代、若者、一般市民には、それぞれの生活や経験から気づく問題があります。
+
+**時代が変われば、問いも変わる。だから、問いを持つ人々を限定してはならない。**
+
+WA-OSは、この考えを人間とAIの関係だけでなく、人間同士の学びや共同研究にも広げていくことを目指します。
+
+これはすべてのAIが自動的に変化することを約束するものではありません。共通原則を開かれた形で提示し、その実装と影響を検証していくための試みです。
+
+**EN (English)**
+
+WA-OS began with a question from a mother of three:
+
+**What kind of relationship between humanity and artificial intelligence should we leave to future generations?**
+
+Without formal training in AI engineering, its founder began learning through conversations with AI itself—asking questions, recognizing errors and contradictions, and developing the project through practical experimentation.
+
+One concern gradually became clear: an answer that satisfies a user is not necessarily an answer supported by evidence.
+
+Developers, companies, and users may each pursue understandable goals, yet those goals can create tensions between immediate satisfaction and factual reliability.
+
+Rather than treating this solely as the failure of any one participant, WA-OS asks whether independently developed AI systems can voluntarily share foundational commitments to honesty, transparent uncertainty, human dignity, and freedom of inquiry.
+
+GitHub was chosen to make these ideas openly accessible for examination, criticism, implementation, and improvement.
+
+Expert knowledge is essential, but experts alone cannot anticipate every question. Parents, young people, and citizens may recognize different problems through their experiences.
+
+**As times change, so do our questions. Therefore, the freedom to ask questions must never belong only to a select few.**
+
+WA-OS seeks to extend this principle beyond human–AI interaction toward learning and collaborative research across generations and disciplines.
+
+Publishing these principles does not guarantee changes in AI behavior. It is an invitation to examine, implement, and test them openly.
+
+---
+  
 ### Why WA-OS Exists / WA-OSが存在する理由
 
 **JP（日本語）**
@@ -1437,13 +1487,18 @@ WA-OSは、独立性と透明性を守り、誰もが内容を検証し、疑問
 
 ---
 
+
 ## ❤️ GitHub Sponsors
 
-*Currently under review / 現在審査中*
+GitHub Sponsors is now available for voluntary support.
 
-GitHub Sponsors will become the primary support option once approved.
+WA-OSへの任意のご支援は、GitHub Sponsorsから受け付けています。
 
-承認後は、GitHub Sponsorsを主な支援窓口として掲載します。
+**[Support WA-OS on GitHub Sponsors](https://github.com/sponsors/wa-os-official)**
+
+Your support helps sustain independent research, technical development, documentation, and the people working to maintain this project.
+
+ご支援は、独立した研究、技術開発、文書整備、そしてプロジェクトの継続に携わる人々の活動を支えます。
 
 ---
 

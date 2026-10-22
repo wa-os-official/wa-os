@@ -5,7 +5,7 @@ import pytest
 
 from wa_os_principles import ProtocolFormatError, generate_system_prompt, load_protocol
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 PROTOCOL = ROOT / "wa-os.protocol.v1.6-draft.json"
 
 

@@ -53,3 +53,7 @@ jobs:
       - name: Run Observatory tests
         run: |
           python -m pytest -q tests/test_observatory.py
+     
+      - name: Run Five Mirrors principles tests
+        run: |
+         python -m pytest -q tests/test_wa_os_principles.py

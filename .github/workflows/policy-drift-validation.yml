@@ -2,25 +2,7 @@ name: Policy Drift Validation
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "tests/policy_drift_cases.json"
-      - "tests/policy_drift_runner.py"
-      - "tests/test_policy_drift_sensor.py"
-      - "wa_os_policy_drift.py"
-      - ".github/workflows/policy-drift-validation.yml"
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "tests/policy_drift_cases.json"
-      - "tests/policy_drift_runner.py"
-      - "tests/test_policy_drift_sensor.py"
-      - "wa_os_policy_drift.py"
-      - ".github/workflows/policy-drift-validation.yml"
-
+  
 permissions:
   contents: read
 

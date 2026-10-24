@@ -7,6 +7,7 @@
   "protocol_file": "wa-os.protocol.v1.6-draft.json",
   "manifest_file": "wa-os.manifest.v1.6-draft.json",
   "observatory_file": "wa_os_observatory.py",
+  "principles_generator_file": "wa_os_principles.py",
   "observation_window_hours": 168,
   "observation_window_role": "longitudinal observation interval, not an enforcement or compliance cycle",
   "automatic_download_allowed": false,
@@ -42,7 +43,8 @@
     "status": "pending_final_validation",
     "protocol_sha256": null,
     "manifest_sha256": null,
-    "observatory_sha256": null
+    "observatory_sha256": null,
+    "principles_generator_sha256": null
   },
   "compatibility": {
     "migration_from": "1.5.0-draft",
@@ -62,7 +64,8 @@
     "main_repository": "https://github.com/wa-os-official/wa-os",
     "protocol": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa-os.protocol.v1.6-draft.json",
     "manifest": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa-os.manifest.v1.6-draft.json",
-    "observatory": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa_os_observatory.py"
+    "observatory": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa_os_observatory.py",
+    "principles_generator": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa_os_principles.py"
   },
   "notes": [
     "This file describes the WA-OS 1.6 Observatory migration candidate.",

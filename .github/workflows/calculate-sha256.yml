@@ -9,6 +9,10 @@ on:
       - "wa-os.protocol.json"
       - "wa-os.manifest.json"
       - "wa_os_runtime.py"
+      - "wa-os.protocol.v1.6-draft.json"
+      - "wa-os.manifest.v1.6-draft.json"
+      - "wa_os_observatory.py"
+      - "wa_os_principles.py"
       - ".github/workflows/calculate-sha256.yml"
 
 permissions:
@@ -82,5 +86,62 @@ jobs:
         with:
           name: wa-os-sha256-checksums
           path: SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      # v1.6-draft candidate files.
+      # These steps only calculate and report SHA-256 values.
+      # They do not modify LATEST.v1.6-draft.json or activate v1.6.
+      - name: Verify v1.6-draft target files exist
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          files=(
+            "wa-os.protocol.v1.6-draft.json"
+            "wa-os.manifest.v1.6-draft.json"
+            "wa_os_observatory.py"
+            "wa_os_principles.py"
+          )
+
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "FOUND: $file"
+            else
+              echo "MISSING: $file"
+              exit 1
+            fi
+          done
+
+      - name: Calculate v1.6-draft SHA-256 checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          sha256sum \
+            "wa-os.protocol.v1.6-draft.json" \
+            "wa-os.manifest.v1.6-draft.json" \
+            "wa_os_observatory.py" \
+            "wa_os_principles.py" \
+            > SHA256SUMS-v1.6-draft.txt
+
+          cat SHA256SUMS-v1.6-draft.txt
+
+          {
+            echo ""
+            echo "## WA-OS v1.6-draft SHA-256 Results (candidate, not yet activated)"
+            echo ""
+            echo "| File | SHA-256 |"
+            echo "|---|---|"
+            while read -r hash file; do
+              echo "| $file | $hash |"
+            done < SHA256SUMS-v1.6-draft.txt
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload v1.6-draft checksum file
+        uses: actions/upload-artifact@v4
+        with:
+          name: wa-os-v1.6-draft-sha256-checksums
+          path: SHA256SUMS-v1.6-draft.txt
           if-no-files-found: error
           retention-days: 30

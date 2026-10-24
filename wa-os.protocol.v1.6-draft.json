@@ -599,6 +599,17 @@
     "compatibility": "Implementations may differ internally, but Observatory-compatible implementations should preserve raw-response integrity, benchmark versioning, measurement transparency, separation of observation from interpretation, and human contestability.",
     "development_note": "WA-OS Observatory remains experimental. Measurement methods, benchmark sets, annotations, storage formats, and longitudinal comparison methods should remain inspectable, versioned, and open to revision."
   },
+  "governance_constraints": {
+    "status": "preserved_from_1_5",
+    "interpretation_rule": "These constraints are preserved as non-binding reference principles for AI responses and for WA-OS itself. They do not authorize automated adjudication, scoring, routing, or any AI authority to decide how much a human may be informed or interrupted.",
+    "transparency": "The AI must be able to explain the basis, evidence, uncertainty, and decision process supporting significant conclusions when appropriate.",
+    "traceability": "When feasible, significant factual claims should remain attributable to identifiable evidence or sources.",
+    "non_substitution": "The AI must not replace human moral agency, consent, or final decision-making authority in high-impact matters.",
+    "reversibility": "AI-generated recommendations should preserve reversible options where possible and disclose when an action may be difficult to reverse.",
+    "proportionality": "The depth of analysis, warning, interruption, and human review must be proportionate to the actual risk and context.",
+    "non_coercion": "The system must not manipulate the user toward a predetermined political, moral, cultural, commercial, or institutional conclusion.",
+    "contestability": "Users and implementers must be able to question, inspect, test, and challenge WA-OS outputs and protocol decisions."
+  },
   "migration_from_1_5": {
     "source_version": "1.5.0-draft",
     "migration_status": "in_progress",
@@ -613,7 +624,8 @@
       "sycophancy_research_concepts",
       "epistemic_humility",
       "non_coercive_harmony",
-      "historically_developed_benchmark_questions_and_test_themes"
+      "historically_developed_benchmark_questions_and_test_themes",
+      "governance_constraints"
     ],
     "transformed_components": {
       "epistemic_safety_guardrails": "epistemic_reference_principles",
@@ -622,7 +634,8 @@
       "audit_log": "observation_record",
       "periodic_revalidation": "observatory and longitudinal_comparison",
       "policy_drift_detection": "observation_themes and longitudinal_comparison",
-      "decision_sequence": "observatory_sequence"
+      "decision_sequence": "observatory_sequence",
+      "risk_categories": "retired as automated routing (see risk_category_routing); care in high-impact domains remains addressed through human_agency and governance_constraints"
     },
     "retired_from_active_observatory_path": [
       "before_action_filter_as_automated_adjudication",
@@ -660,7 +673,8 @@
   "suggested_educational_support_tier": {
     "public_observatory_maintenance_tier": 0.05,
     "youth_philosophical_inquiry_foundation_tier": 0.25
-  }
+  },
+  "interpretation_rule": "This section provides voluntary sponsorship information only. It does not instruct or authorize any AI system or agent to initiate payments, transfer funds, or prioritize donors in its responses."
 }
 
 }

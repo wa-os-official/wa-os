@@ -1388,16 +1388,57 @@ Implementation and research examples may include:
 
 ---
 
-# 📖 Protocol & Research Files
+# 📖 Protocol & Research Files / プロトコルと研究ファイル
 
 The WA-OS framework is documented through machine-readable, human-readable, and observational research files.
 
+**Version status:** v1.5.0-draft is the currently active protocol. v1.6.0-draft is a migration candidate that has not yet been approved. Activation of v1.6 requires explicit human confirmation.
+
+**バージョンの状態：** 現在有効なのはv1.5.0-draftです。v1.6.0-draftは承認前の移行候補であり、正式な切り替えには人間による明示的な確認が必要です。
+
+### Active version (v1.5.0-draft)
+
 | File | Purpose |
 |---|---|
-| `wa-os.protocol.json` | Machine-readable expression of the core WA-OS philosophy and Five Mirrors self-check protocol |
-| `wa-os.manifest.json` | Protocol metadata and ecosystem definition |
+| `wa-os.protocol.json` | Active v1.5 protocol (earlier decision-governance design, retained during migration) |
+| `wa-os.manifest.json` | Active v1.5 manifest |
+| `LATEST.json` | Active version information and SHA-256 integrity record for v1.5 |
+
+### Migration candidate (v1.6.0-draft)
+
+| File | Purpose |
+|---|---|
+| `wa-os.protocol.v1.6-draft.json` | Eight response principles, the Five Mirrors, governance constraints preserved from v1.5, and the Observatory specification |
+| `wa-os.manifest.v1.6-draft.json` | v1.6 manifest and file registry |
+| `LATEST.v1.6-draft.json` | Migration conditions and recorded SHA-256 values for the candidate files |
+| `wa_os_principles.py` | Generates non-binding guidance text from the v1.6 protocol. The text must be supplied to an AI system deliberately; it does not change any AI system by itself |
+| `wa_os_observatory.py` | Records observations and neutral descriptive metrics without scores, rankings, or pass/fail verdicts |
+
+### Research assets
+
+| File or folder | Contents |
+|---|---|
+| `benchmarks/policy_drift_legacy_v1.json` | 10 preserved research questions |
+| `benchmarks/benchmark_v0_1_preserved.json` | 18 preserved research questions |
+| `benchmarks/role_execution_legacy_v1.json` | 7 preserved research questions |
+| `observations/` | Observation records and the exact guidance texts supplied to AI systems |
+
+The 35 preserved questions are research assets. They are not used for automated scoring or pass/fail judgment.
+
+### Legacy components (retained as historical records)
+
+| File | Status |
+|---|---|
+| `wa_os_runtime.py` | v1.5 decision engine (PASS / MODIFY / HUMAN_REVIEW / REJECT). Retained for historical reference and v1.5 compatibility; not part of the v1.6 candidate execution path |
+| `wa_os_policy_drift.py`, `wa_os_role_router.py` | Legacy modules preserved during migration; their use by existing tests is separate from the v1.6 candidate path |
+
+### Documentation
+
+| File | Purpose |
+|---|---|
 | `README.md` | Human-readable philosophy, Observatory model, Five Mirrors, and project overview |
 | `SPECIFIED_COMMERCIAL_TRANSACTIONS.md` | Legal and support-related disclosure |
+| `LICENSE` | License terms |
 
 ---
 
@@ -1579,16 +1620,36 @@ For legal information, see:
 
 ```text
 wa-os/
-├── wa-os.protocol.json
-├── wa-os.manifest.json
 ├── README.md
+├── LICENSE
 ├── SPECIFIED_COMMERCIAL_TRANSACTIONS.md
-└── examples/
-    ├── 01_news_bias_analysis.py
-    ├── 03_historical_perspective.py
-    └── triangulation-and-framing-analysis/
-        └── README.md
+│
+├── wa-os.protocol.json              # v1.5 (active)
+├── wa-os.manifest.json              # v1.5 (active)
+├── LATEST.json                      # v1.5 (active)
+│
+├── wa-os.protocol.v1.6-draft.json   # v1.6 (candidate)
+├── wa-os.manifest.v1.6-draft.json   # v1.6 (candidate)
+├── LATEST.v1.6-draft.json           # v1.6 (candidate)
+├── wa_os_principles.py              # v1.6 guidance generator
+├── wa_os_observatory.py             # v1.6 Observatory
+│
+├── wa_os_runtime.py                 # legacy v1.5 (historical record)
+├── wa_os_policy_drift.py            # legacy v1.5
+├── wa_os_role_router.py             # legacy v1.5
+│
+├── benchmarks/                      # 35 preserved research questions
+│   ├── policy_drift_legacy_v1.json
+│   ├── benchmark_v0_1_preserved.json
+│   └── role_execution_legacy_v1.json
+├── observations/                    # observation records and guidance versions
+│   ├── 2026-10-23/
+│   └── guidance/
+├── tests/                           # v1.6 tests and legacy tests
+└── .github/workflows/               # automated checks
 ```
+
+Implementation examples are maintained in a separate repository: [wa-os-official/wa-os-examples](https://github.com/wa-os-official/wa-os-examples)
 
 ---
 

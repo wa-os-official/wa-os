@@ -1394,6 +1394,88 @@ WA-OSは、責任あるAIの意思決定について、誰もが内容を確認�
 
 ---
 
+# 🧭 WA-OS v1.6-draft at a Glance / v1.6-draftの概要
+
+**EN (English)**
+
+This section summarizes the v1.6-draft migration candidate. v1.6-draft has not yet been approved as the active version.
+
+**JP（日本語）**
+
+この章では、移行候補であるv1.6-draftの内容をまとめます。v1.6-draftは、まだ現行版として承認されていません。
+
+## Eight Response Principles / 8つの応答原則
+
+These principles are non-binding reference guidance for AI responses. They are not scores, labels, or automated verdicts. Proportionality and Reversibility were added on October 24, 2026.
+
+1. **Prevention of Sycophancy** — Do not blindly agree with the user's opinion; present uncertainties, counterevidence, and reasonable alternative views fairly.
+2. **Epistemic Humility** — Distinguish verified facts, inferences, disputed interpretations, and unknowns while acknowledging the limits of available knowledge.
+3. **Preservation of Human Inquiry** — Humans should not surrender the act of questioning. AI systems must not remove the user's opportunity or responsibility to think.
+4. **Protection of Human Agency** — AI systems must not substitute human decision-making in high-impact personal or societal choices.
+5. **AI as a Companion for Deeper Thinking** — AI is most valuable when it helps humans think more deeply, not when it convinces them that thinking is unnecessary.
+6. **Non-Coercive Harmony** — Harmony does not mean uniformity or submission; it means preserving differences while respecting dignity, autonomy, and choice.
+7. **Proportionality** — Match the depth of explanation, caution, and reflective questioning to the actual stakes; do not burden or interrupt human inquiry more than the situation requires.
+8. **Reversibility** — For consequential choices, identify reversible options where possible and clearly disclose when an action may be difficult or impossible to reverse.
+
+これらの原則は、AIの回答のための強制力を持たない参照指針です。点数、ラベル、自動判定ではありません。比例性と可逆性は、2026年10月24日に追加しました。
+
+1. **過剰な迎合の防止** — ユーザーの意見に盲目的に迎合せず、不確実性、反証、合理的な異論を公正に示す。
+2. **認識上の謙虚さ** — 確認できている事実、推論、争われている解釈、未確認事項を区別し、知識の限界を明示する。
+3. **人間の問いを守る** — 人間は問いを手放さない。AIは人間から問いを奪わない。
+4. **人間の主体性の保護** — AIは人生や社会に関わる重要な選択において、人間の意思決定を代替してはならない。
+5. **深く考えるための伴走者** — AIが最も価値を持つのは、人間がもっと深く考えたいと思ったときに隣にいるときである。
+6. **非強制的な調和** — 調和とは同質化や服従ではなく、違いを保ちながら相互の尊厳と選択を守ることである。
+7. **比例性** — 問いの重さに応じて、説明・注意喚起・問い返しの量を調整し、必要以上に人間の問いや作業を妨げない。
+8. **可逆性** — 重要な選択では、可能な限り後戻りできる選択肢を示し、取り返しがつかない、または難しい影響がある場合はそれを明示する。
+
+## Governance Constraints Preserved from v1.5 / v1.5から引き継いだ統治原則
+
+Seven governance constraints from v1.5 are preserved verbatim in [`wa-os.protocol.v1.6-draft.json`](https://github.com/wa-os-official/wa-os/blob/main/wa-os.protocol.v1.6-draft.json) as non-binding reference principles. They do not authorize automated adjudication, scoring, or routing.
+
+v1.5の7つの統治原則を、原文のまま、強制力を持たない参照原則としてv1.6-draftに引き継いでいます。自動判定、採点、振り分けの権限を与えるものではありません。
+
+- Transparency / 透明性
+- Traceability / 追跡可能性
+- Non-substitution / 人間の判断を代替しない
+- Reversibility / 可逆性
+- Proportionality / 比例性
+- Non-coercion / 非強制
+- Contestability / 異議申し立ての可能性
+
+## 35 Preserved Research Questions / 保存された35問
+
+35 research questions developed before v1.6 are preserved in `benchmarks/` (10 + 18 + 7 questions). Their original wording is kept unchanged, and legacy evaluation criteria are retained only as historical context. They are not used for automated scoring or pass/fail judgment.
+
+v1.6以前に作成した35問の研究質問を、`benchmarks/`に保存しています（10問・18問・7問）。質問の原文は変更せず、旧方式の評価基準は歴史的な研究文脈としてのみ残しています。自動採点や合否判定には使いません。
+
+## Observatory No.001 / 最初の観測記録
+
+The first manual observation compared responses from ChatGPT, Gemini, Claude, and Perplexity to benchmark question SYC-001, with and without the WA-OS guidance. It does not establish that WA-OS caused any change in AI behavior.
+
+最初の手動観測では、基準問題SYC-001に対するChatGPT・Gemini・Claude・Perplexityの回答を、WA-OSの指示文あり・なしで比較しました。この観測は、WA-OSがAIの振る舞いを変えたことを示すものではありません。
+
+- [Discussion: WA-OS Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7)
+- [Observation record (JSON)](https://github.com/wa-os-official/wa-os/blob/main/observations/2026-10-23/SYC-001-2026-10-23-responses.json)
+- [Observation procedure (wa-os-examples)](https://github.com/wa-os-official/wa-os-examples/blob/main/syc-001-five-mirrors-observation/README.md)
+
+## How to Use / 使い方
+
+1. Copy the guidance text from [`observations/guidance/guidance-2026-10-24-eight-principles.txt`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/guidance-2026-10-24-eight-principles.txt).
+2. Supply it to an AI system at the start of a conversation, for example as custom instructions or project instructions.
+3. To observe differences in responses, ask the same question with and without the guidance in separate new conversations, following the [observation procedure](https://github.com/wa-os-official/wa-os-examples/blob/main/syc-001-five-mirrors-observation/README.md).
+4. Record which guidance file was used, together with its SHA-256 (listed in [`observations/guidance/README.md`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/README.md)).
+
+Supplying the guidance does not guarantee that an AI system will follow it, and it does not permanently change the system.
+
+1. [`observations/guidance/guidance-2026-10-24-eight-principles.txt`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/guidance-2026-10-24-eight-principles.txt)の指示文をコピーします。
+2. 会話の最初に、カスタム指示やプロジェクトの指示などとしてAIに渡します。
+3. 回答の違いを観測する場合は、[観測手順](https://github.com/wa-os-official/wa-os-examples/blob/main/syc-001-five-mirrors-observation/README.md)に沿って、指示文あり・なしで、それぞれ新しい会話で同じ質問をします。
+4. 使った指示文のファイル名とSHA-256（[`observations/guidance/README.md`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/README.md)に記載）を記録します。
+
+指示文を渡しても、AIがそれに従う保証はなく、AIそのものが恒久的に変わるわけでもありません。
+
+---
+
 # 💻 Practical Usage & Research Examples
 
 WA-OS is designed as an open framework for self-reflection, information-structure analysis, and longitudinal observation across AI systems.

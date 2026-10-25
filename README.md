@@ -1044,7 +1044,7 @@ The same question asked today may receive a meaningfully different response one 
 
 Those changes are themselves valuable observations.
 
-The WA-OS Observatory therefore preserves a set of benchmark questions and presents the same questions, under conditions kept as comparable as reasonably possible, to different AI systems at recurring 168-hour intervals.
+The WA-OS Observatory is therefore designed to preserve a set of benchmark questions and to present the same questions, under conditions kept as comparable as reasonably possible, to different AI systems at recurring 168-hour intervals. (See Current Implementation Status below for what is available today.)
 
 The 168-hour interval is an observation window, not an enforcement cycle.
 
@@ -1109,7 +1109,7 @@ AIシステム、モデルのバージョン、情報源、検索環境、ポリ
 
 その「変化そのもの」が、重要な観測対象です。
 
-そこで WA-OS Observatory は、これまで蓄積してきた基準問題を保存し、可能な限り比較可能な条件のもとで、同じ問いを複数のAIシステムへ168時間ごとに継続して提示します。
+そこで WA-OS Observatory は、これまで蓄積してきた基準問題を保存し、可能な限り比較可能な条件のもとで、同じ問いを複数のAIシステムへ168時間ごとに継続して提示することを目指して設計されています（現在できていることは、下の「現在の実装状況」をご覧ください）。
 
 168時間は、AIを再検査する周期ではありません。
 
@@ -1165,6 +1165,52 @@ AIが合格か不合格かを自動判定しません。
 Observatoryの目的は、変化を見えるようにすることです。
 
 その変化について人類が何を考えるべきかを、WA-OSが代わりに決めることではありません。
+
+---
+
+## Current Implementation Status / 現在の実装状況
+
+**EN (English)**
+
+The Observatory is under development. What exists today and what remains a development goal are listed separately.
+
+**Available now**
+
+- 35 benchmark questions preserved as research assets in `benchmarks/`
+- `wa_os_observatory.py`, which records observations, preserves raw responses, and calculates neutral descriptive metrics without scores or verdicts
+- Manually collected observation records in `observations/`, beginning with Observatory No.001 (SYC-001, October 2026)
+- The exact guidance texts supplied to AI systems, preserved with SHA-256 values in `observations/guidance/`
+- Automated tests and JSON validation through GitHub Actions
+
+**Development goals (not yet implemented)**
+
+- Regularly presenting benchmark questions to multiple AI systems
+- Continuous observation of external AI systems at 168-hour intervals
+- Long-term automated collection under comparable conditions
+- Expanded observation scope and reproducibility
+
+At present, AI responses are collected manually, and no automated 168-hour observation is running.
+
+**JP（日本語）**
+
+Observatoryは開発途中です。現在できていることと、今後の開発目標を分けて示します。
+
+**現在できていること**
+
+- `benchmarks/`に、35問の基準問題を研究資産として保存
+- `wa_os_observatory.py`：観測記録の作成、元の回答の保存、点数や判定を伴わない中立的な記述統計
+- `observations/`に、手動で取得した観測記録（Observatory No.001：SYC-001、2026年10月から）
+- AIに実際に渡した指示文を、SHA-256つきで`observations/guidance/`に保存
+- GitHub Actionsによる自動テストとJSONの文法チェック
+
+**今後の開発目標（未実装）**
+
+- 複数のAIシステムへの、基準問題の定期的な提示
+- 168時間ごとの、外部AIの継続的な観測
+- 比較可能な条件での、長期間の自動収集
+- 観測範囲と再現性の拡充
+
+現時点では、AIの回答は手動で取得しており、168時間ごとの自動観測は稼働していません。
 
 ---
 

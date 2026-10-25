@@ -1514,6 +1514,8 @@ The core machine-readable protocol and implementation examples are publicly avai
 
 The next stage is to strengthen the Five Mirrors self-check protocol, build the 168-hour Observatory, preserve and expand benchmark questions, develop neutral statistical observation across different AI systems, improve multilingual documentation, and support reproducible cross-system research.
 
+WA-OS began with a mother's wish to leave the next generation an environment in which people can live alongside AI while continuing to question and think for themselves. In the future, I hope to use these records as material for open discussion and research with young people, including at universities, so that more people keep asking their own questions.
+
 If you believe this work should remain open, transparent, and available for anyone to examine, your voluntary support helps make its continued development possible.
 
 ---
@@ -1525,6 +1527,8 @@ WA-OSは、人間の尊厳を守り、不確実性を丁寧に扱い、人間の
 機械可読形式の中核プロトコルと実装例は、すでに無償で公開しています。
 
 今後は、五常の鏡によるセルフチェック・プロトコル、168時間Observatory、基準問題の保存、複数AIの出力に対する中立的な統計観測、多言語ドキュメント、再現可能なAI横断研究を進めます。
+
+WA-OSは、子どもたちの世代に、AIと共にありながら自分で問い、考え続けられる環境を残したいという、一人の母親の思いから始まりました。いずれは大学などで、若い世代とこの記録を材料に議論し、問いを持つ人が一人でも増えるような場をつくりたいと考えています。
 
 この研究が、誰でも利用・検証できる開かれた形で残ってほしいと感じていただけたなら、共に一杯のお茶を分かち合うような気持ちで応援していただけると、大きな力になります。
 
@@ -1542,6 +1546,8 @@ Contributions are used for:
 - neutral statistical and longitudinal analysis;
 - implementation examples and developer documentation;
 - Japanese–English and future multilingual documentation;
+- equipment for development and observation, such as a computer suited to development;
+- the time required to sustain independent research, including the researcher's living costs;
 - research materials and long-term project maintenance.
 
 ご支援は、次の活動に活用します。
@@ -1554,6 +1560,8 @@ Contributions are used for:
 - 中立的な統計・時系列分析
 - 実装例および開発者向けドキュメントの作成
 - 日英および今後の多言語ドキュメントの整備
+- 開発と観測のための機材（開発に適したコンピューターなど）
+- 独立した研究を続けるための時間と、研究者自身の生活の支え
 - 研究資料の収集とプロジェクトの長期的な維持管理
 
 Every contribution, regardless of size, gives this independent work more time and capacity to grow.

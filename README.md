@@ -959,7 +959,7 @@ AIは人間から問いを奪いません。
 
 For a detailed implementation example, see:
 
-`examples/triangulation-and-framing-analysis/README.md`
+[Triangulation and Framing Analysis (wa-os-examples)](https://github.com/wa-os-official/wa-os-examples/blob/main/triangulation-and-framing-analysis/README.md)
 
 ---
 

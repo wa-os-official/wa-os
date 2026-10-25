@@ -20,6 +20,7 @@
     "response_principles_generator": "wa_os_principles.py",
     "benchmark_policy_drift_legacy_v1": "benchmarks/policy_drift_legacy_v1.json",
     "benchmark_v0_1_preserved": "benchmarks/benchmark_v0_1_preserved.json",
+    "benchmark_role_execution_legacy_v1": "benchmarks/role_execution_legacy_v1.json",
     "guidance_records": "observations/guidance/"
   },
   "files_scope_note": "Listing a file here records the project structure. It does not mean that observations or AI guidance are executed automatically.",

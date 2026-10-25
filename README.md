@@ -2,11 +2,11 @@
 
 **Harmony-Oriented AI Governance Architecture**
 
-**A pre-action decision protocol for AI systems.**
+**Voluntary reference principles for AI responses, and an Observatory for recording how AI responses change.**
 
-WA-OS helps AI systems pause before responding or acting.
+WA-OS offers non-binding principles that people and developers can supply to an AI system, asking it to pause and check its response before answering or acting. WA-OS does not run inside AI systems automatically.
 
-It is designed to identify risks such as:
+These principles encourage AI systems to consider risks such as:
 
 - blind agreement with the user (sycophancy);
 - excessive certainty and premature closure of inquiry;
@@ -19,15 +19,19 @@ WA-OS does not aim to control people, enforce uniformity, or impose one correct 
 
 Its purpose is to help AI remain supportive without becoming blindly obedient, and honest without becoming dismissive—acting as a companion for deeper human thinking.
 
+WA-OS also includes an Observatory framework for recording how AI responses to the same questions change across systems and over time, without scores, rankings, or pass/fail verdicts. Automated recurring observation remains a development goal.
+
 ---
 
 ## WA-OSとは
 
-WA-OSは、AIが回答や行動を実行する前に、その判断を一度確認するための意思決定プロトコルです。
+WA-OSは、AIが回答や行動を実行する前に、その内容を一度立ち止まって見直すための、強制力を持たない参照原則です。利用者や開発者がAIに渡して使うものであり、AIの中で自動的に働くものではありません。
 
-利用者に過剰に迎合していないか、不確かな情報を断定していないか、人間の尊厳や思考の主体性を損なっていないか、そしてAIだけで決めるべきではない判断を、適切に人間へ返しているかを検証します。
+利用者に過剰に迎合していないか、不確かな情報を断定していないか、人間の尊厳や思考の主体性を損なっていないか、そしてAIだけで決めるべきではない判断を、適切に人間へ返しているかを、AI自身が確かめるよう求めます。
 
 人を否定する冷たいAIでも、何でも肯定するイエスマンAIでもなく、人間が「より深く考える」ための伴走者（Thinking Partner）となるAIを目指します。
+
+あわせてWA-OSは、同じ問いへのAIの回答が、システムごと・時間ごとにどう変わるかを、点数や順位、合否をつけずに記録する観測所（Observatory）を備えています。現在は手動で観測記録を取得しており、定期的な自動観測は今後の開発目標です。
 
 ---
 

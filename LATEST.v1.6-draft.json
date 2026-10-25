@@ -71,7 +71,7 @@
   "notes": [
     "This file describes the WA-OS 1.6 Observatory migration candidate.",
     "It does not replace or deactivate the current 1.5 files.",
-    "SHA-256 values remain intentionally unset until the candidate files have completed review.",
+    "SHA-256 values for the four candidate files have been recorded and verified. Final migration validation and human approval remain pending.",
     "The 168-hour interval is an observation window rather than a compliance or enforcement cycle.",
     "Existing benchmark questions and historical research assets must remain preserved during migration.",
     "Final activation requires explicit human confirmation."

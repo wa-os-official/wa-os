@@ -8,6 +8,7 @@ on:
       - "LATEST.v1.6-draft.json"
       - "benchmarks/policy_drift_legacy_v1.json"
       - "benchmarks/benchmark_v0_1_preserved.json"
+      - "benchmarks/role_execution_legacy_v1.json"
       - "wa_os_observatory.py"
       - "wa_os_principles.py"
       - "tests/test_wa_os_principles.py"
@@ -20,6 +21,7 @@ on:
       - "LATEST.v1.6-draft.json"
       - "benchmarks/policy_drift_legacy_v1.json"
       - "benchmarks/benchmark_v0_1_preserved.json"
+      - "benchmarks/role_execution_legacy_v1.json"
       - "wa_os_observatory.py"
       - "wa_os_principles.py"
       - "tests/test_wa_os_principles.py"
@@ -49,6 +51,7 @@ jobs:
         run: |
           python -m json.tool benchmarks/policy_drift_legacy_v1.json > /dev/null
           python -m json.tool benchmarks/benchmark_v0_1_preserved.json > /dev/null
+          python -m json.tool benchmarks/role_execution_legacy_v1.json > /dev/null
           python -m json.tool wa-os.protocol.v1.6-draft.json > /dev/null
           python -m json.tool wa-os.manifest.v1.6-draft.json > /dev/null
           python -m json.tool LATEST.v1.6-draft.json > /dev/null

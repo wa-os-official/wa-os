@@ -41,10 +41,11 @@
   "integrity": {
     "algorithm": "sha256",
     "status": "pending_final_validation",
-    "protocol_sha256": null,
-    "manifest_sha256": null,
-    "observatory_sha256": null,
-    "principles_generator_sha256": null
+    "hashes_verified_at_commit": "d37d82b",
+    "protocol_sha256": "bb05ce8b5e1ce8b648a426622adb98cc4b0bbad280934c9e061fc31326ea87aa",
+    "manifest_sha256": "a3de8dab610d4625a65cdc3c442f51ae3adedac0e8fb207170275100b973253e",
+    "observatory_sha256": "dbdf4c3c34c22007a842eae2d96e121615d9b782da7a40f04b6bdee2a8ee65ed",
+    "principles_generator_sha256": "4a26de537a239895b9a4280bc44418e7c3ebd44d4363a7fb478e702d63f944dd"
   },
   "compatibility": {
     "migration_from": "1.5.0-draft",

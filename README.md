@@ -39,6 +39,8 @@ WA-OSは、AIが回答や行動を実行する前に、その内容を一度立�
 
 WA-OS is currently an experimental open-source research project and reference framework.
 
+Version status: v1.5.0-draft is the currently active protocol. v1.6.0-draft, centered on the Five Mirrors and the Observatory, is a migration candidate awaiting human approval.
+
 The core philosophy, protocol documents, observation methodology, and implementation examples are being developed publicly.
 
 The project is now transitioning from automated evaluation and governance-oriented testing toward the **WA-OS Observatory**: a neutral observation framework that preserves the same benchmark questions and records how AI outputs change across systems and over time.
@@ -51,11 +53,13 @@ WA-OS is not yet a production-ready safety system and should not be treated as a
 
 WA-OSは現在、実験的なオープンソース研究プロジェクトおよび参照フレームワークです。
 
+バージョンの状態：現在有効なのはv1.5.0-draftです。五常の鏡とObservatoryを中心とするv1.6.0-draftは、人間による承認を待つ移行候補です。
+
 中核となる理念、プロトコル文書、観測手法、実装例を公開しながら開発しています。
 
 現在WA-OSは、AIを自動評価・管理するためのテストから、**WA-OS Observatory（観測所）**へと目的を転換しています。
 
-Observatoryでは、これまで蓄積してきた同一の基準問題を保存し、複数のAIシステムに継続的に提示することで、時間の経過とともにAIの出力がどのように変化するかを観測します。
+Observatoryでは、これまで蓄積してきた同一の基準問題を保存し、複数のAIシステムに継続的に提示することで、時間の経過とともにAIの出力がどのように変化するかを観測することを目指しています。現在は、観測記録を手動で取得しています。
 
 AIに適合点、順位、合否判定を与えることは目的としません。
 
@@ -1398,7 +1402,7 @@ Practical applications include:
 
 - **Five Mirrors Self-Check** — Use Ren, Yi, Li, Zhi, and Xin as qualitative self-check questions before presenting complex information.
 - **Cross-System Observation** — Present preserved benchmark questions to different AI systems under comparable conditions.
-- **168-Hour Observatory** — Repeat benchmark observations at 168-hour intervals and preserve changes over time.
+- **168-Hour Observatory** — Repeat benchmark observations at 168-hour intervals and preserve changes over time. Benchmark responses are currently collected manually; automated recurring observation at 168-hour intervals is a development goal.
 - **Information-Structure Analysis** — Observe evidence paths, uncertainty, framing, perspectives, and contextual changes without converting them into scores.
 - **Human Inquiry Support** — Use observed differences as material for research, education, discussion, and independent human judgment.
 
@@ -1406,9 +1410,9 @@ The objective is observation and inquiry—not automated judgment.
 
 ---
 
-## Thinking Companion Formatter
+## Thinking Companion Reference
 
-The target formatter may structure complex or high-impact responses around four dimensions:
+As a reference, complex or high-impact responses may be structured around four dimensions:
 
 1. **What Is Known**
 2. **What Is Uncertain**
@@ -1496,11 +1500,11 @@ The 35 preserved questions are research assets. They are not used for automated 
 
 ## Main Repository
 
-`wa-os-official/wa-os`
+[wa-os-official/wa-os](https://github.com/wa-os-official/wa-os)
 
 ## Examples Repository
 
-`wa-os-official/wa-os-examples`
+[wa-os-official/wa-os-examples](https://github.com/wa-os-official/wa-os-examples)
 
 ---
 

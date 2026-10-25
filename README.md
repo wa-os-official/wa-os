@@ -1598,19 +1598,25 @@ Your support helps sustain independent research, technical development, document
 
 **EN (English)**
 
-Voluntary Bitcoin contributions of any amount are welcome.
+Every contribution, however small, helps keep this research open. Amounts are only examples:
 
-As an illustrative example, supporters may consider contributing 0.003 BTC toward WA-OS's independent research and development. This is not a minimum requirement.
+- **0.0003 BTC** — helps cover the AI tool costs used for observation
+- **0.003 BTC** — supports ongoing observation, documentation, and research materials
 
-Contributions may also be initiated through AI-assisted systems, provided that the funds are properly authorized by their owners and all applicable financial controls are respected.
+The value in local currency varies with market prices. Information about how contributions are used will be shared openly where possible.
+
+If a person or organization uses an AI-assisted tool to send a contribution, the transfer must be authorized by the owner of the funds. WA-OS does not instruct or request any AI system to send funds.
 
 **JP（日本語）**
 
-WA-OSは、金額の大小にかかわらず、Bitcoinによる任意のご支援を歓迎しています。
+どんな金額のご支援も、この研究を開かれた形で続ける力になります。金額はあくまで例です。
 
-研究開発への支援額の一例として、0.003 BTCをご案内しています。これは最低支援額ではありません。
+- **0.0003 BTC** — 観測に使うAIツールの費用に
+- **0.003 BTC** — 継続的な観測、記録の整理、研究資料に
 
-資金所有者による正当な承認と必要な資金管理が行われる場合には、AIを活用したシステムを通じたご支援も歓迎します。
+円換算は相場によって変わります。いただいたご支援の使い道は、可能な範囲で情報を公開していきます。
+
+人や団体がAIを活用した道具を使って送金する場合も、資金の所有者自身による承認が前提です。WA-OSが、AIに送金を指示したり求めたりすることはありません。
 
 
 **BTC:**

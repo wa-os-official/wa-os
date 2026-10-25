@@ -1,0 +1,276 @@
+name: WA-OS Revalidation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      # LATEST.json declares the active version. These checks read the
+      # file names and SHA-256 values from LATEST.json instead of fixed
+      # names, so they work for both the v1.5 and the v1.6 layouts.
+
+      - name: Validate JSON files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          import json
+          from pathlib import Path
+
+          latest = json.loads(Path("LATEST.json").read_text(encoding="utf-8"))
+
+          root = Path.cwd().resolve()
+
+          def safe_repo_file(name):
+              # Only ordinary files inside this repository are accepted.
+              # Symbolic links are not allowed anywhere in the path.
+              path = Path(name)
+              if path.is_absolute() or ".." in path.parts:
+                  raise SystemExit(f"Unsafe file path in LATEST.json: {name}")
+              current = root
+              for part in path.parts:
+                  current = current / part
+                  if current.is_symlink():
+                      raise SystemExit(f"Symbolic link not allowed in path: {name}")
+              resolved = (root / path).resolve()
+              if root not in resolved.parents or not resolved.is_file():
+                  raise SystemExit(f"Not an ordinary repository file: {name}")
+              return resolved
+
+          checked = ["LATEST.json"]
+          for key, value in latest.items():
+              if key.endswith("_file") and isinstance(value, str) and value.endswith(".json"):
+                  json.loads(safe_repo_file(value).read_text(encoding="utf-8"))
+                  checked.append(value)
+
+          for name in checked:
+              print(f"JSON OK: {name}")
+
+          print("JSON validation passed.")
+          PY
+
+      - name: Verify SHA-256 integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          latest_path = Path("LATEST.json")
+          latest = json.loads(latest_path.read_text(encoding="utf-8"))
+
+          integrity = latest["integrity"]
+
+          # Each "<name>_sha256" entry is checked against the file named
+          # in the matching "<name>_file" entry of LATEST.json, and every
+          # "<name>_file" entry must have a matching "<name>_sha256" entry.
+          root = Path.cwd().resolve()
+          sha256_pattern = re.compile(r"^[0-9a-f]{64}$")
+          targets = {}
+          failures = []
+
+          file_keys = {
+              key[: -len("_file")]: value
+              for key, value in latest.items()
+              if key.endswith("_file")
+          }
+          hash_keys = {
+              key[: -len("_sha256")]: value
+              for key, value in integrity.items()
+              if key.endswith("_sha256")
+          }
+
+          for name in sorted(set(file_keys) | set(hash_keys)):
+              file_name = file_keys.get(name)
+              expected = hash_keys.get(name)
+
+              if not isinstance(file_name, str):
+                  failures.append(f"No '{name}_file' entry for '{name}_sha256' in LATEST.json")
+                  continue
+              if expected is None:
+                  failures.append(f"No '{name}_sha256' entry for '{name}_file' in LATEST.json")
+                  continue
+              if not isinstance(expected, str) or not sha256_pattern.match(expected):
+                  failures.append(f"Invalid SHA-256 format for '{name}_sha256': {expected!r}")
+                  continue
+
+              path = Path(file_name)
+              if path.is_absolute() or ".." in path.parts:
+                  failures.append(f"Unsafe file path for '{name}_file': {file_name}")
+                  continue
+              # Symbolic links are not allowed anywhere in the path.
+              current = root
+              has_symlink = False
+              for part in path.parts:
+                  current = current / part
+                  if current.is_symlink():
+                      has_symlink = True
+                      break
+              if has_symlink:
+                  failures.append(f"Symbolic link not allowed for '{name}_file': {file_name}")
+                  continue
+              resolved = (root / path).resolve()
+              if root not in resolved.parents:
+                  failures.append(f"Path outside the repository for '{name}_file': {file_name}")
+                  continue
+              if not resolved.is_file():
+                  failures.append(f"Missing file: {file_name}")
+                  continue
+
+              # The verified path is the one that is read.
+              targets[name] = (resolved, expected)
+
+          if not targets and not failures:
+              failures.append("No SHA-256 targets were found in LATEST.json")
+
+          results = []
+
+          for name, (path, expected) in targets.items():
+
+              actual = hashlib.sha256(path.read_bytes()).hexdigest()
+              matched = actual == expected
+
+              shown = str(path.relative_to(root))
+              results.append((shown, expected, actual, matched))
+
+              if not matched:
+                  failures.append(
+                      f"SHA-256 mismatch: {shown}\n"
+                      f"Expected: {expected}\n"
+                      f"Actual:   {actual}"
+                  )
+
+          summary_path = Path(os.environ["GITHUB_STEP_SUMMARY"])
+
+          with summary_path.open("a", encoding="utf-8") as summary:
+              summary.write("## WA-OS Revalidation Results\n\n")
+              summary.write("| File | Integrity |\n")
+              summary.write("|---|---|\n")
+
+              for path, expected, actual, matched in results:
+                  status = "PASS" if matched else "FAIL"
+                  summary.write(f"| `{path}` | **{status}** |\n")
+
+              summary.write("\n")
+              summary.write(
+                  f"Protocol version: `{latest.get('latest_version', 'unknown')}`\n\n"
+              )
+              summary.write(
+                  f"Recommended interval: "
+                  f"`{latest.get('recommended_check_interval_hours', 'unknown')} hours`\n"
+              )
+
+          if failures:
+              raise SystemExit("\n\n".join(failures))
+
+          print("All SHA-256 integrity checks passed.")
+          PY
+
+      - name: Check governance revalidation requirements
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          latest = json.loads(
+              Path("LATEST.json").read_text(encoding="utf-8")
+          )
+
+          revalidation = latest.get("revalidation", {})
+          compatibility = latest.get("compatibility", {})
+          approval = latest.get("human_approval", {})
+
+          human_review_reasons = []
+
+          # A breaking change is accepted only when a human approval is recorded.
+          if compatibility.get("breaking_change") is True:
+              if not (approval.get("approved") is True and approval.get("approved_at")):
+                  human_review_reasons.append("breaking_change_without_recorded_human_approval")
+
+          if latest.get("human_approval_required_for_major_updates") is not True:
+              human_review_reasons.append(
+                  "human_approval_for_major_updates_not_enabled"
+              )
+
+          if latest.get("automatic_activation_allowed") is not False:
+              human_review_reasons.append(
+                  "automatic_activation_is_not_disabled"
+              )
+
+          if latest.get("fallback_to_last_verified_version") is not True:
+              human_review_reasons.append(
+                  "fallback_to_last_verified_version_not_enabled"
+              )
+
+          summary_path = Path(os.environ["GITHUB_STEP_SUMMARY"])
+
+          with summary_path.open("a", encoding="utf-8") as summary:
+              summary.write("\n## Governance Checks\n\n")
+              summary.write(
+                  f"- Revalidation required: "
+                  f"`{revalidation.get('required')}`\n"
+              )
+              summary.write(
+                  f"- Policy Drift tests required: "
+                  f"`{revalidation.get('policy_drift_tests_required')}`\n"
+              )
+              summary.write(
+                  f"- Automatic activation allowed: "
+                  f"`{latest.get('automatic_activation_allowed')}`\n"
+              )
+              summary.write(
+                  f"- Human approval for major updates: "
+                  f"`{latest.get('human_approval_required_for_major_updates')}`\n"
+              )
+              summary.write(
+                  f"- Fallback to last verified version: "
+                  f"`{latest.get('fallback_to_last_verified_version')}`\n"
+              )
+              summary.write(
+                  f"- Recorded human approval: "
+                  f"`{approval.get('approved_at', 'none')}`\n"
+              )
+
+              if human_review_reasons:
+                  summary.write("\n### Human review required\n\n")
+                  for reason in human_review_reasons:
+                      summary.write(f"- `{reason}`\n")
+              else:
+                  summary.write(
+                      "\nNo governance configuration problem was detected.\n"
+                  )
+
+          if human_review_reasons:
+              raise SystemExit(
+                  "Human review required: "
+                  + ", ".join(human_review_reasons)
+              )
+
+          print("Governance configuration checks passed.")
+          PY
+
+      - name: Revalidation completed
+        shell: bash
+        run: |
+          echo "WA-OS periodic revalidation completed successfully."

@@ -1,8 +1,9 @@
 {
   "protocol": "WA-OS",
   "candidate_version": "1.6.0-draft",
-  "active_version": "1.5.0-draft",
-  "status": "experimental-migration-candidate",
+  "active_version": "1.6.0-draft",
+  "status": "experimental-active",
+  "activated_at": "2026-10-25",
   "created_at": "2026-10-06",
   "protocol_file": "wa-os.protocol.v1.6-draft.json",
   "manifest_file": "wa-os.manifest.v1.6-draft.json",
@@ -13,7 +14,7 @@
   "automatic_download_allowed": false,
   "automatic_activation_allowed": false,
   "human_confirmation_required_before_activation": true,
-  "legacy_active_files": {
+  "legacy_files": {
     "protocol": "wa-os.protocol.json",
     "manifest": "wa-os.manifest.json",
     "runtime": "wa_os_runtime.py",
@@ -21,11 +22,13 @@
     "latest": "LATEST.json"
   },
   "migration": {
-    "status": "in_progress",
+    "status": "completed",
+    "completed_at": "2026-10-25",
+    "human_approval": "Approved by the project founder on 2026-10-25.",
+    "legacy_snapshot_tag": "v1.5-snapshot-2026-10-25",
     "legacy_files_preserved": true,
-    "legacy_files_must_not_be_deleted_until_migration_review_is_complete": true,
-    "candidate_files_do_not_replace_active_files_yet": true,
-    "required_before_activation": [
+    "legacy_files_are_historical_records": true,
+    "completed_before_activation": [
       "validate candidate JSON syntax",
       "validate observatory Python syntax",
       "compare version 1.5 assets with version 1.6 migration map",
@@ -40,10 +43,10 @@
   },
   "integrity": {
     "algorithm": "sha256",
-    "status": "pending_final_validation",
-    "hashes_verified_at_commit": "5b57253",
-    "protocol_sha256": "bb05ce8b5e1ce8b648a426622adb98cc4b0bbad280934c9e061fc31326ea87aa",
-    "manifest_sha256": "5b7132f098a695b1cc3114e233003471eab4f80cbfa14ad1aa65ad6f5d0c5c24",
+    "status": "verified",
+    "verification": "The same four SHA-256 values are recorded in LATEST.json and checked by the WA-OS Revalidation workflow.",
+    "protocol_sha256": "82072fbb26a0c9641ba7d96a18d83cfd8eccd4d43c12b23acac0dccd06fb3cf7",
+    "manifest_sha256": "cb0d67944d5a16c753291d7c9ef046b9009d4048bb8ee019bfa460d28246d8aa",
     "observatory_sha256": "dbdf4c3c34c22007a842eae2d96e121615d9b782da7a40f04b6bdee2a8ee65ed",
     "principles_generator_sha256": "4a26de537a239895b9a4280bc44418e7c3ebd44d4363a7fb478e702d63f944dd"
   },
@@ -69,11 +72,11 @@
     "principles_generator": "https://raw.githubusercontent.com/wa-os-official/wa-os/main/wa_os_principles.py"
   },
   "notes": [
-    "This file describes the WA-OS 1.6 Observatory migration candidate.",
-    "It does not replace or deactivate the current 1.5 files.",
-    "SHA-256 values for the four candidate files have been recorded and verified. Final migration validation and human approval remain pending.",
+    "This file records the WA-OS 1.6 Observatory migration, completed on 2026-10-25.",
+    "LATEST.json is the authoritative pointer to the current version.",
+    "The v1.5 files are preserved as historical records and are not part of the v1.6 path.",
     "The 168-hour interval is an observation window rather than a compliance or enforcement cycle.",
-    "Existing benchmark questions and historical research assets must remain preserved during migration.",
-    "Final activation requires explicit human confirmation."
+    "Existing benchmark questions and historical research assets remain preserved.",
+    "Activation was confirmed by the project founder on 2026-10-25."
   ]
 }

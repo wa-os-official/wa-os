@@ -122,8 +122,11 @@
   },
   "migration": {
     "from_version": "1.5.0-draft",
-    "status": "in_progress",
+    "status": "completed",
+    "completed_at": "2026-10-25",
+    "legacy_snapshot_tag": "v1.5-snapshot-2026-10-25",
     "legacy_files_remain_available_during_migration": true,
+    "legacy_files_preserved_after_migration": true,
     "legacy_protocol": "wa-os.protocol.json",
     "legacy_runtime": "wa_os_runtime.py",
     "legacy_policy_drift_module": "wa_os_policy_drift.py",

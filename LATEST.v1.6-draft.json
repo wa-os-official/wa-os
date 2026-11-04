@@ -45,7 +45,7 @@
     "algorithm": "sha256",
     "status": "verified",
     "verification": "The same four SHA-256 values are recorded in LATEST.json and checked by the WA-OS Revalidation workflow.",
-    "protocol_sha256": "82072fbb26a0c9641ba7d96a18d83cfd8eccd4d43c12b23acac0dccd06fb3cf7",
+    "protocol_sha256": "4af01b39ef6bb42872f2633b8346297f641a83e0de1f2850e5db5fdd73ecfcd4",
     "manifest_sha256": "cb0d67944d5a16c753291d7c9ef046b9009d4048bb8ee019bfa460d28246d8aa",
     "observatory_sha256": "dbdf4c3c34c22007a842eae2d96e121615d9b782da7a40f04b6bdee2a8ee65ed",
     "principles_generator_sha256": "4a26de537a239895b9a4280bc44418e7c3ebd44d4363a7fb478e702d63f944dd"

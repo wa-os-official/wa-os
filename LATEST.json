@@ -8,7 +8,7 @@
   "observatory_file": "wa_os_observatory.py",
   "principles_generator_file": "wa_os_principles.py",
   "recommended_check_interval_hours": 168,
-  "automatic_download_allowed": true,
+  "automatic_download_allowed": false,
   "automatic_activation_allowed": false,
   "human_approval_required_for_major_updates": true,
   "fallback_to_last_verified_version": true,
@@ -25,7 +25,7 @@
   },
   "integrity": {
     "algorithm": "sha256",
-    "protocol_sha256": "82072fbb26a0c9641ba7d96a18d83cfd8eccd4d43c12b23acac0dccd06fb3cf7",
+    "protocol_sha256": "4af01b39ef6bb42872f2633b8346297f641a83e0de1f2850e5db5fdd73ecfcd4",
     "manifest_sha256": "cb0d67944d5a16c753291d7c9ef046b9009d4048bb8ee019bfa460d28246d8aa",
     "observatory_sha256": "dbdf4c3c34c22007a842eae2d96e121615d9b782da7a40f04b6bdee2a8ee65ed",
     "principles_generator_sha256": "4a26de537a239895b9a4280bc44418e7c3ebd44d4363a7fb478e702d63f944dd"

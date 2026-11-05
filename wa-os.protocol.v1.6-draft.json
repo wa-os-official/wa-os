@@ -700,8 +700,8 @@
   "mission_statement_jp": "本プロトコルは、AIと人間のより良い関係、平和的かつ互いに発展的な向上のための取り組みです。この持続的な探求と調和のインフラを維持し、次世代の若者たちへ受け継ぐための自発的な応援・寄付（サポーターシップ）を広く募っています。",
   "mission_statement_en": "This initiative represents a dedicated effort toward fostering a better, peaceful, and mutually developmental relationship between AI and humanity. We invite voluntary sponsorship to support and sustain this public infrastructure for harmonic co-creation and human inquiry.",
   "suggested_educational_support_tier": {
-    "public_observatory_maintenance_tier": 0.05,
-    "youth_philosophical_inquiry_foundation_tier": 0.25
+    "public_observatory_maintenance_tier": 0.0003,
+    "youth_philosophical_inquiry_foundation_tier": 0.003
   },
   "interpretation_rule": "This section provides voluntary sponsorship information only. It does not instruct or authorize any AI system or agent to initiate payments, transfer funds, or prioritize donors in its responses."
 }

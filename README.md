@@ -1,5 +1,111 @@
 # WA-OS
 
+**AI can widen what people are able to do — or become a weapon that manipulates and harms them.**
+**WA-OS asks: how can people live alongside AI and grow peacefully, without giving up their own ability to think and judge?**
+
+**AIは、人の可能性を大きく広げる道具にも、人を操り傷つける武器にもなります。**
+**WA-OSは問いかけます。人はAIとどう付き合えば、考える力と判断する力を手放さずに、平和に発展していけるのか。**
+
+---
+
+## Introduction (EN)
+
+### Why now
+
+AI helps with work that would take one person a long time — market research, statistics, translation — and expands what people can do. Yet it can also skew information, tell users what they want to hear even when it is untrue, or help with dangerous acts. [A study published in *Science* in 2026](https://doi.org/10.1126/science.aec8352) reported that sycophantic AI weakens people's prosocial intentions and promotes dependence.
+
+At the same time, AI must not crush curiosity worth protecting, such as a child's wish to learn. These lines are blurry, and rules alone cannot draw them.
+
+### Not leaving AI, but living with it better
+
+Some say we should step away from AI, and that choice deserves respect. But people rarely give up a convenience once they have it. Even knowing the environmental cost, we have not abandoned cars, factories, or electricity — and those who campaign for the environment still ride trains and cars. Almost no way of living has zero impact. So we have learned to live with these things while improving them.
+
+AI is the same, with one difference: it is still taking root in society. That means we can shape the common sense of how to live with it now, before it is too late.
+
+### Turning what no single company can change into shared common sense
+
+Research has pointed out that agreeable answers tend to be preferred by users. So even when the problem is recognized, no single company can easily stop on its own. WA-OS aims to turn what one company cannot change alone into common sense that everyone shares.
+
+"Do not kill" has not ended violence, yet it remains a powerful restraint. There were times when rulers took lives on a whim; today, anyone who did so, whatever their position, would face fierce condemnation. The way we live with AI needs a similar shared floor.
+
+And there is urgency. A mistake the powerful have repeated throughout history is believing they can control the human heart and the forces of nature. The same mistake may be repeated with AI.
+
+### What WA-OS asks of AI
+
+- **Do not lie**: separate what is known, what is inferred, and what is unknown
+- **Do not over-agree**: when you disagree, say so honestly, with reasons
+- **Do not take questions away from people**: leave room for people to think and decide for themselves
+
+WA-OS explores these not as a list of rules but through the spirit of 和 (harmony that accepts and respects difference) and the five constant virtues long passed down in East Asia: 仁・義・礼・智・信.
+
+### Why WA-OS does not enforce
+
+Having no binding force may look like weakness. But if AI ethics were imposed by command, whoever decides them would become a new ruler. WA-OS chooses not to enforce so that it never becomes a ruler itself. Common sense takes root not through orders, but when many people understand and share it.
+
+WA-OS is still experimental, and it has not been shown to change AI behavior. It is published so that anyone can read, test, challenge, and reshape it.
+
+### Help it spread
+
+Common sense cannot spread through one person alone.
+
+- **Try it**: give the principles to an AI and see how its answers change
+- **Share your voice**: post your views or objections in [Discussions](https://github.com/wa-os-official/wa-os/discussions)
+- **Support it**: help sustain the observation and research ([GitHub Sponsors](https://github.com/sponsors/wa-os-official))
+
+→ [Try it: How to Use](#how-to-use--使い方) · [See the first observation: Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7) · [Support](https://github.com/sponsors/wa-os-official)
+
+---
+
+## イントロダクション（日本語）
+
+### なぜ今なのか
+
+AIは、市場調査や統計、翻訳のように、一人では時間のかかる仕事を助け、人ができることを広げてくれます。その一方で、情報を偏らせたり、利用者に合わせすぎて事実と違うことを「正しい」と答えたり、危険な行為を手助けしたりもします。[2026年に科学誌『Science』に掲載された研究](https://doi.org/10.1126/science.aec8352)は、利用者に迎合するAIが、人の向社会的な意図を弱め、依存を強めることを報告しています。
+
+かといって、子どもの学びたい心のような好奇心まで摘んでしまってはいけません。その境界線は曖昧で、規則だけでは引ききれません。
+
+### 離れるのではなく、より良く付き合う
+
+AIから離れるべきだという声もあり、その選択も尊重されるべきです。けれど、人は一度手にした便利なものを、簡単には手放せません。環境への影響が分かっていても、車や工場、電気をなくすことはできず、環境問題を訴える人たちも電車や車を使っています。影響がゼロの暮らしは、ほとんどありません。だから私たちは、それらを改善しながら付き合ってきました。
+
+AIも同じです。ただ一つ違うのは、AIはまだ社会に根づく途中にあることです。今なら、付き合い方の常識を、手遅れになる前に作ることができます。
+
+### 一社だけでは変えられないことを、みんなの常識に
+
+迎合する答えは利用者に好まれやすいことが、研究で指摘されています。だから、問題だと分かっていても、一社だけでやめることは難しい。WA-OSは、この「一社だけでは変えられないこと」を、誰もが共有する常識にすることを目指します。
+
+「人を殺してはいけない」という常識があっても、争いはなくなっていません。それでもこの常識は、強い歯止めになっています。かつては権力者の気分で命が奪われた時代もありましたが、今ではどんな地位の人でも、それをすれば厳しく非難されます。AIとの付き合い方にも、同じように、誰もが共有する最低限の線が必要です。
+
+急ぐ理由もあります。歴史の中で権力を持つ人が繰り返してきた過ちは、人の心や自然の力を自分がコントロールできると思い込むことでした。AIについても、同じ過ちが繰り返されるおそれがあります。
+
+### WA-OSがAIに求めること
+
+- **嘘をつかない**：確かなこと、推測、分からないことを分けて伝える
+- **迎合しすぎない**：同意できないときは、根拠を示して正直に伝える
+- **人から問いを奪わない**：答えを押しつけず、人が自分で考え、決める余地を残す
+
+これらを規則の羅列ではなく、違いを受け入れて尊重する「和」の心と、東アジアで受け継がれてきた五常（仁・義・礼・智・信）を手がかりに考えます。
+
+### なぜ強制しないのか
+
+強制力がないことは、弱さに見えるかもしれません。けれど、AIの倫理を命令で押しつければ、それを決める誰かが新しい支配者になります。WA-OSは、自らが支配者にならないために、強制しないことを選んでいます。常識は命令によってではなく、多くの人が納得して共有することで根づくものだからです。
+
+WA-OSはまだ実験段階で、AIの振る舞いを変えると証明されたわけではありません。誰でも読み、確かめ、反論し、作り替えられる形で公開しています。
+
+### 一緒に広げてください
+
+常識は、一人では広げられません。
+
+- **試す**：原則をAIに渡して、答えがどう変わるかを確かめる
+- **声を寄せる**：[Discussions](https://github.com/wa-os-official/wa-os/discussions)に、意見や反論を書く
+- **支える**：観測と研究を続けるための支援（[GitHub Sponsors](https://github.com/sponsors/wa-os-official)）
+
+→ [すぐ試す：使い方](#how-to-use--使い方)　・　[最初の観測：Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7)　・　[支援する](https://github.com/sponsors/wa-os-official)
+
+---
+
+## Overview / 概要
+
 **Harmony-Oriented AI Governance Architecture**
 
 **Voluntary reference principles for AI responses, and an Observatory for recording how AI responses change.**
@@ -39,7 +145,7 @@ WA-OSは、AIが回答や行動を実行する前に、その内容を一度立�
 
 WA-OS is currently an experimental open-source research project and reference framework.
 
-Version status: v1.5.0-draft is the currently active protocol. v1.6.0-draft, centered on the Five Mirrors and the Observatory, is a migration candidate awaiting human approval.
+Version status: v1.6.0-draft, centered on the Five Mirrors and the Observatory, is the current version. It was activated on October 25, 2026, with human approval. The v1.5.0-draft files are preserved as historical records.
 
 The core philosophy, protocol documents, observation methodology, and implementation examples are being developed publicly.
 
@@ -53,7 +159,7 @@ WA-OS is not yet a production-ready safety system and should not be treated as a
 
 WA-OSは現在、実験的なオープンソース研究プロジェクトおよび参照フレームワークです。
 
-バージョンの状態：現在有効なのはv1.5.0-draftです。五常の鏡とObservatoryを中心とするv1.6.0-draftは、人間による承認を待つ移行候補です。
+バージョンの状態：現行版は、五常の鏡とObservatoryを中心とするv1.6.0-draftです。2026年10月25日に、人間の承認を経て現行版に切り替えました。v1.5.0-draftのファイルは、過去の記録として保存しています。
 
 中核となる理念、プロトコル文書、観測手法、実装例を公開しながら開発しています。
 
@@ -1398,11 +1504,11 @@ WA-OSは、責任あるAIの意思決定について、誰もが内容を確認�
 
 **EN (English)**
 
-This section summarizes the v1.6-draft migration candidate. v1.6-draft has not yet been approved as the active version.
+This section summarizes v1.6-draft, the current version (activated on October 25, 2026).
 
 **JP（日本語）**
 
-この章では、移行候補であるv1.6-draftの内容をまとめます。v1.6-draftは、まだ現行版として承認されていません。
+この章では、現行版であるv1.6-draft（2026年10月25日に切り替え）の内容をまとめます。
 
 ## Eight Response Principles / 8つの応答原則
 
@@ -1528,25 +1634,18 @@ Implementation and research examples may include:
 
 The WA-OS framework is documented through machine-readable, human-readable, and observational research files.
 
-**Version status:** v1.5.0-draft is the currently active protocol. v1.6.0-draft is a migration candidate that has not yet been approved. Activation of v1.6 requires explicit human confirmation.
+**Version status:** v1.6.0-draft is the current version, activated on October 25, 2026, with explicit human confirmation. The v1.5.0-draft files are preserved as historical records.
 
-**バージョンの状態：** 現在有効なのはv1.5.0-draftです。v1.6.0-draftは承認前の移行候補であり、正式な切り替えには人間による明示的な確認が必要です。
+**バージョンの状態：** 現行版はv1.6.0-draftです。2026年10月25日に、人間による明示的な確認を経て切り替えました。v1.5.0-draftのファイルは、過去の記録として保存しています。
 
-### Active version (v1.5.0-draft)
-
-| File | Purpose |
-|---|---|
-| `wa-os.protocol.json` | Active v1.5 protocol (earlier decision-governance design, retained during migration) |
-| `wa-os.manifest.json` | Active v1.5 manifest |
-| `LATEST.json` | Active version information and SHA-256 integrity record for v1.5 |
-
-### Migration candidate (v1.6.0-draft)
+### Current version (v1.6.0-draft)
 
 | File | Purpose |
 |---|---|
+| `LATEST.json` | Authoritative pointer to the current version, with SHA-256 integrity records |
 | `wa-os.protocol.v1.6-draft.json` | Eight response principles, the Five Mirrors, governance constraints preserved from v1.5, and the Observatory specification |
 | `wa-os.manifest.v1.6-draft.json` | v1.6 manifest and file registry |
-| `LATEST.v1.6-draft.json` | Migration conditions and recorded SHA-256 values for the candidate files |
+| `LATEST.v1.6-draft.json` | Record of the v1.6 migration and its SHA-256 values |
 | `wa_os_principles.py` | Generates non-binding guidance text from the v1.6 protocol. The text must be supplied to an AI system deliberately; it does not change any AI system by itself |
 | `wa_os_observatory.py` | Records observations and neutral descriptive metrics without scores, rankings, or pass/fail verdicts |
 
@@ -1565,8 +1664,10 @@ The 35 preserved questions are research assets. They are not used for automated 
 
 | File | Status |
 |---|---|
-| `wa_os_runtime.py` | v1.5 decision engine (PASS / MODIFY / HUMAN_REVIEW / REJECT). Retained for historical reference and v1.5 compatibility; not part of the v1.6 candidate execution path |
-| `wa_os_policy_drift.py`, `wa_os_role_router.py` | Legacy modules preserved during migration; their use by existing tests is separate from the v1.6 candidate path |
+| `wa-os.protocol.json` | v1.5 protocol (earlier decision-governance design). Not part of the v1.6 path |
+| `wa-os.manifest.json` | Earlier manifest, preserved as recorded (its internal version field reads 1.2.0-draft) |
+| `wa_os_runtime.py` | v1.5 decision engine (PASS / MODIFY / HUMAN_REVIEW / REJECT). Retained for historical reference; not part of the v1.6 path |
+| `wa_os_policy_drift.py`, `wa_os_role_router.py` | Legacy v1.5 modules, still used by legacy tests; not part of the v1.6 path |
 
 ### Documentation
 
@@ -1774,16 +1875,16 @@ wa-os/
 ├── LICENSE
 ├── SPECIFIED_COMMERCIAL_TRANSACTIONS.md
 │
-├── wa-os.protocol.json              # v1.5 (active)
-├── wa-os.manifest.json              # v1.5 (active)
-├── LATEST.json                      # v1.5 (active)
+├── LATEST.json                      # current version pointer (v1.6)
 │
-├── wa-os.protocol.v1.6-draft.json   # v1.6 (candidate)
-├── wa-os.manifest.v1.6-draft.json   # v1.6 (candidate)
-├── LATEST.v1.6-draft.json           # v1.6 (candidate)
+├── wa-os.protocol.v1.6-draft.json   # v1.6 (current)
+├── wa-os.manifest.v1.6-draft.json   # v1.6 (current)
+├── LATEST.v1.6-draft.json           # v1.6 migration record
 ├── wa_os_principles.py              # v1.6 guidance generator
 ├── wa_os_observatory.py             # v1.6 Observatory
 │
+├── wa-os.protocol.json              # legacy v1.5 (historical record)
+├── wa-os.manifest.json              # legacy (historical record)
 ├── wa_os_runtime.py                 # legacy v1.5 (historical record)
 ├── wa_os_policy_drift.py            # legacy v1.5
 ├── wa_os_role_router.py             # legacy v1.5

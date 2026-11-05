@@ -1,9 +1,11 @@
 # WA-OS
 
 **AI can widen what people are able to do — or become a weapon that manipulates and harms them.**
+
 **WA-OS asks: how can people live alongside AI and grow peacefully, without giving up their own ability to think and judge?**
 
 **AIは、人の可能性を大きく広げる道具にも、人を操り傷つける武器にもなります。**
+
 **WA-OSは問いかけます。人はAIとどう付き合えば、考える力と判断する力を手放さずに、平和に発展していけるのか。**
 
 ---

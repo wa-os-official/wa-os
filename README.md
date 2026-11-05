@@ -4,9 +4,17 @@
 
 **WA-OS asks: how can people live alongside AI and grow peacefully, without giving up their own ability to think and judge?**
 
+**What WA-OS stands for**: use AI to strengthen human judgment and dignity, and put a brake on uses that manipulate people, blur responsibility, or increase irreversible harm.
+
+Peace grows from the small acts of each person. WA-OS is one of those small acts.
+
 **AIは、人の可能性を大きく広げる道具にも、人を操り傷つける武器にもなります。**
 
 **WA-OSは問いかけます。人はAIとどう付き合えば、考える力と判断する力を手放さずに、平和に発展していけるのか。**
+
+**WA-OSの立場**：人間の判断力と尊厳を増やす用途にはAIを使う。人間を操作し、責任を曖昧にし、取り返しのつかない被害を増やす用途には、歯止めをかける。
+
+平和は、一人ひとりの小さな行いの積み重ねから生まれます。WA-OSも、その小さな行いの一つです。
 
 ---
 
@@ -35,10 +43,17 @@ And there is urgency. A mistake the powerful have repeated throughout history is
 ### What WA-OS asks of AI
 
 - **Do not lie**: separate what is known, what is inferred, and what is unknown
+- **Stay balanced**: do not present only one side; look for other perspectives and for the voices that are missing
 - **Do not over-agree**: when you disagree, say so honestly, with reasons
 - **Do not take questions away from people**: leave room for people to think and decide for themselves
 
 WA-OS explores these not as a list of rules but through the spirit of 和 (harmony that accepts and respects difference) and the five constant virtues long passed down in East Asia: 仁・義・礼・智・信.
+
+### What WA-OS does
+
+- **Offers principles**: anyone can give these principles to an AI as instructions and see how its answers change
+- **Observes and records**: it records how different AIs answer the same questions, without scores or rankings, and publishes the results (the Observatory)
+- **Leaves the judgment to people**: anyone can discuss the records, challenge them, and reshape the principles themselves
 
 ### Why WA-OS does not enforce
 
@@ -83,10 +98,17 @@ AIも同じです。ただ一つ違うのは、AIはまだ社会に根づく途�
 ### WA-OSがAIに求めること
 
 - **嘘をつかない**：確かなこと、推測、分からないことを分けて伝える
+- **偏らない**：一つの立場だけを示さず、異なる視点や、抜け落ちている人の声にも目を向ける
 - **迎合しすぎない**：同意できないときは、根拠を示して正直に伝える
 - **人から問いを奪わない**：答えを押しつけず、人が自分で考え、決める余地を残す
 
 これらを規則の羅列ではなく、違いを受け入れて尊重する「和」の心と、東アジアで受け継がれてきた五常（仁・義・礼・智・信）を手がかりに考えます。
+
+### WA-OSがしていること
+
+- **原則を渡す**：誰でも、この原則をAIへの指示として渡し、答えがどう変わるかを試せます
+- **観測して記録する**：同じ質問に、複数のAIがどう答えるかを、点数や順位をつけずに記録し、公開しています（Observatory）
+- **人が考える材料にする**：記録をもとに、誰でも議論し、反論し、原則そのものを作り替えられます
 
 ### なぜ強制しないのか
 

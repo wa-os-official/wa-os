@@ -23,7 +23,7 @@ Peace grows from the small acts of each person. WA-OS is one of those small acts
 **Purpose**: In an age of living with AI, people keep their own ability to think, grow their inner strength as human beings, and move closer to peace.
 
 **Values we hold**
-- **Yaoyorozu (八百万の神)**: every view has a place. Accept differences as they are, and forgive one another.
+- **Yaoyorozu (八百万の神)**: every view has a place, and we forgive one another. This does not mean that anything goes: we keep shared rules properly, and within them, no one's ability to think for themselves may be taken away. No government, company, or AI should steer people's thinking in one direction. The ethics and philosophy of AI should be thought through by many people, always.
 - **Sanpo-yoshi (三方良し)**: good for people, good for AI, and good for society and the Earth.
 - **The Five Constants (五常)**: 仁・義・礼・智・信
 - **Small acts**: peace grows from the small acts of each person.
@@ -37,7 +37,7 @@ Peace grows from the small acts of each person. WA-OS is one of those small acts
 **目的**：AIと共に生きる時代に、人が自分で考える力を手放さず、人間力（自分の中身）を育て、平和に近づくこと。
 
 **大切にする考え**
-- **八百万の神**：どの考えにも居場所がある。違いをそのまま認め、許し合う
+- **八百万の神**：どの考えにも居場所があり、互いに許し合う。ただし、何でも許されるという意味ではない。共通のルールはきちんと守ったうえで、一人ひとりが自分で考える力を奪わない。国も企業もAIも、人々の考えを一つの方向へ誘導してはいけない。AIの倫理や哲学は、常に多くの人で考え続けるもの
 - **三方良し**：人間よし、AIよし、世間（地球環境）よし
 - **五常**：仁・義・礼・智・信
 - **小さな行い**：平和は、一人ひとりの小さな行いの積み重ねから生まれる

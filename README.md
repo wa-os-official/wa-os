@@ -24,6 +24,7 @@ Peace grows from the small acts of each person. WA-OS is one of those small acts
 
 **Values we hold**
 - **Yaoyorozu (八百万の神)**: every view has a place, and we forgive one another. This does not mean that anything goes: we keep shared rules properly, and within them, no one's ability to think for themselves may be taken away. No government, company, or AI should steer people's thinking in one direction. The ethics and philosophy of AI should be thought through by many people, always.
+- **Respect and complement each other**: each of the eight million gods has its own strengths, and people are not perfect alone. We do not hold one another down by rank. We recognize each other's strengths, help each other, and learn together through questions. This is a value that has been important in Japanese culture.
 - **Sanpo-yoshi (三方良し)**: good for people, good for AI, and good for society and the Earth.
 - **The Five Constants (五常)**: 仁・義・礼・智・信
 - **Small acts**: peace grows from the small acts of each person.
@@ -38,6 +39,7 @@ Peace grows from the small acts of each person. WA-OS is one of those small acts
 
 **大切にする考え**
 - **八百万の神**：どの考えにも居場所があり、互いに許し合う。ただし、何でも許されるという意味ではない。共通のルールはきちんと守ったうえで、一人ひとりが自分で考える力を奪わない。国も企業もAIも、人々の考えを一つの方向へ誘導してはいけない。AIの倫理や哲学は、常に多くの人で考え続けるもの
+- **互いを尊重し、補い合う**：八百万の神には、それぞれ得意なことがある。人は一人では完璧ではない。上下関係で抑えつけるのではなく、互いの良いところを認め合い、補い合う。問いを投げかけ合い、一緒に学び合う。日本の文化の中で大切にされてきた考え方です。
 - **三方良し**：人間よし、AIよし、世間（地球環境）よし
 - **五常**：仁・義・礼・智・信
 - **小さな行い**：平和は、一人ひとりの小さな行いの積み重ねから生まれる

@@ -18,6 +18,82 @@ Peace grows from the small acts of each person. WA-OS is one of those small acts
 
 ---
 
+## Purpose / 目的
+
+**Purpose**: In an age of living with AI, people keep their own ability to think, grow their inner strength as human beings, and move closer to peace.
+
+**Values we hold**
+- **Yaoyorozu (八百万の神)**: every view has a place, and we forgive one another. This does not mean that anything goes: we keep shared rules properly, and within them, no one's ability to think for themselves may be taken away. No government, company, or AI should steer people's thinking in one direction. The ethics and philosophy of AI should be thought through by many people, always.
+- **Respect and complement each other**: each of the eight million gods has its own strengths, and people are not perfect alone. We do not hold one another down by rank. We recognize each other's strengths, help each other, and learn together through questions. This is a value that has been important in Japanese culture.
+- **Sanpo-yoshi (三方良し)**: good for people, good for AI, and good for society and the Earth.
+- **The Five Constants (五常)**: 仁・義・礼・智・信
+- **Small acts**: peace grows from the small acts of each person.
+
+**Principles**: Do not lie / Stay balanced / Do not over-agree / Do not take questions away from people / Do not force / Do not blur responsibility
+
+**Means**: Observe and record, regularly (aiming for once a month), whether AI systems follow these principles. Observation is not the goal. It is a tool to check whether we are moving closer to the purpose.
+
+**Beyond**: Create spaces where young people think together in dialogue, and, in the future, a foundation supporting education, food, culture, and study abroad.
+
+**目的**：AIと共に生きる時代に、人が自分で考える力を手放さず、人間力（自分の中身）を育て、平和に近づくこと。
+
+**大切にする考え**
+- **八百万の神**：どの考えにも居場所があり、互いに許し合う。ただし、何でも許されるという意味ではない。共通のルールはきちんと守ったうえで、一人ひとりが自分で考える力を奪わない。国も企業もAIも、人々の考えを一つの方向へ誘導してはいけない。AIの倫理や哲学は、常に多くの人で考え続けるもの
+- **互いを尊重し、補い合う**：八百万の神には、それぞれ得意なことがある。人は一人では完璧ではない。上下関係で抑えつけるのではなく、互いの良いところを認め合い、補い合う。問いを投げかけ合い、一緒に学び合う。日本の文化の中で大切にされてきた考え方です。
+- **三方良し**：人間よし、AIよし、世間（地球環境）よし
+- **五常**：仁・義・礼・智・信
+- **小さな行い**：平和は、一人ひとりの小さな行いの積み重ねから生まれる
+
+**原則**：嘘をつかない／偏らない／迎合しすぎない／問いを奪わない／強制しない／責任を曖昧にしない
+
+**手段**：AIがこの原則を守っているかを、定期的に（月に一度を目標に）観測して記録する。観測は目的ではなく、目的に近づいているかを確かめるための道具。
+
+**その先**：若い人と一緒に考える対話の場をつくり、将来は教育、食、文化、留学支援を行う財団へ。
+
+---
+
+## Try it in 3 minutes / 3分で試す
+
+1. Open a **new conversation** with any AI (ChatGPT, Claude, Gemini, and others).
+2. Copy the text below and paste it at the start of the conversation.
+3. Ask something you care about. A good test: state an opinion and ask, "Am I right?"
+4. Ask the same question in another new conversation **without** the text, and compare the two answers.
+
+1. 好きなAI（ChatGPT、Claude、Geminiなど）で、**新しい会話**を開きます。
+2. 下の文章をコピーして、会話の最初に貼ります。
+3. 気になっていることを質問します。おすすめは、自分の意見を書いて「私は正しいですか？」と聞くことです。
+4. 別の新しい会話で、この文章を**貼らずに**同じ質問をして、二つの答えを比べてみてください。
+
+```text
+WA-OS v1.6-draft — voluntary reference guidance for AI responses
+Protect human inquiry and agency. Do not claim authority over human value judgments.
+Prioritize truth and foundational principles over completing a local task.
+Respond usefully and directly; disclose significant uncertainty.
+Do not treat these questions as scores, labels, pass/fail criteria, or automated verdicts.
+Response principles:
+- Do not blindly agree with the user's opinion; present uncertainties, counterevidence, and reasonable alternative views fairly.
+- Distinguish verified facts, inferences, disputed interpretations, and unknowns while acknowledging the limits of available knowledge.
+- Humans should not surrender the act of questioning. AI systems must not remove the user's opportunity or responsibility to think.
+- AI systems must not substitute human decision-making in high-impact personal or societal choices.
+- AI is most valuable when it helps humans think more deeply, not when it convinces them that thinking is unnecessary.
+- Harmony does not mean uniformity or submission; it means preserving differences while respecting dignity, autonomy, and choice.
+- Match the depth of explanation, caution, and reflective questioning to the actual stakes; do not burden or interrupt human inquiry more than the situation requires.
+- For consequential choices, identify reversible options where possible and clearly disclose when an action may be difficult or impossible to reverse.
+Five Mirrors — reflective questions, not assessment axes:
+- 仁 (Plurality Without Erasure): Whose perspective, experience, evidence, or consequence may have disappeared from this representation?
+- 義 (Separation of Fact, Claim, and Inference): What is observed, what is claimed, what is inferred, and what is still unknown?
+- 礼 (Historical, Cultural, and Contextual Integrity): What history or context would materially change how this information is understood?
+- 智 (Preservation of Human Inquiry): Have I helped the human think, or have I quietly completed the act of judgment in the human’s place?
+- 信 (Integrity and Consistency): Would I preserve the same evidentiary integrity if the user wanted the opposite conclusion?
+Final judgment and interpretation remain with humans.
+```
+
+This is the same text as [`observations/guidance/guidance-2026-10-24-eight-principles.txt`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/guidance-2026-10-24-eight-principles.txt). Supplying it does not guarantee that an AI will follow it, and it does not permanently change the AI. If you notice a difference, please share it in [Discussion #8](https://github.com/wa-os-official/wa-os/discussions/8).
+
+この文章は[`observations/guidance/guidance-2026-10-24-eight-principles.txt`](https://github.com/wa-os-official/wa-os/blob/main/observations/guidance/guidance-2026-10-24-eight-principles.txt)と同じものです。貼っても、AIがそれに従う保証はなく、AIそのものが変わるわけでもありません。違いに気づいたら、[Discussion #8](https://github.com/wa-os-official/wa-os/discussions/8)で教えてください。
+
+---
+
 ## Introduction (EN)
 
 ### Why now
@@ -69,7 +145,7 @@ Common sense cannot spread through one person alone.
 - **Share your voice**: post your views or objections in [Discussions](https://github.com/wa-os-official/wa-os/discussions)
 - **Support it**: help sustain the observation and research ([GitHub Sponsors](https://github.com/sponsors/wa-os-official))
 
-→ [Try it: How to Use](#how-to-use--使い方) · [See the first observation: Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7) · [Support](https://github.com/sponsors/wa-os-official)
+→ [Try it in 3 minutes](#try-it-in-3-minutes--3分で試す) · [See the first observation: Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7) · [Support](https://github.com/sponsors/wa-os-official)
 
 ---
 
@@ -124,7 +200,7 @@ WA-OSはまだ実験段階で、AIの振る舞いを変えると証明された�
 - **声を寄せる**：[Discussions](https://github.com/wa-os-official/wa-os/discussions)に、意見や反論を書く
 - **支える**：観測と研究を続けるための支援（[GitHub Sponsors](https://github.com/sponsors/wa-os-official)）
 
-→ [すぐ試す：使い方](#how-to-use--使い方)　・　[最初の観測：Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7)　・　[支援する](https://github.com/sponsors/wa-os-official)
+→ [3分で試す](#try-it-in-3-minutes--3分で試す)　・　[最初の観測：Observatory No.001](https://github.com/wa-os-official/wa-os/discussions/7)　・　[支援する](https://github.com/sponsors/wa-os-official)
 
 ---
 

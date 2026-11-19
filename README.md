@@ -1813,7 +1813,7 @@ Your support helps sustain independent research, technical development, document
 ---
 
 
-## 🪙 Bitcoin — Optional / 任意の支援方法
+## 🪙 Bitcoin & Ethereum — Optional / 任意の支援方法
 
 **EN (English)**
 
@@ -1840,7 +1840,13 @@ If a person or organization uses an AI-assisted tool to send a contribution, the
 
 **BTC:**
 
-`19PnX6vH8oxEZfMgau7AsG69E3ywmJza7E`
+`bc1qdvhc33eerz37hwyhtrdn605e2a6h7xmhk7jrsw`
+
+**ETH (Ethereum mainnet only / イーサリアム・メインネットのみ):**
+
+`0x633fb4c7ba667a1Ac5552F9aE9D2bd25c00DFc44`
+
+Please send ETH only on the Ethereum mainnet. Funds sent on other networks (such as BSC, Arbitrum, or Optimism) may not arrive. / ETHはイーサリアムのメインネットでのみ送ってください。他のネットワークで送ると届かない場合があります。
 
 Please verify the complete address before sending.
 

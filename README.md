@@ -1834,7 +1834,7 @@ Contributions are used for:
 - implementation examples and developer documentation;
 - Japanese–English and future multilingual documentation;
 - equipment for development and observation, such as a computer suited to development;
-- the time required to sustain independent research, including the researcher's living costs;
+- part of the researcher's living costs, so that this research can continue;
 - research materials and long-term project maintenance.
 
 ご支援は、次の活動に活用します。
@@ -1848,12 +1848,16 @@ Contributions are used for:
 - 実装例および開発者向けドキュメントの作成
 - 日英および今後の多言語ドキュメントの整備
 - 開発と観測のための機材（開発に適したコンピューターなど）
-- 独立した研究を続けるための時間と、研究者自身の生活の支え
+- 研究者が研究を続けるための生活費の一部
 - 研究資料の収集とプロジェクトの長期的な維持管理
 
 Every contribution, regardless of size, gives this independent work more time and capacity to grow.
 
 金額の大小にかかわらず、一つひとつのご支援が、独立した研究を継続し、育てていく力になります。
+
+Contributions are used for research costs such as AI usage fees for observation, equipment, and materials. They may also cover part of the researcher's living costs so that this research can continue. We will regularly report how contributions are used on this page.
+
+寄付は、観測のためのAI利用料、機材、資料などの研究費に充てます。また、研究者が研究を続けるための生活費の一部にも充てることがあります。使い道は、このページで定期的に報告します。
 
 ---
 

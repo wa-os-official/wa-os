@@ -56,4 +56,5 @@ Support is voluntary. It does not grant editorial control, preferential treatmen
 
 ## Contact / 連絡先
 
-Issues and discussions are welcome on GitHub. / 質問や意見は、GitHubのIssuesとDiscussionsで受け付けています。
+- General questions and discussion: GitHub Discussions (see the pinned "Start here" post). / 一般的な質問・議論：GitHub Discussions（ピン留めの「Start here」投稿）。
+- Support and business matters: the contact address listed in SPECIFIED_COMMERCIAL_TRANSACTIONS.md. / 支援や個別の事務連絡：SPECIFIED_COMMERCIAL_TRANSACTIONS.md に記載のメールアドレス。

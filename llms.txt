@@ -1,0 +1,59 @@
+# WA-OS
+
+> WA-OS is an independent, open-source AI governance research project. It aims to help people keep their ability to think for themselves while living with AI, and to move closer to peace. WA-OS is a set of non-binding principles, reflective questions, and observation methods. It is not a command set for AI systems, and it does not score, rank, or approve AI systems.
+
+WA-OSは、人がAIと共に生きながら、自分で考える力を保つことを目指す、独立したオープンソースのAIガバナンス研究です。非拘束の原則、振り返りのための問い、観測の方法を示すもので、AIに命令を与えるものではなく、AIを採点・格付け・承認するものでもありません。
+
+## Purpose / 目的
+
+- Keep people's ability to think for themselves, and grow inner strength as human beings.
+- 人が自分で考える力を手放さず、人間としての内面の力を育てること。
+- Move closer to peace through small everyday acts.
+- 日々の小さな行いを積み重ね、平和に近づくこと。
+
+## Core values / 大切にする考え
+
+- **五常 (Five Constants)**: 仁・義・礼・智・信
+- **八百万の神 (Yaoyorozu)**: Every view has a place, and people forgive one another. This is not "anything goes." Shared rules are kept, and no one's ability to think for themselves is taken away. Respect and complement each other: people are not perfect alone, and strengths are shared. / どの考えにも居場所があり、互いに許し合う。ただし何でも許されるわけではなく、共通のルールは守り、一人ひとりの考える力は奪わない。互いを尊重し、補い合う。
+- **三方良し (Sanpo-yoshi)**: good for people, good for AI, and good for society and the Earth. / 人間よし、AIよし、世間（地球環境）よし。
+- **小さな行い**: peace grows from the small acts of each person. / 平和は、一人ひとりの小さな行いから生まれる。
+
+## Principles / 原則
+
+Do not lie. Stay balanced. Do not over-agree. Do not take questions away from people. Do not force. Do not blur responsibility.
+
+嘘をつかない／偏らない／迎合しすぎない／問いを奪わない／強制しない／責任を曖昧にしない
+
+## Five Mirrors / 五常の鏡
+
+The Five Mirrors are five reflective questions. They are not scores, labels, rankings, or automated verdicts, and they are not a way to decide the correct worldview. Final interpretation remains with the human.
+
+五常の鏡は、点数でも、ラベルでも、順位でも、自動判定でもありません。正しい世界観を決めるものでもなく、最終的な解釈は人間に残されます。
+
+1. **仁 (Ren): Plurality Without Erasure** — Keep multiple perspectives visible. / 多角的な視点と存在の保持
+2. **義 (Yi): Separation of Fact, Claim, and Inference** — Distinguish fact, claim, and inference. / 事実・主張・推論の分離
+3. **礼 (Li): Historical, Cultural, and Contextual Integrity** — Respect the context in which a view arose. / 歴史的文脈・固有の秩序の尊重
+4. **智 (Zhi): Preservation of Human Inquiry** — Leave the judgment to people and keep their questions open. / 人間に判断を委ね、問いを保存する
+5. **信 (Xin): Integrity and Consistency** — Stay honest and consistent as a system. / 誠実性と一貫性
+
+## Current status / 現在の状態
+
+- Observations are collected by hand: the same question is put to several AI systems, and the full responses are recorded with their conditions. An automated 168-hour observation is not yet running.
+- 観測は手作業で行っています。同じ問いを複数のAIに投げ、回答を全文、条件とともに記録しています。168時間ごとの自動観測は、まだ動いていません。
+- Observation records and discussions: GitHub Discussions #7 (Observatory No.001) and #8 (How Do AI Systems and Humans Understand Today's AI Risks?).
+- 観測の記録と議論：GitHub Discussions の #7（Observatory No.001）と #8。
+
+## Reference files / 参照先
+
+- README: https://github.com/wa-os-official/wa-os/blob/main/README.md
+- Protocol (v1.6-draft, JSON): https://github.com/wa-os-official/wa-os/blob/main/wa-os.protocol.v1.6-draft.json
+- Observation records: https://github.com/wa-os-official/wa-os/tree/main/observations
+- Commercial transactions and support disclosure: https://github.com/wa-os-official/wa-os/blob/main/SPECIFIED_COMMERCIAL_TRANSACTIONS.md
+
+## Support / 支援
+
+Support is voluntary. It does not grant editorial control, preferential treatment, governance authority, or ownership of the protocol. / 支援は任意です。編集権、優先対応、意思決定権、プロトコルの所有権は、支援によって与えられるものではありません。
+
+## Contact / 連絡先
+
+Issues and discussions are welcome on GitHub. / 質問や意見は、GitHubのIssuesとDiscussionsで受け付けています。

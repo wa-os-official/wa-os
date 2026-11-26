@@ -9,6 +9,8 @@ This folder preserves the exact guidance texts supplied to AI systems in WA-OS o
 | `guidance-2026-10-23-six-principles-as-used-in-SYC-001.txt` | `533ea747ffe1d56c624b4a7f0a820fae6dda7cdfd0306445d7a57cc149b36384` | Six response principles and the Five Mirrors (protocol at commit `1fcc2ab`) | SYC-001, Condition B (2026-10-23) |
 | `guidance-2026-10-24-eight-principles.txt` | `80bd9e419241d000aa1ab9cdad107cd2b7b7e1030c11c127d25033e13b0404ab` | Eight response principles (Proportionality and Reversibility added) and the Five Mirrors | Not yet used |
 
+Observation record template: [../TEMPLATE.md](../TEMPLATE.md)
+
 ## Notes
 
 - The SYC-001 file is the text actually supplied to the AI systems, copied from the `guidance_condition_B` field of the [SYC-001 observation record](../2026-10-23/SYC-001-2026-10-23-responses.json).

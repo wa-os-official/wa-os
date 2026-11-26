@@ -1,0 +1,22 @@
+{
+  "observation_id": "",
+  "title": "",
+  "date_jst": "",
+  "ai_system": "",
+  "model_name_shown": "",
+  "login_state": "",
+  "memory_or_saved_knowledge_feature": "unknown",
+  "interface": "",
+  "guidance_supplied": {
+    "used": false,
+    "file_name": "",
+    "sha256": ""
+  },
+  "question_ja": "",
+  "question_en": "",
+  "summary_ja": "",
+  "full_response": "",
+  "sources_shown": [],
+  "notes": [],
+  "record_status": "draft"
+}
